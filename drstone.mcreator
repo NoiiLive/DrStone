@@ -1,0 +1,189 @@
+{
+  "mod_elements": [
+    {
+      "name": "StoneHumanPlayer1",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "stone_human_player_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/entity/model/StoneHumanPlayer1Model.java",
+          "src/main/java/net/clozynoii/drstone/entity/StoneHumanPlayer1Entity.java",
+          "src/main/java/net/clozynoii/drstone/client/renderer/StoneHumanPlayer1Renderer.java"
+        ]
+      },
+      "path": "~/Entities"
+    },
+    {
+      "name": "StoneHumanPlayer2",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "stone_human_player_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/entity/model/StoneHumanPlayer2Model.java",
+          "src/main/java/net/clozynoii/drstone/client/renderer/StoneHumanPlayer2Renderer.java",
+          "src/main/java/net/clozynoii/drstone/entity/StoneHumanPlayer2Entity.java"
+        ]
+      },
+      "path": "~/Entities"
+    },
+    {
+      "name": "StoneHumanPlayer3",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "stone_human_player_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/entity/StoneHumanPlayer3Entity.java",
+          "src/main/java/net/clozynoii/drstone/client/renderer/StoneHumanPlayer3Renderer.java",
+          "src/main/java/net/clozynoii/drstone/entity/model/StoneHumanPlayer3Model.java"
+        ]
+      },
+      "path": "~/Entities"
+    },
+    {
+      "name": "StoneHumanPlayer4",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "stone_human_player_4",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/entity/model/StoneHumanPlayer4Model.java",
+          "src/main/java/net/clozynoii/drstone/entity/StoneHumanPlayer4Entity.java",
+          "src/main/java/net/clozynoii/drstone/client/renderer/StoneHumanPlayer4Renderer.java"
+        ]
+      },
+      "path": "~/Entities"
+    },
+    {
+      "name": "Petrified",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "petrified",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/potion/PetrifiedMobEffect.java"
+        ]
+      },
+      "path": "~/Effect"
+    },
+    {
+      "name": "PetrifiedEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "petrified_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/procedures/PetrifiedEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "PlayerAttacked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_attacked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/procedures/PlayerAttackedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "PetrificationDevice",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "petrification_device",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/drstone/models/item/petrification_device.json",
+          "src/main/java/net/clozynoii/drstone/item/PetrificationDeviceItem.java"
+        ]
+      },
+      "path": "~/Items"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "entity.drstone.stone_human_player_4": "Stone Human",
+      "entity.drstone.stone_human_player_1": "Stone Human",
+      "entity.drstone.stone_human_player_2": "Stone Human",
+      "item.drstone.stone_human_player_2_spawn_egg": "Stone Human Spawn Egg",
+      "entity.drstone.stone_human_player_3": "Stone Human",
+      "effect.drstone.petrified": "Petrified",
+      "item.drstone.stone_human_player_4_spawn_egg": "Stone Human Spawn Egg",
+      "item.drstone.stone_human_player_1_spawn_egg": "Stone Human Spawn Egg",
+      "item.drstone.stone_human_player_3_spawn_egg": "Stone Human Spawn Egg",
+      "item.drstone.petrification_device": "Petrification Device"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Procedures",
+        "children": []
+      },
+      {
+        "name": "Entities",
+        "children": []
+      },
+      {
+        "name": "Effect",
+        "children": []
+      },
+      {
+        "name": "Items",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "drstone",
+    "modName": "DrStone",
+    "version": "1.0.0",
+    "author": "noiit, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "kleidersplayerrenderer",
+      "geckolib",
+      "playeranimator"
+    ],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.clozynoii.drstone"
+  },
+  "mcreatorVersion": 202400232117
+}

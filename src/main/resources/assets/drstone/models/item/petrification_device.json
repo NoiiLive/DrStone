@@ -1,0 +1,7 @@
+{
+  "parent": "drstone:custom/petrificationdevice",
+  "textures": {
+    "0": "drstone:block/petrificationdevicetexture",
+    "particle": "drstone:item/petrificationdevicetexture"
+  }
+}
