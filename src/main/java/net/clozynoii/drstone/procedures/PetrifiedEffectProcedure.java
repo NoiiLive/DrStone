@@ -16,7 +16,7 @@ public class PetrifiedEffectProcedure {
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 20, 0, false, false));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 20, 0, false, false));
+			_entity.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 40, 0, false, false));
 		if (entity.onGround()) {
 			entity.makeStuckInBlock(Blocks.AIR.defaultBlockState(), new Vec3(0.25, 0.05, 0.25));
 		}
