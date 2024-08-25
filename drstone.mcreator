@@ -90,7 +90,7 @@
           }
         ]
       },
-      "path": "~/Procedures"
+      "path": "~/Procedures/Player"
     },
     {
       "name": "PlayerAttacked",
@@ -109,7 +109,7 @@
           }
         ]
       },
-      "path": "~/Procedures"
+      "path": "~/Procedures/Player"
     },
     {
       "name": "PetrificationDevice",
@@ -123,13 +123,262 @@
           "src/main/java/net/clozynoii/drstone/item/PetrificationDeviceItem.java"
         ]
       },
-      "path": "~/Items"
+      "path": "~/Items/Tools"
+    },
+    {
+      "name": "Grapes",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grapes",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/drstone/models/item/grapes.json",
+          "src/main/java/net/clozynoii/drstone/item/GrapesItem.java"
+        ]
+      },
+      "path": "~/Items/Food"
+    },
+    {
+      "name": "GrapeBushVine",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grape_bush_vine",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/drstone/models/block/grape_bush_vine.json",
+          "src/main/resources/assets/drstone/blockstates/grape_bush_vine.json",
+          "src/main/resources/data/drstone/loot_tables/blocks/grape_bush_vine.json",
+          "src/main/java/net/clozynoii/drstone/block/GrapeBushVineBlock.java",
+          "src/main/resources/assets/drstone/models/item/grape_bush_vine.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "GrapeBushVineMature",
+      "type": "plant",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grape_bush_vine_mature",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/drstone/models/item/grape_bush_vine_mature.json",
+          "src/main/resources/assets/drstone/models/block/grape_bush_vine_mature.json",
+          "src/main/resources/data/drstone/worldgen/placed_feature/grape_bush_vine_mature.json",
+          "src/main/resources/data/drstone/forge/biome_modifier/grape_bush_vine_mature_biome_modifier.json",
+          "src/main/resources/assets/drstone/blockstates/grape_bush_vine_mature.json",
+          "src/main/java/net/clozynoii/drstone/block/GrapeBushVineMatureBlock.java",
+          "src/main/resources/data/drstone/loot_tables/blocks/grape_bush_vine_mature.json",
+          "src/main/resources/data/drstone/worldgen/configured_feature/grape_bush_vine_mature.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "GrapeBushBonemeal",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grape_bush_bonemeal",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/procedures/GrapeBushBonemealProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Block"
+    },
+    {
+      "name": "GrapeBushHarvest",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grape_bush_harvest",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/procedures/GrapeBushHarvestProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Block"
+    },
+    {
+      "name": "GrapeBushGrowth",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grape_bush_growth",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/procedures/GrapeBushGrowthProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Block"
+    },
+    {
+      "name": "ClayJar",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clay_jar",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/item/ClayJarItem.java",
+          "src/main/resources/assets/drstone/models/item/clay_jar.json"
+        ]
+      },
+      "path": "~/Items/Tools"
+    },
+    {
+      "name": "FriedClayJar",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fried_clay_jar",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/drstone/models/item/fried_clay_jar.json",
+          "src/main/java/net/clozynoii/drstone/item/FriedClayJarItem.java"
+        ]
+      },
+      "path": "~/Items/Tools"
+    },
+    {
+      "name": "CookJarRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cook_jar_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/drstone/recipes/cook_jar_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "GrapeSake",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grape_sake",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/drstone/models/item/grape_sake.json",
+          "src/main/java/net/clozynoii/drstone/item/GrapeSakeItem.java"
+        ]
+      },
+      "path": "~/Items/Food"
+    },
+    {
+      "name": "SweetBerrySake",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sweet_berry_sake",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/item/SweetBerrySakeItem.java",
+          "src/main/resources/assets/drstone/models/item/sweet_berry_sake.json"
+        ]
+      },
+      "path": "~/Items/Food"
+    },
+    {
+      "name": "GlowBerrySake",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glow_berry_sake",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/drstone/models/item/glow_berry_sake.json",
+          "src/main/java/net/clozynoii/drstone/item/GlowBerrySakeItem.java"
+        ]
+      },
+      "path": "~/Items/Food"
+    },
+    {
+      "name": "DrStone",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dr_stone",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Misc"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {},
-  "tab_element_order": {},
+  "tab_element_order": {
+    "CUSTOM:DrStone": [
+      "PetrificationDevice",
+      "GrapeBushVine",
+      "Grapes",
+      "ClayJar",
+      "FriedClayJar",
+      "GrapeSake",
+      "SweetBerrySake",
+      "GlowBerrySake"
+    ]
+  },
   "language_map": {
     "en_us": {
       "entity.drstone.stone_human_player_4": "Stone Human",
@@ -139,9 +388,18 @@
       "entity.drstone.stone_human_player_3": "Stone Human",
       "effect.drstone.petrified": "Petrified",
       "item.drstone.stone_human_player_4_spawn_egg": "Stone Human Spawn Egg",
-      "item.drstone.stone_human_player_1_spawn_egg": "Stone Human Spawn Egg",
+      "item.drstone.grape_sake": "Grape Sake",
+      "item_group.drstone.dr_stone": "Dr. Stone",
       "item.drstone.stone_human_player_3_spawn_egg": "Stone Human Spawn Egg",
-      "item.drstone.petrification_device": "Petrification Device"
+      "item.drstone.petrification_device": "Petrification Device",
+      "item.drstone.glow_berry_sake": "Glow Berry Sake",
+      "item.drstone.clay_jar": "Clay Jar",
+      "block.drstone.grape_bush_vine": "Grape Bush Vine",
+      "item.drstone.sweet_berry_sake": "Sweet Berry Sake",
+      "item.drstone.fried_clay_jar": "Cooked Jar",
+      "item.drstone.grapes": "Grapes",
+      "item.drstone.stone_human_player_1_spawn_egg": "Stone Human Spawn Egg",
+      "block.drstone.grape_bush_vine_mature": "Grape Bush Vine"
     }
   },
   "foldersRoot": {
@@ -149,7 +407,16 @@
     "children": [
       {
         "name": "Procedures",
-        "children": []
+        "children": [
+          {
+            "name": "Block",
+            "children": []
+          },
+          {
+            "name": "Player",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Entities",
@@ -161,6 +428,27 @@
       },
       {
         "name": "Items",
+        "children": [
+          {
+            "name": "Food",
+            "children": []
+          },
+          {
+            "name": "Tools",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Blocks",
+        "children": []
+      },
+      {
+        "name": "Recipes",
+        "children": []
+      },
+      {
+        "name": "Misc",
         "children": []
       }
     ]

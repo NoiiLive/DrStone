@@ -2,19 +2,19 @@
   "_fv": 66,
   "_type": "item",
   "definition": {
-    "renderType": 1,
-    "texture": "petrificationdevicetexture",
-    "customModelName": "petrificationdevice:default",
+    "renderType": 0,
+    "texture": "clay_jar",
+    "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Petrification Device",
-    "rarity": "RARE",
+    "name": "Clay Jar",
+    "rarity": "COMMON",
     "creativeTabs": [
       {
         "value": "CUSTOM:DrStone"
       }
     ],
-    "stackSize": 1,
+    "stackSize": 16,
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,

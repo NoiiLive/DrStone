@@ -17,9 +17,11 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.clozynoii.drstone.init.DrstoneModTabs;
 import net.clozynoii.drstone.init.DrstoneModMobEffects;
 import net.clozynoii.drstone.init.DrstoneModItems;
 import net.clozynoii.drstone.init.DrstoneModEntities;
+import net.clozynoii.drstone.init.DrstoneModBlocks;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -41,8 +43,12 @@ public class DrstoneMod {
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
+		DrstoneModBlocks.REGISTRY.register(bus);
+
 		DrstoneModItems.REGISTRY.register(bus);
 		DrstoneModEntities.REGISTRY.register(bus);
+
+		DrstoneModTabs.REGISTRY.register(bus);
 
 		DrstoneModMobEffects.REGISTRY.register(bus);
 

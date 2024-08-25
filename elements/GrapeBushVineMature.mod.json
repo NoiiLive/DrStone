@@ -1,0 +1,101 @@
+{
+  "_fv": 66,
+  "_type": "plant",
+  "definition": {
+    "renderType": 2,
+    "texture": "bushvinegrown",
+    "textureBottom": "",
+    "customModelName": "grapebushvinegrown:default",
+    "itemTexture": "grapebushgrown",
+    "particleTexture": "",
+    "tintType": "No tint",
+    "isItemTinted": false,
+    "plantType": "normal",
+    "suspiciousStewEffect": "SPEED",
+    "suspiciousStewDuration": 100,
+    "growapableSpawnType": "Plains",
+    "growapableMaxHeight": 3,
+    "customBoundingBox": false,
+    "disableOffset": false,
+    "boundingBoxes": [
+      {
+        "mx": 0.0,
+        "my": 0.0,
+        "mz": 0.0,
+        "Mx": 16.0,
+        "My": 16.0,
+        "Mz": 16.0,
+        "subtract": false
+      }
+    ],
+    "name": "Grape Bush Vine",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTabs": [],
+    "hardness": 0.0,
+    "resistance": 0.0,
+    "luminance": 0,
+    "unbreakable": false,
+    "isSolid": true,
+    "isCustomSoundType": false,
+    "soundOnStep": {
+      "value": "PLANT"
+    },
+    "breakSound": {
+      "value": ""
+    },
+    "stepSound": {
+      "value": ""
+    },
+    "placeSound": {
+      "value": ""
+    },
+    "hitSound": {
+      "value": ""
+    },
+    "fallSound": {
+      "value": ""
+    },
+    "useLootTableForDrops": false,
+    "customDrop": {
+      "value": "CUSTOM:Grapes"
+    },
+    "dropAmount": 3,
+    "forceTicking": false,
+    "emissiveRendering": false,
+    "hasTileEntity": false,
+    "isReplaceable": false,
+    "colorOnMap": "GRASS",
+    "creativePickItem": {
+      "value": ""
+    },
+    "offsetType": "NONE",
+    "aiPathNodeType": "DEFAULT",
+    "flammability": 100,
+    "fireSpreadSpeed": 60,
+    "jumpFactor": 1.0,
+    "speedFactor": 1.0,
+    "canBePlacedOn": [],
+    "isBonemealable": false,
+    "frequencyOnChunks": 5,
+    "generateFeature": true,
+    "restrictionBiomes": [
+      {
+        "value": "birch_forest"
+      },
+      {
+        "value": "roofed_forest"
+      },
+      {
+        "value": "forest"
+      }
+    ],
+    "generationType": "Flower",
+    "patchSize": 5,
+    "generateAtAnyHeight": false,
+    "onRightClicked": {
+      "name": "GrapeBushHarvest"
+    }
+  }
+}

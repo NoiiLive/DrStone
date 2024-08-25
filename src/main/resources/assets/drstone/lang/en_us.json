@@ -6,7 +6,16 @@
   "entity.drstone.stone_human_player_3": "Stone Human",
   "effect.drstone.petrified": "Petrified",
   "item.drstone.stone_human_player_4_spawn_egg": "Stone Human Spawn Egg",
-  "item.drstone.stone_human_player_1_spawn_egg": "Stone Human Spawn Egg",
+  "item.drstone.grape_sake": "Grape Sake",
+  "item_group.drstone.dr_stone": "Dr. Stone",
   "item.drstone.stone_human_player_3_spawn_egg": "Stone Human Spawn Egg",
-  "item.drstone.petrification_device": "Petrification Device"
+  "item.drstone.petrification_device": "Petrification Device",
+  "item.drstone.glow_berry_sake": "Glow Berry Sake",
+  "item.drstone.clay_jar": "Clay Jar",
+  "block.drstone.grape_bush_vine": "Grape Bush Vine",
+  "item.drstone.sweet_berry_sake": "Sweet Berry Sake",
+  "item.drstone.fried_clay_jar": "Cooked Jar",
+  "item.drstone.grapes": "Grapes",
+  "item.drstone.stone_human_player_1_spawn_egg": "Stone Human Spawn Egg",
+  "block.drstone.grape_bush_vine_mature": "Grape Bush Vine"
 }

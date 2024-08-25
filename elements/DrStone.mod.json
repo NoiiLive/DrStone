@@ -1,0 +1,11 @@
+{
+  "_fv": 66,
+  "_type": "tab",
+  "definition": {
+    "name": "Dr. Stone",
+    "icon": {
+      "value": "CUSTOM:PetrificationDevice"
+    },
+    "showSearch": true
+  }
+}

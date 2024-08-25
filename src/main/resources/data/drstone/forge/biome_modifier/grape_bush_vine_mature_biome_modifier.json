@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "birch_forest",
+    "dark_forest",
+    "forest"
+  ],
+  "features": "drstone:grape_bush_vine_mature",
+  "step": "vegetal_decoration"
+}

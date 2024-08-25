@@ -1,0 +1,9 @@
+{
+  "parent": "drstone:custom/grapebushvinegrown",
+  "textures": {
+    "all": "drstone:block/bushvinegrown",
+    "particle": "drstone:block/bushvinegrown",
+    "0": "drstone:block/bushvinegrown"
+  },
+  "render_type": "cutout"
+}
