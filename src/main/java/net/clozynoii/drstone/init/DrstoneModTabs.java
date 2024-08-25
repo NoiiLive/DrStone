@@ -26,5 +26,6 @@ public class DrstoneModTabs {
 				tabData.accept(DrstoneModItems.GRAPE_SAKE.get());
 				tabData.accept(DrstoneModItems.SWEET_BERRY_SAKE.get());
 				tabData.accept(DrstoneModItems.GLOW_BERRY_SAKE.get());
+				tabData.accept(DrstoneModItems.REVIVAL_FLUID.get());
 			}).withSearchBar().build());
 }

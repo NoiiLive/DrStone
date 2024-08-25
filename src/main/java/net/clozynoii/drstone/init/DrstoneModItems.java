@@ -13,6 +13,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
 import net.clozynoii.drstone.item.SweetBerrySakeItem;
+import net.clozynoii.drstone.item.RevivalFluidItem;
 import net.clozynoii.drstone.item.PetrificationDeviceItem;
 import net.clozynoii.drstone.item.GrapesItem;
 import net.clozynoii.drstone.item.GrapeSakeItem;
@@ -32,6 +33,7 @@ public class DrstoneModItems {
 	public static final RegistryObject<Item> GRAPE_SAKE = REGISTRY.register("grape_sake", () -> new GrapeSakeItem());
 	public static final RegistryObject<Item> SWEET_BERRY_SAKE = REGISTRY.register("sweet_berry_sake", () -> new SweetBerrySakeItem());
 	public static final RegistryObject<Item> GLOW_BERRY_SAKE = REGISTRY.register("glow_berry_sake", () -> new GlowBerrySakeItem());
+	public static final RegistryObject<Item> REVIVAL_FLUID = REGISTRY.register("revival_fluid", () -> new RevivalFluidItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items
