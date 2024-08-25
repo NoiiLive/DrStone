@@ -40,7 +40,7 @@
     "isSolid": true,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "PLANT"
+      "value": "SWEET_BERRY_BUSH"
     },
     "breakSound": {
       "value": ""

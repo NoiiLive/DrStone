@@ -23,7 +23,7 @@ import net.clozynoii.drstone.procedures.GrapeBushBonemealProcedure;
 public class GrapeBushVineBlock extends FlowerBlock implements BonemealableBlock {
 	public GrapeBushVineBlock() {
 		super(() -> MobEffects.MOVEMENT_SPEED, 100,
-				BlockBehaviour.Properties.of().mapColor(MapColor.GRASS).randomTicks().sound(SoundType.GRASS).instabreak().noOcclusion().offsetType(BlockBehaviour.OffsetType.NONE).pushReaction(PushReaction.DESTROY));
+				BlockBehaviour.Properties.of().mapColor(MapColor.GRASS).randomTicks().sound(SoundType.SWEET_BERRY_BUSH).instabreak().noOcclusion().offsetType(BlockBehaviour.OffsetType.NONE).pushReaction(PushReaction.DESTROY));
 	}
 
 	@Override

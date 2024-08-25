@@ -21,7 +21,7 @@ import net.clozynoii.drstone.procedures.GrapeBushHarvestProcedure;
 
 public class GrapeBushVineMatureBlock extends FlowerBlock {
 	public GrapeBushVineMatureBlock() {
-		super(() -> MobEffects.MOVEMENT_SPEED, 100, BlockBehaviour.Properties.of().mapColor(MapColor.GRASS).sound(SoundType.GRASS).instabreak().noOcclusion().offsetType(BlockBehaviour.OffsetType.NONE).pushReaction(PushReaction.DESTROY));
+		super(() -> MobEffects.MOVEMENT_SPEED, 100, BlockBehaviour.Properties.of().mapColor(MapColor.GRASS).sound(SoundType.SWEET_BERRY_BUSH).instabreak().noOcclusion().offsetType(BlockBehaviour.OffsetType.NONE).pushReaction(PushReaction.DESTROY));
 	}
 
 	@Override
