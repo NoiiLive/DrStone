@@ -19,13 +19,12 @@ public class DrstoneModTabs {
 	public static final RegistryObject<CreativeModeTab> DR_STONE = REGISTRY.register("dr_stone",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.drstone.dr_stone")).icon(() -> new ItemStack(DrstoneModItems.PETRIFICATION_DEVICE.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(DrstoneModItems.PETRIFICATION_DEVICE.get());
-				tabData.accept(DrstoneModBlocks.GRAPE_BUSH_VINE.get().asItem());
-				tabData.accept(DrstoneModItems.GRAPES.get());
-				tabData.accept(DrstoneModItems.CLAY_JAR.get());
-				tabData.accept(DrstoneModItems.FRIED_CLAY_JAR.get());
+				tabData.accept(DrstoneModItems.REVIVAL_FLUID.get());
 				tabData.accept(DrstoneModItems.GRAPE_SAKE.get());
 				tabData.accept(DrstoneModItems.SWEET_BERRY_SAKE.get());
 				tabData.accept(DrstoneModItems.GLOW_BERRY_SAKE.get());
-				tabData.accept(DrstoneModItems.REVIVAL_FLUID.get());
+				tabData.accept(DrstoneModItems.FRIED_CLAY_JAR.get());
+				tabData.accept(DrstoneModItems.CLAY_JAR.get());
+				tabData.accept(DrstoneModItems.GRAPES.get());
 			}).withSearchBar().build());
 }

@@ -29,7 +29,9 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInformation": {
-      "fixedValue": []
+      "fixedValue": [
+        "§7§oA device, able to petrify people in their place."
+      ]
     },
     "glowCondition": {
       "fixedValue": false

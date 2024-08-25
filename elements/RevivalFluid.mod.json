@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "revival_fluid",
+    "texture": "revivial_fluid",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],

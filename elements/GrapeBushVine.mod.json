@@ -32,11 +32,7 @@
     "specialInformation": {
       "fixedValue": []
     },
-    "creativeTabs": [
-      {
-        "value": "CUSTOM:DrStone"
-      }
-    ],
+    "creativeTabs": [],
     "hardness": 0.0,
     "resistance": 0.0,
     "luminance": 0,

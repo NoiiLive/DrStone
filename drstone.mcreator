@@ -581,6 +581,41 @@
         ]
       },
       "path": "~/Procedures/Entities"
+    },
+    {
+      "name": "PlantGrapes",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plant_grapes",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/procedures/PlantGrapesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Block"
     }
   ],
   "variable_elements": [],
@@ -589,14 +624,13 @@
   "tab_element_order": {
     "CUSTOM:DrStone": [
       "PetrificationDevice",
-      "GrapeBushVine",
-      "Grapes",
-      "ClayJar",
-      "FriedClayJar",
+      "RevivalFluid",
       "GrapeSake",
       "SweetBerrySake",
       "GlowBerrySake",
-      "RevivalFluid"
+      "FriedClayJar",
+      "ClayJar",
+      "Grapes"
     ]
   },
   "language_map": {
