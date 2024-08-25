@@ -423,6 +423,37 @@
         ]
       },
       "path": "~/Procedures/Entities"
+    },
+    {
+      "name": "StatueDestroy",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "statue_destroy",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/procedures/StatueDestroyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Entities"
     }
   ],
   "variable_elements": [],

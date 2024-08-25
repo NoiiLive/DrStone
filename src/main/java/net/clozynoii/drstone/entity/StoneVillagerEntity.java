@@ -214,7 +214,7 @@ public class StoneVillagerEntity extends Monster implements GeoEntity {
 	@Override
 	protected void tickDeath() {
 		++this.deathTime;
-		if (this.deathTime == 20) {
+		if (this.deathTime == 1) {
 			this.remove(StoneVillagerEntity.RemovalReason.KILLED);
 			this.dropExperience();
 		}

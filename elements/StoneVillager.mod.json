@@ -65,7 +65,7 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "deathTime": 20,
+    "deathTime": 1,
     "lerp": 4,
     "disableCollisions": true,
     "ridable": false,

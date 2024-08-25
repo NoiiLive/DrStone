@@ -34,4 +34,9 @@ public class StoneVillagerBrokenRenderer extends GeoEntityRenderer<StoneVillager
 		this.scaleWidth = scale;
 		super.preRender(poseStack, entity, model, bufferSource, buffer, isReRender, partialTick, packedLight, packedOverlay, red, green, blue, alpha);
 	}
+
+	@Override
+	protected float getDeathMaxRotation(StoneVillagerBrokenEntity entityLivingBaseIn) {
+		return 0.0F;
+	}
 }

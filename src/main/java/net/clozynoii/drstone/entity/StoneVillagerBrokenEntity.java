@@ -37,6 +37,7 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.nbt.CompoundTag;
 
+import net.clozynoii.drstone.procedures.StatueDestroyProcedure;
 import net.clozynoii.drstone.init.DrstoneModEntities;
 
 public class StoneVillagerBrokenEntity extends Monster implements GeoEntity {
@@ -128,6 +129,12 @@ public class StoneVillagerBrokenEntity extends Monster implements GeoEntity {
 	}
 
 	@Override
+	public void die(DamageSource source) {
+		super.die(source);
+		StatueDestroyProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ());
+	}
+
+	@Override
 	public void addAdditionalSaveData(CompoundTag compound) {
 		super.addAdditionalSaveData(compound);
 		compound.putString("Texture", this.getTexture());
@@ -207,7 +214,7 @@ public class StoneVillagerBrokenEntity extends Monster implements GeoEntity {
 	@Override
 	protected void tickDeath() {
 		++this.deathTime;
-		if (this.deathTime == 20) {
+		if (this.deathTime == 5) {
 			this.remove(StoneVillagerBrokenEntity.RemovalReason.KILLED);
 			this.dropExperience();
 		}
