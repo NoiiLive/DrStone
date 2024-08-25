@@ -365,12 +365,13 @@
     },
     {
       "name": "StoneVillager",
-      "type": "livingentity",
+      "type": "animatedentity",
       "compiles": true,
       "locked_code": false,
       "registry_name": "stone_villager",
       "metadata": {
         "files": [
+          "src/main/java/net/clozynoii/drstone/entity/model/StoneVillagerModel.java",
           "src/main/java/net/clozynoii/drstone/entity/StoneVillagerEntity.java",
           "src/main/java/net/clozynoii/drstone/client/renderer/StoneVillagerRenderer.java"
         ]
@@ -379,12 +380,13 @@
     },
     {
       "name": "StoneVillagerBroken",
-      "type": "livingentity",
+      "type": "animatedentity",
       "compiles": true,
       "locked_code": false,
       "registry_name": "stone_villager_broken",
       "metadata": {
         "files": [
+          "src/main/java/net/clozynoii/drstone/entity/model/StoneVillagerBrokenModel.java",
           "src/main/java/net/clozynoii/drstone/entity/StoneVillagerBrokenEntity.java",
           "src/main/java/net/clozynoii/drstone/client/renderer/StoneVillagerBrokenRenderer.java"
         ]
@@ -416,6 +418,7 @@
       "entity.drstone.stone_human_player_2": "Stone Human",
       "item.drstone.stone_human_player_2_spawn_egg": "Stone Human Spawn Egg",
       "entity.drstone.stone_human_player_3": "Stone Human",
+      "item.drstone.stone_villager_broken_spawn_egg": "Stone Villager Spawn Egg",
       "effect.drstone.petrified": "Petrified",
       "item.drstone.stone_human_player_4_spawn_egg": "Stone Human Spawn Egg",
       "item.drstone.grape_sake": "Grape Sake",
@@ -426,6 +429,7 @@
       "item.drstone.clay_jar": "Clay Jar",
       "block.drstone.grape_bush_vine": "Grape Bush Vine",
       "item.drstone.sweet_berry_sake": "Sweet Berry Sake",
+      "item.drstone.stone_villager_spawn_egg": "Stone Villager Spawn Egg",
       "item.drstone.fried_clay_jar": "Cooked Jar",
       "item.drstone.grapes": "Grapes",
       "item.drstone.stone_human_player_1_spawn_egg": "Stone Human Spawn Egg",

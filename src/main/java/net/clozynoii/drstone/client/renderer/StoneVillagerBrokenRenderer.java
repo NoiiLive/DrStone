@@ -1,20 +1,37 @@
 
 package net.clozynoii.drstone.client.renderer;
 
+import software.bernie.geckolib.renderer.GeoEntityRenderer;
+import software.bernie.geckolib.cache.object.BakedGeoModel;
+
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.MultiBufferSource;
 
+import net.clozynoii.drstone.entity.model.StoneVillagerBrokenModel;
 import net.clozynoii.drstone.entity.StoneVillagerBrokenEntity;
-import net.clozynoii.drstone.client.model.ModelStoneVillagerBroken;
 
-public class StoneVillagerBrokenRenderer extends MobRenderer<StoneVillagerBrokenEntity, ModelStoneVillagerBroken<StoneVillagerBrokenEntity>> {
-	public StoneVillagerBrokenRenderer(EntityRendererProvider.Context context) {
-		super(context, new ModelStoneVillagerBroken(context.bakeLayer(ModelStoneVillagerBroken.LAYER_LOCATION)), 0.5f);
+import com.mojang.blaze3d.vertex.VertexConsumer;
+import com.mojang.blaze3d.vertex.PoseStack;
+
+public class StoneVillagerBrokenRenderer extends GeoEntityRenderer<StoneVillagerBrokenEntity> {
+	public StoneVillagerBrokenRenderer(EntityRendererProvider.Context renderManager) {
+		super(renderManager, new StoneVillagerBrokenModel());
+		this.shadowRadius = 1f;
 	}
 
 	@Override
-	public ResourceLocation getTextureLocation(StoneVillagerBrokenEntity entity) {
-		return new ResourceLocation("drstone:textures/entities/stone_villager.png");
+	public RenderType getRenderType(StoneVillagerBrokenEntity animatable, ResourceLocation texture, MultiBufferSource bufferSource, float partialTick) {
+		return RenderType.entityTranslucent(getTextureLocation(animatable));
+	}
+
+	@Override
+	public void preRender(PoseStack poseStack, StoneVillagerBrokenEntity entity, BakedGeoModel model, MultiBufferSource bufferSource, VertexConsumer buffer, boolean isReRender, float partialTick, int packedLight, int packedOverlay, float red,
+			float green, float blue, float alpha) {
+		float scale = 1f;
+		this.scaleHeight = scale;
+		this.scaleWidth = scale;
+		super.preRender(poseStack, entity, model, bufferSource, buffer, isReRender, partialTick, packedLight, packedOverlay, red, green, blue, alpha);
 	}
 }

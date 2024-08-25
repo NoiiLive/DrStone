@@ -4,6 +4,8 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.entity.living.LivingEvent;
 
+import net.clozynoii.drstone.entity.StoneVillagerEntity;
+import net.clozynoii.drstone.entity.StoneVillagerBrokenEntity;
 import net.clozynoii.drstone.entity.StoneHumanPlayer4Entity;
 import net.clozynoii.drstone.entity.StoneHumanPlayer3Entity;
 import net.clozynoii.drstone.entity.StoneHumanPlayer2Entity;
@@ -36,6 +38,20 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof StoneHumanPlayer4Entity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof StoneVillagerEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof StoneVillagerBrokenEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

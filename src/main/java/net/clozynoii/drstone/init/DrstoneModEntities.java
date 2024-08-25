@@ -28,17 +28,17 @@ import net.clozynoii.drstone.DrstoneMod;
 public class DrstoneModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, DrstoneMod.MODID);
 	public static final RegistryObject<EntityType<StoneHumanPlayer1Entity>> STONE_HUMAN_PLAYER_1 = register("stone_human_player_1", EntityType.Builder.<StoneHumanPlayer1Entity>of(StoneHumanPlayer1Entity::new, MobCategory.MONSTER)
-			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(StoneHumanPlayer1Entity::new).fireImmune().sized(1f, 2f));
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(1).setUpdateInterval(3).setCustomClientFactory(StoneHumanPlayer1Entity::new).fireImmune().sized(1f, 2f));
 	public static final RegistryObject<EntityType<StoneHumanPlayer2Entity>> STONE_HUMAN_PLAYER_2 = register("stone_human_player_2", EntityType.Builder.<StoneHumanPlayer2Entity>of(StoneHumanPlayer2Entity::new, MobCategory.MONSTER)
-			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(StoneHumanPlayer2Entity::new).fireImmune().sized(1f, 2f));
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(1).setUpdateInterval(3).setCustomClientFactory(StoneHumanPlayer2Entity::new).fireImmune().sized(1f, 2f));
 	public static final RegistryObject<EntityType<StoneHumanPlayer3Entity>> STONE_HUMAN_PLAYER_3 = register("stone_human_player_3", EntityType.Builder.<StoneHumanPlayer3Entity>of(StoneHumanPlayer3Entity::new, MobCategory.MONSTER)
-			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(StoneHumanPlayer3Entity::new).fireImmune().sized(1f, 2f));
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(1).setUpdateInterval(3).setCustomClientFactory(StoneHumanPlayer3Entity::new).fireImmune().sized(1f, 2f));
 	public static final RegistryObject<EntityType<StoneHumanPlayer4Entity>> STONE_HUMAN_PLAYER_4 = register("stone_human_player_4", EntityType.Builder.<StoneHumanPlayer4Entity>of(StoneHumanPlayer4Entity::new, MobCategory.MONSTER)
-			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(StoneHumanPlayer4Entity::new).fireImmune().sized(1f, 2f));
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(1).setUpdateInterval(3).setCustomClientFactory(StoneHumanPlayer4Entity::new).fireImmune().sized(1f, 2f));
 	public static final RegistryObject<EntityType<StoneVillagerEntity>> STONE_VILLAGER = register("stone_villager", EntityType.Builder.<StoneVillagerEntity>of(StoneVillagerEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
-			.setTrackingRange(1).setUpdateInterval(3).setCustomClientFactory(StoneVillagerEntity::new).fireImmune().sized(0.6f, 1.8f));
+			.setTrackingRange(1).setUpdateInterval(3).setCustomClientFactory(StoneVillagerEntity::new).fireImmune().sized(1f, 2f));
 	public static final RegistryObject<EntityType<StoneVillagerBrokenEntity>> STONE_VILLAGER_BROKEN = register("stone_villager_broken", EntityType.Builder.<StoneVillagerBrokenEntity>of(StoneVillagerBrokenEntity::new, MobCategory.MONSTER)
-			.setShouldReceiveVelocityUpdates(true).setTrackingRange(1).setUpdateInterval(3).setCustomClientFactory(StoneVillagerBrokenEntity::new).fireImmune().sized(0.6f, 1.8f));
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(1).setUpdateInterval(3).setCustomClientFactory(StoneVillagerBrokenEntity::new).fireImmune().sized(1f, 2f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
