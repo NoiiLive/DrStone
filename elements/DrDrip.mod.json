@@ -1,0 +1,11 @@
+{
+  "_fv": 66,
+  "_type": "tab",
+  "definition": {
+    "name": "Dr. Stone Armor",
+    "icon": {
+      "value": "CUSTOM:SenkuuArmor.body"
+    },
+    "showSearch": false
+  }
+}

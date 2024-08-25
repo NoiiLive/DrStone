@@ -13,6 +13,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
 import net.clozynoii.drstone.item.SweetBerrySakeItem;
+import net.clozynoii.drstone.item.SenkuuArmorItem;
 import net.clozynoii.drstone.item.RevivalFluidItem;
 import net.clozynoii.drstone.item.PetrificationDeviceItem;
 import net.clozynoii.drstone.item.GrapesItem;
@@ -34,6 +35,9 @@ public class DrstoneModItems {
 	public static final RegistryObject<Item> SWEET_BERRY_SAKE = REGISTRY.register("sweet_berry_sake", () -> new SweetBerrySakeItem());
 	public static final RegistryObject<Item> GLOW_BERRY_SAKE = REGISTRY.register("glow_berry_sake", () -> new GlowBerrySakeItem());
 	public static final RegistryObject<Item> REVIVAL_FLUID = REGISTRY.register("revival_fluid", () -> new RevivalFluidItem());
+	public static final RegistryObject<Item> SENKUU_ARMOR_CHESTPLATE = REGISTRY.register("senkuu_armor_chestplate", () -> new SenkuuArmorItem.Chestplate());
+	public static final RegistryObject<Item> SENKUU_ARMOR_LEGGINGS = REGISTRY.register("senkuu_armor_leggings", () -> new SenkuuArmorItem.Leggings());
+	public static final RegistryObject<Item> SENKUU_ARMOR_BOOTS = REGISTRY.register("senkuu_armor_boots", () -> new SenkuuArmorItem.Boots());
 
 	// Start of user code block custom items
 	// End of user code block custom items

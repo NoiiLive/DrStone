@@ -616,6 +616,33 @@
         ]
       },
       "path": "~/Procedures/Block"
+    },
+    {
+      "name": "SenkuuArmor",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "senkuu_armor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/drstone/models/item/senkuu_armor_boots.json",
+          "src/main/java/net/clozynoii/drstone/item/SenkuuArmorItem.java",
+          "src/main/resources/assets/drstone/models/item/senkuu_armor_leggings.json",
+          "src/main/resources/assets/drstone/models/item/senkuu_armor_chestplate.json"
+        ]
+      },
+      "path": "~/Armor"
+    },
+    {
+      "name": "DrDrip",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dr_drip",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Misc"
     }
   ],
   "variable_elements": [],
@@ -641,12 +668,16 @@
       "item.drstone.stone_human_player_3_spawn_egg": "Stone Human Spawn Egg",
       "item.drstone.glow_berry_sake": "Glow Berry Sake",
       "item.drstone.fried_clay_jar": "Cooked Jar",
+      "item.drstone.senkuu_armor_leggings": "Senkuu\u0027s Pants",
       "item.drstone.grapes": "Grapes",
       "item.drstone.stone_human_player_1_spawn_egg": "Stone Human Spawn Egg",
       "block.drstone.grape_bush_vine_mature": "Grape Bush Vine",
       "entity.drstone.stone_human_player_4": "Stone Human",
+      "item_group.drstone.dr_drip": "Dr. Stone Armor",
+      "item.drstone.senkuu_armor_boots": "Senkuu\u0027s Shoes",
       "entity.drstone.stone_human_player_1": "Stone Human",
       "entity.drstone.stone_human_player_2": "Stone Human",
+      "item.drstone.senkuu_armor_chestplate": "Senkuu\u0027s Coat",
       "item.drstone.stone_human_player_2_spawn_egg": "Stone Human Spawn Egg",
       "entity.drstone.stone_human_player_3": "Stone Human",
       "item.drstone.stone_villager_broken_spawn_egg": "Stone Villager Spawn Egg",
@@ -708,6 +739,10 @@
       },
       {
         "name": "Recipes",
+        "children": []
+      },
+      {
+        "name": "Armor",
         "children": []
       },
       {
