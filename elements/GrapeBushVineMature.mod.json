@@ -68,7 +68,7 @@
     "isReplaceable": false,
     "colorOnMap": "GRASS",
     "creativePickItem": {
-      "value": ""
+      "value": "CUSTOM:Grapes"
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",

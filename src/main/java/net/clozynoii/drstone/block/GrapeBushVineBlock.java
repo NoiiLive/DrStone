@@ -1,6 +1,7 @@
 
 package net.clozynoii.drstone.block;
 
+import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.BlockState;
@@ -11,6 +12,8 @@ import net.minecraft.world.level.block.BonemealableBlock;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerLevel;
@@ -19,6 +22,7 @@ import net.minecraft.core.BlockPos;
 
 import net.clozynoii.drstone.procedures.GrapeBushGrowthProcedure;
 import net.clozynoii.drstone.procedures.GrapeBushBonemealProcedure;
+import net.clozynoii.drstone.init.DrstoneModItems;
 
 public class GrapeBushVineBlock extends FlowerBlock implements BonemealableBlock {
 	public GrapeBushVineBlock() {
@@ -39,6 +43,11 @@ public class GrapeBushVineBlock extends FlowerBlock implements BonemealableBlock
 	@Override
 	public int getFireSpreadSpeed(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
 		return 60;
+	}
+
+	@Override
+	public ItemStack getCloneItemStack(BlockState state, HitResult target, BlockGetter world, BlockPos pos, Player player) {
+		return new ItemStack(DrstoneModItems.GRAPES.get());
 	}
 
 	@Override
