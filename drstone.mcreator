@@ -392,6 +392,37 @@
         ]
       },
       "path": "~/Entities"
+    },
+    {
+      "name": "StoneVillagerBreak",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_villager_break",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/procedures/StoneVillagerBreakProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Entities"
     }
   ],
   "variable_elements": [],
@@ -448,6 +479,10 @@
           },
           {
             "name": "Player",
+            "children": []
+          },
+          {
+            "name": "Entities",
             "children": []
           }
         ]

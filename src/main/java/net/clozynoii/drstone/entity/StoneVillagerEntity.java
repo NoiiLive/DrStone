@@ -37,6 +37,7 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.nbt.CompoundTag;
 
+import net.clozynoii.drstone.procedures.StoneVillagerBreakProcedure;
 import net.clozynoii.drstone.init.DrstoneModEntities;
 
 public class StoneVillagerEntity extends Monster implements GeoEntity {
@@ -125,6 +126,12 @@ public class StoneVillagerEntity extends Monster implements GeoEntity {
 		if (source.is(DamageTypes.WITHER_SKULL))
 			return false;
 		return super.hurt(source, amount);
+	}
+
+	@Override
+	public void die(DamageSource source) {
+		super.die(source);
+		StoneVillagerBreakProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ());
 	}
 
 	@Override
