@@ -31,11 +31,13 @@ public class UnpetrifyVillagerProcedure {
 				ItemStack _stktoremove = new ItemStack(DrstoneModItems.REVIVAL_FLUID.get());
 				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 			}
-			if (entity instanceof Player _player) {
-				ItemStack _setstack = new ItemStack(DrstoneModItems.FRIED_CLAY_JAR.get()).copy();
-				_setstack.setCount(1);
-				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
-			}
+			DrstoneMod.queueServerWork(1, () -> {
+				if (entity instanceof Player _player) {
+					ItemStack _setstack = new ItemStack(DrstoneModItems.FRIED_CLAY_JAR.get()).copy();
+					_setstack.setCount(1);
+					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+				}
+			});
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.fire.extinguish")), SoundSource.BLOCKS, 1, 1);
@@ -43,8 +45,6 @@ public class UnpetrifyVillagerProcedure {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.fire.extinguish")), SoundSource.BLOCKS, 1, 1, false);
 				}
 			}
-			if (world instanceof ServerLevel)
-				((ServerLevel) world).sendParticles((new BlockParticleOption(ParticleTypes.BLOCK, Blocks.STONE.defaultBlockState())), x, (y + 1), z, 35, 0.5, 0.5, 0.5, 0);
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.brewing_stand.brew")), SoundSource.BLOCKS, 1, 1);
@@ -53,6 +53,8 @@ public class UnpetrifyVillagerProcedure {
 				}
 			}
 			DrstoneMod.queueServerWork(30, () -> {
+				if (world instanceof ServerLevel)
+					((ServerLevel) world).sendParticles((new BlockParticleOption(ParticleTypes.BLOCK, Blocks.STONE.defaultBlockState())), x, (y + 1), z, 35, 0.5, 0.5, 0.5, 0);
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
 						_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.deepslate.break")), SoundSource.BLOCKS, 1, 1);
