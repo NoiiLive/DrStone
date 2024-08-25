@@ -7,7 +7,7 @@
     "textureBottom": "",
     "customModelName": "grapebushvinegrown:default",
     "itemTexture": "grapebushgrown",
-    "particleTexture": "",
+    "particleTexture": "grapebushmature",
     "tintType": "No tint",
     "isItemTinted": false,
     "plantType": "normal",
