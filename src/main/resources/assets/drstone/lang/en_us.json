@@ -1,6 +1,8 @@
 {
   "entity.drstone.stone_human_player_4": "Stone Human",
+  "entity.drstone.stone_villager": "Stone Villager",
   "entity.drstone.stone_human_player_1": "Stone Human",
+  "entity.drstone.stone_villager_broken": "Stone Villager",
   "entity.drstone.stone_human_player_2": "Stone Human",
   "item.drstone.stone_human_player_2_spawn_egg": "Stone Human Spawn Egg",
   "entity.drstone.stone_human_player_3": "Stone Human",

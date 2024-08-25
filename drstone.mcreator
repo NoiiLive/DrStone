@@ -362,6 +362,34 @@
         "files": []
       },
       "path": "~/Misc"
+    },
+    {
+      "name": "StoneVillager",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_villager",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/entity/StoneVillagerEntity.java",
+          "src/main/java/net/clozynoii/drstone/client/renderer/StoneVillagerRenderer.java"
+        ]
+      },
+      "path": "~/Entities"
+    },
+    {
+      "name": "StoneVillagerBroken",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stone_villager_broken",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/entity/StoneVillagerBrokenEntity.java",
+          "src/main/java/net/clozynoii/drstone/client/renderer/StoneVillagerBrokenRenderer.java"
+        ]
+      },
+      "path": "~/Entities"
     }
   ],
   "variable_elements": [],
@@ -382,7 +410,9 @@
   "language_map": {
     "en_us": {
       "entity.drstone.stone_human_player_4": "Stone Human",
+      "entity.drstone.stone_villager": "Stone Villager",
       "entity.drstone.stone_human_player_1": "Stone Human",
+      "entity.drstone.stone_villager_broken": "Stone Villager",
       "entity.drstone.stone_human_player_2": "Stone Human",
       "item.drstone.stone_human_player_2_spawn_egg": "Stone Human Spawn Egg",
       "entity.drstone.stone_human_player_3": "Stone Human",
