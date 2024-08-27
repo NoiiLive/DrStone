@@ -32,7 +32,7 @@ public class DeviceConditionsSetProcedure {
 					return 0;
 				}
 			}.convert(guistate.containsKey("text:Meters") ? ((EditBox) guistate.get("text:Meters")).getValue() : ""));
-			(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putDouble("Seconds", new Object() {
+			(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putDouble("Seconds", (new Object() {
 				double convert(String s) {
 					try {
 						return Double.parseDouble(s.trim());
@@ -40,7 +40,7 @@ public class DeviceConditionsSetProcedure {
 					}
 					return 0;
 				}
-			}.convert(guistate.containsKey("text:Seconds") ? ((EditBox) guistate.get("text:Seconds")).getValue() : ""));
+			}.convert(guistate.containsKey("text:Seconds") ? ((EditBox) guistate.get("text:Seconds")).getValue() : "") * 20));
 			{
 				final Vec3 _center = new Vec3(x, y, z);
 				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(100 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
@@ -77,7 +77,7 @@ public class DeviceConditionsSetProcedure {
 					return 0;
 				}
 			}.convert(guistate.containsKey("text:Meters") ? ((EditBox) guistate.get("text:Meters")).getValue() : ""));
-			(entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getOrCreateTag().putDouble("Seconds", new Object() {
+			(entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getOrCreateTag().putDouble("Seconds", (new Object() {
 				double convert(String s) {
 					try {
 						return Double.parseDouble(s.trim());
@@ -85,7 +85,7 @@ public class DeviceConditionsSetProcedure {
 					}
 					return 0;
 				}
-			}.convert(guistate.containsKey("text:Seconds") ? ((EditBox) guistate.get("text:Seconds")).getValue() : ""));
+			}.convert(guistate.containsKey("text:Seconds") ? ((EditBox) guistate.get("text:Seconds")).getValue() : "") * 20));
 			{
 				final Vec3 _center = new Vec3(x, y, z);
 				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(100 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();

@@ -12,6 +12,7 @@ public class DropPetriDeviceProcedure {
 		if (world instanceof ServerLevel _level) {
 			ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(DrstoneModItems.PETRIFICATION_DEVICE.get()));
 			entityToSpawn.setPickUpDelay(20);
+			entityToSpawn.setUnlimitedLifetime();
 			_level.addFreshEntity(entityToSpawn);
 		}
 	}

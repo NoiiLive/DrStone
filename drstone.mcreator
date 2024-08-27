@@ -814,9 +814,45 @@
         ]
       },
       "path": "~/Procedures/Items"
+    },
+    {
+      "name": "PetrificationDeviceTimer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "petrification_device_timer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/procedures/PetrificationDeviceTimerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Procedures/Items"
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "DeviceMeters",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "DeviceSeconds",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    }
+  ],
   "sound_elements": [],
   "tag_elements": {},
   "tab_element_order": {

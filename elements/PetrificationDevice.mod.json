@@ -42,6 +42,9 @@
     "onRightClickedInAir": {
       "name": "PetrificationMenu"
     },
+    "onItemInInventoryTick": {
+      "name": "PetrificationDeviceTimer"
+    },
     "enableRanged": true,
     "shootConstantly": false,
     "rangedItemChargesPower": false,
