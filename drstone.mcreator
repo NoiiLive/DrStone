@@ -361,7 +361,7 @@
       "metadata": {
         "files": []
       },
-      "path": "~/Misc"
+      "path": "~/Misc/Tabs"
     },
     {
       "name": "StoneVillager",
@@ -642,7 +642,44 @@
       "metadata": {
         "files": []
       },
-      "path": "~/Misc"
+      "path": "~/Misc/Tabs"
+    },
+    {
+      "name": "NoVillagers",
+      "type": "gamerule",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "no_villagers",
+      "metadata": {
+        "files": [],
+        "type": "logic"
+      },
+      "path": "~/Misc/Gamerules"
+    },
+    {
+      "name": "SpawnPetrified",
+      "type": "gamerule",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spawn_petrified",
+      "metadata": {
+        "files": [],
+        "type": "logic"
+      },
+      "path": "~/Misc/Gamerules"
+    },
+    {
+      "name": "DrStoneOP",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dr_stone_op",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/command/DrStoneOPCommand.java"
+        ]
+      },
+      "path": "~/Misc/Commands"
     }
   ],
   "variable_elements": [],
@@ -665,8 +702,11 @@
       "entity.drstone.stone_villager": "Stone Villager",
       "entity.drstone.stone_villager_broken": "Stone Villager",
       "effect.drstone.petrified": "Petrified",
+      "gamerule.spawnPetrified": "Spawn Petrified",
       "item.drstone.stone_human_player_3_spawn_egg": "Stone Human Spawn Egg",
       "item.drstone.glow_berry_sake": "Glow Berry Sake",
+      "gamerule.noVillagers": "No Vanilla Villagers",
+      "gamerule.noVillagers.description": "Disables Vanilla Villagers",
       "item.drstone.fried_clay_jar": "Cooked Jar",
       "item.drstone.senkuu_armor_leggings": "Senkuu\u0027s Pants",
       "item.drstone.grapes": "Grapes",
@@ -686,6 +726,7 @@
       "item_group.drstone.dr_stone": "Dr. Stone",
       "item.drstone.petrification_device": "Petrification Device",
       "item.drstone.clay_jar": "Clay Jar",
+      "gamerule.spawnPetrified.description": "Changes players being petrified when joining AFTER mass petrification.",
       "block.drstone.grape_bush_vine": "Grape Bush Vine",
       "item.drstone.sweet_berry_sake": "Sweet Berry Sake",
       "item.drstone.stone_villager_spawn_egg": "Stone Villager Spawn Egg",
@@ -747,7 +788,20 @@
       },
       {
         "name": "Misc",
-        "children": []
+        "children": [
+          {
+            "name": "Tabs",
+            "children": []
+          },
+          {
+            "name": "Gamerules",
+            "children": []
+          },
+          {
+            "name": "Commands",
+            "children": []
+          }
+        ]
       }
     ]
   },

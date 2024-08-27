@@ -1,0 +1,12 @@
+{
+  "_fv": 66,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Logic",
+    "displayName": "Spawn Petrified",
+    "description": "Changes players being petrified when joining AFTER mass petrification.",
+    "category": "PLAYER",
+    "defaultValueLogic": true,
+    "defaultValueNumber": 0
+  }
+}

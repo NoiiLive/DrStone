@@ -5,7 +5,7 @@ repositories {
 }
       
 dependencies {
-  implementation fg.deobf("curse.maven:kleidersplayerrenderer-682065:5083323")
+  implementation fg.deobf("curse.maven:kleidersplayerrenderer-682065:5654821")
 }
 
 
