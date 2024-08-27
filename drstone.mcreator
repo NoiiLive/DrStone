@@ -735,7 +735,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/clozynoii/drstone/world/inventory/PetrificationDeviceGUIMenu.java",
-          "src/main/java/net/clozynoii/drstone/client/gui/PetrificationDeviceGUIScreen.java"
+          "src/main/java/net/clozynoii/drstone/client/gui/PetrificationDeviceGUIScreen.java",
+          "src/main/java/net/clozynoii/drstone/network/PetrificationDeviceGUIButtonMessage.java"
         ]
       },
       "path": "~/GUI"
@@ -754,6 +755,45 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Items"
+    },
+    {
+      "name": "DeviceConditionsSet",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "device_conditions_set",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/procedures/DeviceConditionsSetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
           },
           {
             "name": "x",

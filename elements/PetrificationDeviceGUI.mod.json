@@ -68,6 +68,9 @@
           "name": "button_set_conditions",
           "text": "Set Conditions",
           "isUndecorated": false,
+          "onClick": {
+            "name": "DeviceConditionsSet"
+          },
           "width": 98,
           "height": 20,
           "x": 165,

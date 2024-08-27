@@ -12,6 +12,8 @@ import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.Minecraft;
 
 import net.clozynoii.drstone.world.inventory.PetrificationDeviceGUIMenu;
+import net.clozynoii.drstone.network.PetrificationDeviceGUIButtonMessage;
+import net.clozynoii.drstone.DrstoneMod;
 
 import java.util.HashMap;
 
@@ -142,6 +144,10 @@ public class PetrificationDeviceGUIScreen extends AbstractContainerScreen<Petrif
 		guistate.put("text:Seconds", Seconds);
 		this.addWidget(this.Seconds);
 		button_set_conditions = Button.builder(Component.translatable("gui.drstone.petrification_device_gui.button_set_conditions"), e -> {
+			if (true) {
+				DrstoneMod.PACKET_HANDLER.sendToServer(new PetrificationDeviceGUIButtonMessage(0, x, y, z));
+				PetrificationDeviceGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
+			}
 		}).bounds(this.leftPos + -49, this.topPos + 23, 98, 20).build();
 		guistate.put("button:button_set_conditions", button_set_conditions);
 		this.addRenderableWidget(button_set_conditions);
