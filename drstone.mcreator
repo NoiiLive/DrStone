@@ -680,6 +680,100 @@
         ]
       },
       "path": "~/Misc/Commands"
+    },
+    {
+      "name": "PetrificationThrown",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "petrification_thrown",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/client/renderer/PetrificationThrownRenderer.java",
+          "src/main/java/net/clozynoii/drstone/entity/PetrificationThrownEntity.java"
+        ]
+      },
+      "path": "~/Misc/Projectile"
+    },
+    {
+      "name": "DropPetriDevice",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "drop_petri_device",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/procedures/DropPetriDeviceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Items"
+    },
+    {
+      "name": "PetrificationDeviceGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "petrification_device_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/world/inventory/PetrificationDeviceGUIMenu.java",
+          "src/main/java/net/clozynoii/drstone/client/gui/PetrificationDeviceGUIScreen.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "PetrificationMenu",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "petrification_menu",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/procedures/PetrificationMenuProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Items"
     }
   ],
   "variable_elements": [],
@@ -703,7 +797,9 @@
       "entity.drstone.stone_villager_broken": "Stone Villager",
       "effect.drstone.petrified": "Petrified",
       "gamerule.spawnPetrified": "Spawn Petrified",
+      "gui.drstone.petrification_device_gui.button_set_conditions": "Set Conditions",
       "item.drstone.stone_human_player_3_spawn_egg": "Stone Human Spawn Egg",
+      "gui.drstone.petrification_device_gui.Meters": "0",
       "item.drstone.glow_berry_sake": "Glow Berry Sake",
       "gamerule.noVillagers": "No Vanilla Villagers",
       "gamerule.noVillagers.description": "Disables Vanilla Villagers",
@@ -712,6 +808,7 @@
       "item.drstone.grapes": "Grapes",
       "item.drstone.stone_human_player_1_spawn_egg": "Stone Human Spawn Egg",
       "block.drstone.grape_bush_vine_mature": "Grape Bush Vine",
+      "gui.drstone.petrification_device_gui.label_meters": "Meters",
       "entity.drstone.stone_human_player_4": "Stone Human",
       "item_group.drstone.dr_drip": "Dr. Stone Armor",
       "item.drstone.senkuu_armor_boots": "Senkuu\u0027s Shoes",
@@ -721,12 +818,14 @@
       "item.drstone.stone_human_player_2_spawn_egg": "Stone Human Spawn Egg",
       "entity.drstone.stone_human_player_3": "Stone Human",
       "item.drstone.stone_villager_broken_spawn_egg": "Stone Villager Spawn Egg",
+      "gui.drstone.petrification_device_gui.label_seconds": "Seconds",
       "item.drstone.stone_human_player_4_spawn_egg": "Stone Human Spawn Egg",
       "item.drstone.grape_sake": "Grape Sake",
       "item_group.drstone.dr_stone": "Dr. Stone",
       "item.drstone.petrification_device": "Petrification Device",
       "item.drstone.clay_jar": "Clay Jar",
       "gamerule.spawnPetrified.description": "Changes players being petrified when joining AFTER mass petrification.",
+      "gui.drstone.petrification_device_gui.Seconds": "0",
       "block.drstone.grape_bush_vine": "Grape Bush Vine",
       "item.drstone.sweet_berry_sake": "Sweet Berry Sake",
       "item.drstone.stone_villager_spawn_egg": "Stone Villager Spawn Egg",
@@ -749,6 +848,10 @@
           },
           {
             "name": "Entities",
+            "children": []
+          },
+          {
+            "name": "Items",
             "children": []
           }
         ]
@@ -800,8 +903,16 @@
           {
             "name": "Commands",
             "children": []
+          },
+          {
+            "name": "Projectile",
+            "children": []
           }
         ]
+      },
+      {
+        "name": "GUI",
+        "children": []
       }
     ]
   },

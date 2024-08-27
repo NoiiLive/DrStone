@@ -19,6 +19,7 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.clozynoii.drstone.init.DrstoneModTabs;
 import net.clozynoii.drstone.init.DrstoneModMobEffects;
+import net.clozynoii.drstone.init.DrstoneModMenus;
 import net.clozynoii.drstone.init.DrstoneModItems;
 import net.clozynoii.drstone.init.DrstoneModEntities;
 import net.clozynoii.drstone.init.DrstoneModBlocks;
@@ -52,6 +53,7 @@ public class DrstoneMod {
 
 		DrstoneModMobEffects.REGISTRY.register(bus);
 
+		DrstoneModMenus.REGISTRY.register(bus);
 		// Start of user code block mod init
 		// End of user code block mod init
 	}

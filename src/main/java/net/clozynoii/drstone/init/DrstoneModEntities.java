@@ -22,6 +22,7 @@ import net.clozynoii.drstone.entity.StoneHumanPlayer4Entity;
 import net.clozynoii.drstone.entity.StoneHumanPlayer3Entity;
 import net.clozynoii.drstone.entity.StoneHumanPlayer2Entity;
 import net.clozynoii.drstone.entity.StoneHumanPlayer1Entity;
+import net.clozynoii.drstone.entity.PetrificationThrownEntity;
 import net.clozynoii.drstone.DrstoneMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -39,6 +40,8 @@ public class DrstoneModEntities {
 			.setTrackingRange(1).setUpdateInterval(3).setCustomClientFactory(StoneVillagerEntity::new).fireImmune().sized(1f, 2f));
 	public static final RegistryObject<EntityType<StoneVillagerBrokenEntity>> STONE_VILLAGER_BROKEN = register("stone_villager_broken", EntityType.Builder.<StoneVillagerBrokenEntity>of(StoneVillagerBrokenEntity::new, MobCategory.MONSTER)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(1).setUpdateInterval(3).setCustomClientFactory(StoneVillagerBrokenEntity::new).fireImmune().sized(1f, 2f));
+	public static final RegistryObject<EntityType<PetrificationThrownEntity>> PETRIFICATION_THROWN = register("petrification_thrown", EntityType.Builder.<PetrificationThrownEntity>of(PetrificationThrownEntity::new, MobCategory.MISC)
+			.setCustomClientFactory(PetrificationThrownEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

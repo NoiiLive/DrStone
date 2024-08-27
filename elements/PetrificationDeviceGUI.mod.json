@@ -1,0 +1,86 @@
+{
+  "_fv": 66,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 0,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "0",
+          "name": "Meters",
+          "width": 60,
+          "height": 20,
+          "x": 183,
+          "y": 63
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "0",
+          "name": "Seconds",
+          "width": 60,
+          "height": 20,
+          "x": 183,
+          "y": 103
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_meters",
+          "text": {
+            "fixedValue": "Meters"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 197,
+          "y": 88
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_seconds",
+          "text": {
+            "fixedValue": "Seconds"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 193,
+          "y": 128
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_set_conditions",
+          "text": "Set Conditions",
+          "isUndecorated": false,
+          "width": 98,
+          "height": 20,
+          "x": 165,
+          "y": 143
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}
