@@ -12,6 +12,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.components.EditBox;
 
+import net.clozynoii.drstone.network.DrstoneModVariables;
 import net.clozynoii.drstone.init.DrstoneModItems;
 
 import java.util.List;
@@ -41,6 +42,36 @@ public class DeviceConditionsSetProcedure {
 					return 0;
 				}
 			}.convert(guistate.containsKey("text:Seconds") ? ((EditBox) guistate.get("text:Seconds")).getValue() : "") * 20));
+			{
+				double _setval = new Object() {
+					double convert(String s) {
+						try {
+							return Double.parseDouble(s.trim());
+						} catch (Exception e) {
+						}
+						return 0;
+					}
+				}.convert(guistate.containsKey("text:Meters") ? ((EditBox) guistate.get("text:Meters")).getValue() : "");
+				entity.getCapability(DrstoneModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.DeviceMeters = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				double _setval = new Object() {
+					double convert(String s) {
+						try {
+							return Double.parseDouble(s.trim());
+						} catch (Exception e) {
+						}
+						return 0;
+					}
+				}.convert(guistate.containsKey("text:Seconds") ? ((EditBox) guistate.get("text:Seconds")).getValue() : "") * 20;
+				entity.getCapability(DrstoneModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.DeviceSeconds = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
 			{
 				final Vec3 _center = new Vec3(x, y, z);
 				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(100 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
@@ -86,6 +117,36 @@ public class DeviceConditionsSetProcedure {
 					return 0;
 				}
 			}.convert(guistate.containsKey("text:Seconds") ? ((EditBox) guistate.get("text:Seconds")).getValue() : "") * 20));
+			{
+				double _setval = new Object() {
+					double convert(String s) {
+						try {
+							return Double.parseDouble(s.trim());
+						} catch (Exception e) {
+						}
+						return 0;
+					}
+				}.convert(guistate.containsKey("text:Meters") ? ((EditBox) guistate.get("text:Meters")).getValue() : "");
+				entity.getCapability(DrstoneModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.DeviceMeters = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				double _setval = new Object() {
+					double convert(String s) {
+						try {
+							return Double.parseDouble(s.trim());
+						} catch (Exception e) {
+						}
+						return 0;
+					}
+				}.convert(guistate.containsKey("text:Seconds") ? ((EditBox) guistate.get("text:Seconds")).getValue() : "") * 20;
+				entity.getCapability(DrstoneModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.DeviceSeconds = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
 			{
 				final Vec3 _center = new Vec3(x, y, z);
 				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(100 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
