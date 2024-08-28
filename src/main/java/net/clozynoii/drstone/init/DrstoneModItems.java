@@ -12,10 +12,13 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
+import net.clozynoii.drstone.item.SweetberryWineItem;
 import net.clozynoii.drstone.item.SenkuuArmorItem;
 import net.clozynoii.drstone.item.RevivalFluidItem;
 import net.clozynoii.drstone.item.PetrificationDeviceItem;
 import net.clozynoii.drstone.item.GrapesItem;
+import net.clozynoii.drstone.item.GrapeWineItem;
+import net.clozynoii.drstone.item.GlowberryWineItem;
 import net.clozynoii.drstone.item.FiredClayBrickItem;
 import net.clozynoii.drstone.item.CupSweetberryJuiceItem;
 import net.clozynoii.drstone.item.CupGrapeJuiceItem;
@@ -46,6 +49,9 @@ public class DrstoneModItems {
 	public static final RegistryObject<Item> GRAPE_JUICE_CUP = block(DrstoneModBlocks.GRAPE_JUICE_CUP);
 	public static final RegistryObject<Item> SWEETBERRY_JUICE_CUP = block(DrstoneModBlocks.SWEETBERRY_JUICE_CUP);
 	public static final RegistryObject<Item> GLOWBERRY_JUICE_CUP = block(DrstoneModBlocks.GLOWBERRY_JUICE_CUP);
+	public static final RegistryObject<Item> GRAPE_WINE = REGISTRY.register("grape_wine", () -> new GrapeWineItem());
+	public static final RegistryObject<Item> SWEETBERRY_WINE = REGISTRY.register("sweetberry_wine", () -> new SweetberryWineItem());
+	public static final RegistryObject<Item> GLOWBERRY_WINE = REGISTRY.register("glowberry_wine", () -> new GlowberryWineItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

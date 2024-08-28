@@ -2,18 +2,18 @@
   "_fv": 66,
   "_type": "potioneffect",
   "definition": {
-    "effectName": "Petrified",
-    "icon": "petrified",
+    "effectName": "Intoxicated",
+    "icon": "intoxicated",
     "color": {
-      "value": -13369549,
+      "value": -10112933,
       "falpha": 0.0
     },
     "isInstant": false,
-    "mobEffectCategory": "HARMFUL",
+    "mobEffectCategory": "BENEFICIAL",
     "renderStatusInInventory": true,
     "renderStatusInHUD": true,
     "onActiveTick": {
-      "name": "PetrifiedEffect"
+      "name": "IntoxicatedEffect"
     }
   }
 }

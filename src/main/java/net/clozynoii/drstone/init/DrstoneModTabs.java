@@ -30,11 +30,14 @@ public class DrstoneModTabs {
 				tabData.accept(DrstoneModItems.REVIVAL_FLUID.get());
 				tabData.accept(DrstoneModBlocks.STOMPING_POT.get().asItem());
 				tabData.accept(DrstoneModItems.FIRED_CLAY_BRICK.get());
+				tabData.accept(DrstoneModItems.GRAPES.get());
 				tabData.accept(DrstoneModItems.CLAY_CUP.get());
 				tabData.accept(DrstoneModItems.COOKED_CLAY_CUP.get());
 				tabData.accept(DrstoneModItems.CUP_GRAPE_JUICE.get());
+				tabData.accept(DrstoneModItems.GRAPE_WINE.get());
 				tabData.accept(DrstoneModItems.CUP_SWEETBERRY_JUICE.get());
+				tabData.accept(DrstoneModItems.SWEETBERRY_WINE.get());
 				tabData.accept(DrstoneModItems.CUP_GLOWBERRY_JUICE.get());
-				tabData.accept(DrstoneModItems.GRAPES.get());
+				tabData.accept(DrstoneModItems.GLOWBERRY_WINE.get());
 			}).withSearchBar().build());
 }

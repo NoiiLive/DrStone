@@ -1168,6 +1168,125 @@
         ]
       },
       "path": "~/Recipes"
+    },
+    {
+      "name": "Intoxicated",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "intoxicated",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/potion/IntoxicatedMobEffect.java"
+        ]
+      },
+      "path": "~/Effect"
+    },
+    {
+      "name": "IntoxicatedEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "intoxicated_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/procedures/IntoxicatedEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Player"
+    },
+    {
+      "name": "IntoxicatedChat",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "intoxicated_chat",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/procedures/IntoxicatedChatProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "text",
+            "type": "string"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Player"
+    },
+    {
+      "name": "DrinkAlcohol",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "drink_alcohol",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/procedures/DrinkAlcoholProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GrapeWine",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grape_wine",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/item/GrapeWineItem.java",
+          "src/main/resources/assets/drstone/models/item/grape_wine.json"
+        ]
+      },
+      "path": "~/Items/Food"
+    },
+    {
+      "name": "SweetberryWine",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sweetberry_wine",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/drstone/models/item/sweetberry_wine.json",
+          "src/main/java/net/clozynoii/drstone/item/SweetberryWineItem.java"
+        ]
+      },
+      "path": "~/Items/Food"
+    },
+    {
+      "name": "GlowberryWine",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowberry_wine",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/item/GlowberryWineItem.java",
+          "src/main/resources/assets/drstone/models/item/glowberry_wine.json"
+        ]
+      },
+      "path": "~/Items/Food"
     }
   ],
   "variable_elements": [
@@ -1192,12 +1311,15 @@
       "RevivalFluid",
       "StompingPot",
       "FiredClayBrick",
+      "Grapes",
       "ClayCup",
       "CookedClayCup",
       "CupGrapeJuice",
+      "GrapeWine",
       "CupSweetberryJuice",
+      "SweetberryWine",
       "CupGlowberryJuice",
-      "Grapes"
+      "GlowberryWine"
     ]
   },
   "language_map": {
@@ -1207,6 +1329,7 @@
       "block.drstone.empty_cup": "Empty Cup",
       "entity.drstone.stone_villager_broken": "Stone Villager",
       "effect.drstone.petrified": "Petrified",
+      "item.drstone.grape_wine": "Cup of Grape Wine",
       "gamerule.spawnPetrified": "Spawn Petrified",
       "gui.drstone.petrification_device_gui.button_set_conditions": "Set Conditions",
       "item.drstone.cup_sweetberry_juice": "Cup of Sweetberry Juice",
@@ -1215,6 +1338,7 @@
       "gamerule.noVillagers": "No Vanilla Villagers",
       "item.drstone.clay_cup": "Clay Cup",
       "gamerule.noVillagers.description": "Disables Vanilla Villagers",
+      "item.drstone.glowberry_wine": "Cup of Glowberry Wine",
       "item.drstone.cup_grape_juice": "Cup of Grape Juice",
       "item.drstone.senkuu_armor_leggings": "Senkuu\u0027s Pants",
       "item.drstone.grapes": "Grapes",
@@ -1235,10 +1359,12 @@
       "item.drstone.stone_human_player_2_spawn_egg": "Stone Human Spawn Egg",
       "entity.drstone.stone_human_player_3": "Stone Human",
       "item.drstone.stone_villager_broken_spawn_egg": "Stone Villager Spawn Egg",
+      "item.drstone.sweetberry_wine": "Cup of Sweetberry Wine",
       "gui.drstone.petrification_device_gui.label_seconds": "Seconds",
       "item.drstone.stone_human_player_4_spawn_egg": "Stone Human Spawn Egg",
       "item_group.drstone.dr_stone": "Dr. Stone",
       "item.drstone.fired_clay_brick": "Clay Brick",
+      "effect.drstone.intoxicated": "Intoxicated",
       "item.drstone.petrification_device": "Petrification Device",
       "gamerule.spawnPetrified.description": "Changes players being petrified when joining AFTER mass petrification.",
       "gui.drstone.petrification_device_gui.Seconds": "0",
