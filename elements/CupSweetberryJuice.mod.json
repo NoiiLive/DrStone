@@ -3,11 +3,11 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "glowberry_sake",
+    "texture": "sweetberry_sake",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Cup of Glowberry Wine",
+    "name": "Cup of Sweetberry Juice",
     "rarity": "COMMON",
     "creativeTabs": [
       {

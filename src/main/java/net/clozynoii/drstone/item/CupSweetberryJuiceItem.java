@@ -12,8 +12,8 @@ import net.minecraft.world.entity.LivingEntity;
 
 import net.clozynoii.drstone.init.DrstoneModItems;
 
-public class CupWineGlowberryItem extends Item {
-	public CupWineGlowberryItem() {
+public class CupSweetberryJuiceItem extends Item {
+	public CupSweetberryJuiceItem() {
 		super(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(2).saturationMod(4f).alwaysEat().build()));
 	}
 
