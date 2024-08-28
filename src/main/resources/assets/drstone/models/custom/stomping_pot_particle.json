@@ -1,0 +1,7 @@
+
+{
+  "parent": "drstone:displaysettings/stompingpot.item",
+  "textures": {
+    "particle": "drstone:block/stompingjartexture"
+  }
+}

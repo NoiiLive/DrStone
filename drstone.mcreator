@@ -890,6 +890,28 @@
         ]
       },
       "path": "~/Recipes"
+    },
+    {
+      "name": "StompingPot",
+      "type": "animatedblock",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stomping_pot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/block/StompingPotBlock.java",
+          "src/main/java/net/clozynoii/drstone/block/renderer/StompingPotDisplayItemRenderer.java",
+          "src/main/java/net/clozynoii/drstone/block/entity/StompingPotTileEntity.java",
+          "src/main/java/net/clozynoii/drstone/block/renderer/StompingPotTileRenderer.java",
+          "src/main/resources/assets/drstone/models/item/stomping_pot.json",
+          "src/main/java/net/clozynoii/drstone/block/model/StompingPotBlockModel.java",
+          "src/main/resources/assets/drstone/blockstates/stomping_pot.json",
+          "src/main/java/net/clozynoii/drstone/block/model/StompingPotDisplayModel.java",
+          "src/main/resources/assets/drstone/models/custom/stomping_pot_particle.json",
+          "src/main/java/net/clozynoii/drstone/block/display/StompingPotDisplayItem.java"
+        ]
+      },
+      "path": "~/Blocks"
     }
   ],
   "variable_elements": [
@@ -918,7 +940,8 @@
       "CupWineSweetberry",
       "CupWineGlowberry",
       "Grapes",
-      "FiredClayBrick"
+      "FiredClayBrick",
+      "StompingPot"
     ]
   },
   "language_map": {
@@ -941,6 +964,7 @@
       "item.drstone.stone_human_player_1_spawn_egg": "Stone Human Spawn Egg",
       "block.drstone.grape_bush_vine_mature": "Grape Bush Vine",
       "gui.drstone.petrification_device_gui.label_meters": "Meters",
+      "block.drstone.stomping_pot": "Stomping Pot",
       "entity.drstone.stone_human_player_4": "Stone Human",
       "item_group.drstone.dr_drip": "Dr. Stone Armor",
       "item.drstone.senkuu_armor_boots": "Senkuu\u0027s Shoes",

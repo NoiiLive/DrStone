@@ -1,0 +1,49 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.StompingPot",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [0, 0.25, 0]
+			},
+			"bones": [
+				{
+					"name": "pot",
+					"pivot": [-14, 1, 10],
+					"cubes": [
+						{"origin": [-10, 0, -8], "size": [20, 1, 16], "uv": [0, 0]},
+						{"origin": [9, 1, -8], "size": [1, 7, 16], "uv": [0, 57]},
+						{"origin": [-10, 1, -8], "size": [1, 7, 16], "uv": [48, 43]},
+						{"origin": [-9, 1, -8], "size": [18, 7, 1], "uv": [56, 8]},
+						{"origin": [-9, 1, 7], "size": [18, 7, 1], "uv": [56, 0]}
+					]
+				},
+				{
+					"name": "grape",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-9, 1, -7], "size": [18, 6, 14], "uv": [50, 23]}
+					]
+				},
+				{
+					"name": "glowberry",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-9, 1, -7], "size": [18, 6, 14], "uv": [0, 37]}
+					]
+				},
+				{
+					"name": "sweetberry",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-9, 1, -7], "size": [18, 6, 14], "uv": [0, 17]}
+					]
+				}
+			]
+		}
+	]
+}

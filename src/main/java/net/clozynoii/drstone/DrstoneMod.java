@@ -23,6 +23,7 @@ import net.clozynoii.drstone.init.DrstoneModMenus;
 import net.clozynoii.drstone.init.DrstoneModItems;
 import net.clozynoii.drstone.init.DrstoneModEntities;
 import net.clozynoii.drstone.init.DrstoneModBlocks;
+import net.clozynoii.drstone.init.DrstoneModBlockEntities;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -45,7 +46,7 @@ public class DrstoneMod {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
 		DrstoneModBlocks.REGISTRY.register(bus);
-
+		DrstoneModBlockEntities.REGISTRY.register(bus);
 		DrstoneModItems.REGISTRY.register(bus);
 		DrstoneModEntities.REGISTRY.register(bus);
 

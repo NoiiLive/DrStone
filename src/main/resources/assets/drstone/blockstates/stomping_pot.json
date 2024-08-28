@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "drstone:custom/stomping_pot_particle"
+    },
+    "facing=east": {
+      "model": "drstone:custom/stomping_pot_particle",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "drstone:custom/stomping_pot_particle",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "drstone:custom/stomping_pot_particle",
+      "y": 270
+    }
+  }
+}

@@ -35,5 +35,6 @@ public class DrstoneModTabs {
 				tabData.accept(DrstoneModItems.CUP_WINE_GLOWBERRY.get());
 				tabData.accept(DrstoneModItems.GRAPES.get());
 				tabData.accept(DrstoneModItems.FIRED_CLAY_BRICK.get());
+				tabData.accept(DrstoneModBlocks.STOMPING_POT.get().asItem());
 			}).withSearchBar().build());
 }
