@@ -31,7 +31,7 @@ public class UnpetrifyBrokenVillagerProcedure {
 			}
 			DrstoneMod.queueServerWork(1, () -> {
 				if (entity instanceof Player _player) {
-					ItemStack _setstack = new ItemStack(DrstoneModItems.FRIED_CLAY_JAR.get()).copy();
+					ItemStack _setstack = new ItemStack(DrstoneModItems.COOKED_CLAY_CUP.get()).copy();
 					_setstack.setCount(1);
 					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 				}

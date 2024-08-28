@@ -3,18 +3,18 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "fried_jar",
+    "texture": "fried_brick",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Cooked Jar",
+    "name": "Clay Brick",
     "rarity": "COMMON",
     "creativeTabs": [
       {
         "value": "CUSTOM:DrStone"
       }
     ],
-    "stackSize": 16,
+    "stackSize": 64,
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,
@@ -41,7 +41,7 @@
     "shootConstantly": false,
     "rangedItemChargesPower": false,
     "projectile": {
-      "value": "Arrow"
+      "value": "CUSTOM:PetrificationThrown"
     },
     "isFood": false,
     "nutritionalValue": 4,

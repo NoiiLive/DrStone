@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "drstone:item/clay_jar"
+    "layer0": "drstone:item/cooked_cup"
   }
 }

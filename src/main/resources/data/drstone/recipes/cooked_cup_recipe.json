@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "drstone:fired_clay_brick"
+    }
+  },
+  "result": {
+    "item": "drstone:cooked_clay_cup",
+    "count": 1
+  }
+}

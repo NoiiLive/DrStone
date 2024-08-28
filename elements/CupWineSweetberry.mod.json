@@ -3,11 +3,11 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "glowberry_sake",
+    "texture": "sweetberry_sake",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Glow Berry Sake",
+    "name": "Cup of Sweetberry Wine",
     "rarity": "COMMON",
     "creativeTabs": [
       {
@@ -47,7 +47,7 @@
     "nutritionalValue": 2,
     "saturation": 4.0,
     "eatResultItem": {
-      "value": "CUSTOM:FriedClayJar"
+      "value": "CUSTOM:CookedClayCup"
     },
     "isMeat": false,
     "isAlwaysEdible": true,

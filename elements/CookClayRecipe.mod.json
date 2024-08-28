@@ -11,12 +11,12 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "campfireCookingInputStack": {
-      "value": "CUSTOM:ClayCup"
+      "value": "Items.CLAY_BALL"
     },
     "campfireCookingReturnStack": {
-      "value": "CUSTOM:CookedClayCup"
+      "value": "CUSTOM:FiredClayBrick"
     },
-    "name": "cook_jar_recipe",
+    "name": "cook_clay_recipe",
     "namespace": "mod"
   }
 }

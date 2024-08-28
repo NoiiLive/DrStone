@@ -3,20 +3,20 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "sweetberry_sake",
+    "texture": "cooked_cup",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Sweet Berry Sake",
+    "name": "Clay Cup",
     "rarity": "COMMON",
     "creativeTabs": [
       {
         "value": "CUSTOM:DrStone"
       }
     ],
-    "stackSize": 1,
+    "stackSize": 16,
     "enchantability": 0,
-    "useDuration": 60,
+    "useDuration": 0,
     "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
@@ -43,14 +43,14 @@
     "projectile": {
       "value": "Arrow"
     },
-    "isFood": true,
-    "nutritionalValue": 2,
-    "saturation": 4.0,
+    "isFood": false,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
     "eatResultItem": {
-      "value": "CUSTOM:FriedClayJar"
+      "value": ""
     },
     "isMeat": false,
-    "isAlwaysEdible": true,
-    "animation": "drink"
+    "isAlwaysEdible": false,
+    "animation": "none"
   }
 }

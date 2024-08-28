@@ -270,34 +270,6 @@
       "path": "~/Procedures/Block"
     },
     {
-      "name": "ClayJar",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "clay_jar",
-      "metadata": {
-        "files": [
-          "src/main/java/net/clozynoii/drstone/item/ClayJarItem.java",
-          "src/main/resources/assets/drstone/models/item/clay_jar.json"
-        ]
-      },
-      "path": "~/Items/Tools"
-    },
-    {
-      "name": "FriedClayJar",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fried_clay_jar",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/drstone/models/item/fried_clay_jar.json",
-          "src/main/java/net/clozynoii/drstone/item/FriedClayJarItem.java"
-        ]
-      },
-      "path": "~/Items/Tools"
-    },
-    {
       "name": "CookJarRecipe",
       "type": "recipe",
       "compiles": true,
@@ -309,48 +281,6 @@
         ]
       },
       "path": "~/Recipes"
-    },
-    {
-      "name": "GrapeSake",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "grape_sake",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/drstone/models/item/grape_sake.json",
-          "src/main/java/net/clozynoii/drstone/item/GrapeSakeItem.java"
-        ]
-      },
-      "path": "~/Items/Food"
-    },
-    {
-      "name": "SweetBerrySake",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sweet_berry_sake",
-      "metadata": {
-        "files": [
-          "src/main/java/net/clozynoii/drstone/item/SweetBerrySakeItem.java",
-          "src/main/resources/assets/drstone/models/item/sweet_berry_sake.json"
-        ]
-      },
-      "path": "~/Items/Food"
-    },
-    {
-      "name": "GlowBerrySake",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "glow_berry_sake",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/drstone/models/item/glow_berry_sake.json",
-          "src/main/java/net/clozynoii/drstone/item/GlowBerrySakeItem.java"
-        ]
-      },
-      "path": "~/Items/Food"
     },
     {
       "name": "DrStone",
@@ -837,6 +767,129 @@
         ]
       },
       "path": "~/Procedures/Items"
+    },
+    {
+      "name": "CupWineGrape",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cup_wine_grape",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/item/CupWineGrapeItem.java",
+          "src/main/resources/assets/drstone/models/item/cup_wine_grape.json"
+        ]
+      },
+      "path": "~/Items/Food"
+    },
+    {
+      "name": "CupWineSweetberry",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cup_wine_sweetberry",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/item/CupWineSweetberryItem.java",
+          "src/main/resources/assets/drstone/models/item/cup_wine_sweetberry.json"
+        ]
+      },
+      "path": "~/Items/Food"
+    },
+    {
+      "name": "CupWineGlowberry",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cup_wine_glowberry",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/item/CupWineGlowberryItem.java",
+          "src/main/resources/assets/drstone/models/item/cup_wine_glowberry.json"
+        ]
+      },
+      "path": "~/Items/Food"
+    },
+    {
+      "name": "ClayCup",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clay_cup",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/drstone/models/item/clay_cup.json",
+          "src/main/java/net/clozynoii/drstone/item/ClayCupItem.java"
+        ]
+      },
+      "path": "~/Items/Tools"
+    },
+    {
+      "name": "CookedClayCup",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cooked_clay_cup",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/drstone/models/item/cooked_clay_cup.json",
+          "src/main/java/net/clozynoii/drstone/item/CookedClayCupItem.java"
+        ]
+      },
+      "path": "~/Items/Tools"
+    },
+    {
+      "name": "FiredClayBrick",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fired_clay_brick",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/drstone/models/item/fired_clay_brick.json",
+          "src/main/java/net/clozynoii/drstone/item/FiredClayBrickItem.java"
+        ]
+      },
+      "path": "~/Items/Materials"
+    },
+    {
+      "name": "CookClayRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cook_clay_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/drstone/recipes/cook_clay_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "ClayCupRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clay_cup_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/drstone/recipes/clay_cup_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "CookedCupRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cooked_cup_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/drstone/recipes/cooked_cup_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [
@@ -859,28 +912,31 @@
     "CUSTOM:DrStone": [
       "PetrificationDevice",
       "RevivalFluid",
-      "GrapeSake",
-      "SweetBerrySake",
-      "GlowBerrySake",
-      "FriedClayJar",
-      "ClayJar",
-      "Grapes"
+      "CookedClayCup",
+      "ClayCup",
+      "CupWineGrape",
+      "CupWineSweetberry",
+      "CupWineGlowberry",
+      "Grapes",
+      "FiredClayBrick"
     ]
   },
   "language_map": {
     "en_us": {
+      "item.drstone.cooked_clay_cup": "Clay Cup",
       "entity.drstone.stone_villager": "Stone Villager",
       "entity.drstone.stone_villager_broken": "Stone Villager",
+      "item.drstone.cup_wine_glowberry": "Cup of Glowberry Wine",
       "effect.drstone.petrified": "Petrified",
       "gamerule.spawnPetrified": "Spawn Petrified",
       "gui.drstone.petrification_device_gui.button_set_conditions": "Set Conditions",
       "item.drstone.stone_human_player_3_spawn_egg": "Stone Human Spawn Egg",
       "gui.drstone.petrification_device_gui.Meters": "0",
-      "item.drstone.glow_berry_sake": "Glow Berry Sake",
       "gamerule.noVillagers": "No Vanilla Villagers",
+      "item.drstone.clay_cup": "Clay Cup",
       "gamerule.noVillagers.description": "Disables Vanilla Villagers",
-      "item.drstone.fried_clay_jar": "Cooked Jar",
       "item.drstone.senkuu_armor_leggings": "Senkuu\u0027s Pants",
+      "item.drstone.cup_wine_sweetberry": "Cup of Sweetberry Wine",
       "item.drstone.grapes": "Grapes",
       "item.drstone.stone_human_player_1_spawn_egg": "Stone Human Spawn Egg",
       "block.drstone.grape_bush_vine_mature": "Grape Bush Vine",
@@ -896,15 +952,14 @@
       "item.drstone.stone_villager_broken_spawn_egg": "Stone Villager Spawn Egg",
       "gui.drstone.petrification_device_gui.label_seconds": "Seconds",
       "item.drstone.stone_human_player_4_spawn_egg": "Stone Human Spawn Egg",
-      "item.drstone.grape_sake": "Grape Sake",
       "item_group.drstone.dr_stone": "Dr. Stone",
+      "item.drstone.fired_clay_brick": "Clay Brick",
       "item.drstone.petrification_device": "Petrification Device",
-      "item.drstone.clay_jar": "Clay Jar",
       "gamerule.spawnPetrified.description": "Changes players being petrified when joining AFTER mass petrification.",
       "gui.drstone.petrification_device_gui.Seconds": "0",
       "block.drstone.grape_bush_vine": "Grape Bush Vine",
-      "item.drstone.sweet_berry_sake": "Sweet Berry Sake",
       "item.drstone.stone_villager_spawn_egg": "Stone Villager Spawn Egg",
+      "item.drstone.cup_wine_grape": "Cup of Grape Wine",
       "item.drstone.revival_fluid": "Miracle Fluid"
     }
   },
@@ -949,6 +1004,10 @@
           },
           {
             "name": "Tools",
+            "children": []
+          },
+          {
+            "name": "Materials",
             "children": []
           }
         ]

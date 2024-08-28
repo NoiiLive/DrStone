@@ -12,8 +12,8 @@ import net.minecraft.world.entity.LivingEntity;
 
 import net.clozynoii.drstone.init.DrstoneModItems;
 
-public class GlowBerrySakeItem extends Item {
-	public GlowBerrySakeItem() {
+public class CupWineGlowberryItem extends Item {
+	public CupWineGlowberryItem() {
 		super(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(2).saturationMod(4f).alwaysEat().build()));
 	}
 
@@ -29,7 +29,7 @@ public class GlowBerrySakeItem extends Item {
 
 	@Override
 	public ItemStack finishUsingItem(ItemStack itemstack, Level world, LivingEntity entity) {
-		ItemStack retval = new ItemStack(DrstoneModItems.FRIED_CLAY_JAR.get());
+		ItemStack retval = new ItemStack(DrstoneModItems.COOKED_CLAY_CUP.get());
 		super.finishUsingItem(itemstack, world, entity);
 		if (itemstack.isEmpty()) {
 			return retval;

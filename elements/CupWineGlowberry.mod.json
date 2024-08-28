@@ -3,20 +3,20 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "clay_jar",
+    "texture": "glowberry_sake",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Clay Jar",
+    "name": "Cup of Glowberry Wine",
     "rarity": "COMMON",
     "creativeTabs": [
       {
         "value": "CUSTOM:DrStone"
       }
     ],
-    "stackSize": 16,
+    "stackSize": 1,
     "enchantability": 0,
-    "useDuration": 0,
+    "useDuration": 60,
     "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
@@ -43,14 +43,14 @@
     "projectile": {
       "value": "Arrow"
     },
-    "isFood": false,
-    "nutritionalValue": 4,
-    "saturation": 0.3,
+    "isFood": true,
+    "nutritionalValue": 2,
+    "saturation": 4.0,
     "eatResultItem": {
-      "value": ""
+      "value": "CUSTOM:CookedClayCup"
     },
     "isMeat": false,
-    "isAlwaysEdible": false,
-    "animation": "none"
+    "isAlwaysEdible": true,
+    "animation": "drink"
   }
 }

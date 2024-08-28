@@ -4,7 +4,7 @@
   "experience": 1,
   "cookingtime": 450,
   "ingredient": {
-    "item": "drstone:clay_cup"
+    "item": "minecraft:clay_ball"
   },
-  "result": "drstone:cooked_clay_cup"
+  "result": "drstone:fired_clay_brick"
 }
