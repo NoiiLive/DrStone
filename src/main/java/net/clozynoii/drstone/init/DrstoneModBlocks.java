@@ -10,9 +10,13 @@ import net.minecraftforge.registries.DeferredRegister;
 
 import net.minecraft.world.level.block.Block;
 
+import net.clozynoii.drstone.block.SweetberryJuiceCupBlock;
 import net.clozynoii.drstone.block.StompingPotBlock;
+import net.clozynoii.drstone.block.GrapeJuiceCupBlock;
 import net.clozynoii.drstone.block.GrapeBushVineMatureBlock;
 import net.clozynoii.drstone.block.GrapeBushVineBlock;
+import net.clozynoii.drstone.block.GlowberryJuiceCupBlock;
+import net.clozynoii.drstone.block.EmptyCupBlock;
 import net.clozynoii.drstone.DrstoneMod;
 
 public class DrstoneModBlocks {
@@ -20,6 +24,10 @@ public class DrstoneModBlocks {
 	public static final RegistryObject<Block> GRAPE_BUSH_VINE = REGISTRY.register("grape_bush_vine", () -> new GrapeBushVineBlock());
 	public static final RegistryObject<Block> GRAPE_BUSH_VINE_MATURE = REGISTRY.register("grape_bush_vine_mature", () -> new GrapeBushVineMatureBlock());
 	public static final RegistryObject<Block> STOMPING_POT = REGISTRY.register("stomping_pot", () -> new StompingPotBlock());
+	public static final RegistryObject<Block> EMPTY_CUP = REGISTRY.register("empty_cup", () -> new EmptyCupBlock());
+	public static final RegistryObject<Block> GRAPE_JUICE_CUP = REGISTRY.register("grape_juice_cup", () -> new GrapeJuiceCupBlock());
+	public static final RegistryObject<Block> SWEETBERRY_JUICE_CUP = REGISTRY.register("sweetberry_juice_cup", () -> new SweetberryJuiceCupBlock());
+	public static final RegistryObject<Block> GLOWBERRY_JUICE_CUP = REGISTRY.register("glowberry_juice_cup", () -> new GlowberryJuiceCupBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

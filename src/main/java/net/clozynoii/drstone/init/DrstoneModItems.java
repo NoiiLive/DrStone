@@ -42,6 +42,10 @@ public class DrstoneModItems {
 	public static final RegistryObject<Item> CUP_GRAPE_JUICE = REGISTRY.register("cup_grape_juice", () -> new CupGrapeJuiceItem());
 	public static final RegistryObject<Item> CUP_SWEETBERRY_JUICE = REGISTRY.register("cup_sweetberry_juice", () -> new CupSweetberryJuiceItem());
 	public static final RegistryObject<Item> CUP_GLOWBERRY_JUICE = REGISTRY.register("cup_glowberry_juice", () -> new CupGlowberryJuiceItem());
+	public static final RegistryObject<Item> EMPTY_CUP = block(DrstoneModBlocks.EMPTY_CUP);
+	public static final RegistryObject<Item> GRAPE_JUICE_CUP = block(DrstoneModBlocks.GRAPE_JUICE_CUP);
+	public static final RegistryObject<Item> SWEETBERRY_JUICE_CUP = block(DrstoneModBlocks.SWEETBERRY_JUICE_CUP);
+	public static final RegistryObject<Item> GLOWBERRY_JUICE_CUP = block(DrstoneModBlocks.GLOWBERRY_JUICE_CUP);
 
 	// Start of user code block custom items
 	// End of user code block custom items

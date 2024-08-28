@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "drstone:blocks/sweetberry_juice_cup",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "drstone:cup_sweetberry_juice"
+        }
+      ]
+    }
+  ]
+}

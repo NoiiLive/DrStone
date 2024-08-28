@@ -1,0 +1,9 @@
+{
+  "parent": "drstone:custom/sweetberryjuicecup",
+  "textures": {
+    "all": "drstone:block/sweetberrycuptexture",
+    "particle": "drstone:block/sweetberrycuptexture",
+    "0": "drstone:block/sweetberrycuptexture"
+  },
+  "render_type": "cutout"
+}
