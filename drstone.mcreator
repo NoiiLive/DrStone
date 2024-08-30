@@ -1244,7 +1244,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Procedures/Items"
     },
     {
       "name": "GrapeWine",

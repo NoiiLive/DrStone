@@ -3885,247 +3885,331 @@
 			}
 		},
 		"16": {
-			"loop": "hold_on_last_frame",
+			"loop": true,
+			"animation_length": 5,
 			"bones": {
 				"pot": {
 					"rotation": {
-						"vector": [0, 0, 0]
+						"0.0": [0, 0, 0],
+						"5.0": [0, 0, 0]
 					},
 					"position": {
-						"vector": [0, 0, 0]
+						"0.0": [0, 0, 0],
+						"5.0": [0, 0, 0]
 					},
 					"scale": {
-						"vector": [1, 1, 1]
+						"0.0": [1, 1, 1],
+						"5.0": [1, 1, 1]
 					}
 				},
 				"grape": {
 					"rotation": {
-						"vector": [0, 0, 0]
+						"0.0": [0, 0, 0],
+						"5.0": [0, 0, 0]
 					},
 					"position": {
-						"vector": [0, 0.1, 0]
+						"0.0": [0, 0.1, 0],
+						"5.0": [0, 0.1, 0]
 					},
 					"scale": {
-						"vector": [1, 0, 1]
+						"0.0": [1, 0, 1],
+						"5.0": [1, 0, 1]
 					}
 				},
 				"glowberry": {
 					"rotation": {
-						"vector": [0, 0, 0]
+						"0.0": [0, 0, 0],
+						"5.0": [0, 0, 0]
 					},
 					"position": {
-						"vector": [0, 0.1, 0]
+						"0.0": [0, 0.1, 0],
+						"5.0": [0, 0.1, 0]
 					},
 					"scale": {
-						"vector": [1, 0, 1]
+						"0.0": [1, 0, 1],
+						"5.0": [1, 0, 1]
 					}
 				},
 				"sweetberry": {
 					"rotation": {
-						"vector": [0, 0, 0]
+						"0.0": [0, 0, 0],
+						"5.0": [0, 0, 0]
 					},
 					"position": {
-						"vector": [0, 0.1, 0]
+						"0.0": [0, 0.1, 0],
+						"5.0": [0, 0.1, 0]
 					},
 					"scale": {
-						"vector": [1, 0, 1]
+						"0.0": [1, 0, 1],
+						"5.0": [1, 0, 1]
 					}
 				},
 				"grape_juice": {
 					"rotation": {
-						"vector": [0, 0, 0]
+						"0.0": [0, 0, 0],
+						"5.0": [0, 0, 0]
 					},
 					"position": {
-						"vector": [0, 0.1, 0]
+						"0.0": [0, 0.1, 0],
+						"5.0": [0, 0.1, 0]
 					},
 					"scale": {
-						"vector": [1, 1, 1]
+						"0.0": [1, 1, 1],
+						"5.0": [1, 1, 1]
 					}
 				},
 				"glowberry_juice": {
 					"rotation": {
-						"vector": [0, 0, 0]
+						"0.0": [0, 0, 0],
+						"5.0": [0, 0, 0]
 					},
 					"position": {
-						"vector": [0, 0.1, 0]
+						"0.0": [0, 0.1, 0],
+						"5.0": [0, 0.1, 0]
 					},
 					"scale": {
-						"vector": [1, 0, 1]
+						"0.0": [1, 0, 1],
+						"5.0": [1, 0, 1]
 					}
 				},
 				"sweetberry_juice": {
 					"rotation": {
-						"vector": [0, 0, 0]
+						"0.0": [0, 0, 0],
+						"5.0": [0, 0, 0]
 					},
 					"position": {
-						"vector": [0, 0.1, 0]
+						"0.0": [0, 0.1, 0],
+						"5.0": [0, 0.1, 0]
 					},
 					"scale": {
-						"vector": [1, 0, 1]
+						"0.0": [1, 0, 1],
+						"5.0": [1, 0, 1]
+					}
+				},
+				"grapes1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"5.0": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"1.75": [2, 0, -2],
+						"3.25": [3, 0, 1],
+						"5.0": [0, 0, 0]
+					},
+					"scale": {
+						"0.0": [1, 1, 1],
+						"5.0": [1, 1, 1]
+					}
+				},
+				"grapes2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"5.0": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"1.5": [-2, 0, -2],
+						"3.0": [-3, 0, 2],
+						"5.0": [0, 0, 0]
+					},
+					"scale": {
+						"0.0": [1, 1, 1],
+						"5.0": [1, 1, 1]
+					}
+				},
+				"grapes3": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"5.0": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"1.25": [2, 0, -2],
+						"3.375": [1, 0, 2],
+						"5.0": [0, 0, 0]
+					},
+					"scale": {
+						"0.0": [1, 1, 1],
+						"5.0": [1, 1, 1]
 					}
 				}
 			}
 		},
 		"17": {
-			"loop": "hold_on_last_frame",
+			"loop": true,
+			"animation_length": 5,
 			"bones": {
 				"pot": {
-					"rotation": {
-						"vector": [0, 0, 0]
-					},
-					"position": {
-						"vector": [0, 0, 0]
-					},
-					"scale": {
-						"vector": [1, 1, 1]
-					}
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0],
+					"scale": 1
 				},
 				"grape": {
-					"rotation": {
-						"vector": [0, 0, 0]
-					},
-					"position": {
-						"vector": [0, 0.1, 0]
-					},
-					"scale": {
-						"vector": [1, 0, 1]
-					}
+					"rotation": [0, 0, 0],
+					"position": [0, 0.1, 0],
+					"scale": [1, 0, 1]
 				},
 				"glowberry": {
-					"rotation": {
-						"vector": [0, 0, 0]
-					},
-					"position": {
-						"vector": [0, 0.1, 0]
-					},
-					"scale": {
-						"vector": [1, 0, 1]
-					}
+					"rotation": [0, 0, 0],
+					"position": [0, 0.1, 0],
+					"scale": [1, 0, 1]
 				},
 				"sweetberry": {
-					"rotation": {
-						"vector": [0, 0, 0]
-					},
-					"position": {
-						"vector": [0, 0.1, 0]
-					},
-					"scale": {
-						"vector": [1, 0, 1]
-					}
+					"rotation": [0, 0, 0],
+					"position": [0, 0.1, 0],
+					"scale": [1, 0, 1]
 				},
 				"grape_juice": {
-					"rotation": {
-						"vector": [0, 0, 0]
-					},
-					"position": {
-						"vector": [0, 0.1, 0]
-					},
-					"scale": {
-						"vector": [1, 0, 1]
-					}
+					"rotation": [0, 0, 0],
+					"position": [0, 0.1, 0],
+					"scale": [1, 0, 1]
 				},
 				"glowberry_juice": {
-					"rotation": {
-						"vector": [0, 0, 0]
-					},
-					"position": {
-						"vector": [0, 0.1, 0]
-					},
-					"scale": {
-						"vector": [1, 1, 1]
-					}
+					"rotation": [0, 0, 0],
+					"position": [0, 0.1, 0],
+					"scale": 1
 				},
 				"sweetberry_juice": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0.1, 0],
+					"scale": [1, 0, 1]
+				},
+				"glowberries1": {
 					"rotation": {
-						"vector": [0, 0, 0]
+						"0.0": [0, 0, 0],
+						"5.0": [0, 0, 0]
 					},
 					"position": {
-						"vector": [0, 0.1, 0]
+						"0.0": [0, 0, 0],
+						"1.75": [2, 0, -2],
+						"3.25": [3, 0, 1],
+						"5.0": [0, 0, 0]
 					},
 					"scale": {
-						"vector": [1, 0, 1]
+						"0.0": [1, 1, 1],
+						"5.0": [1, 1, 1]
+					}
+				},
+				"glowberries2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"5.0": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"1.5": [-2, 0, -2],
+						"3.0": [-3, 0, 2],
+						"5.0": [0, 0, 0]
+					},
+					"scale": {
+						"0.0": [1, 1, 1],
+						"5.0": [1, 1, 1]
+					}
+				},
+				"glowberries3": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"5.0": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"1.25": [2, 0, -2],
+						"3.375": [1, 0, 2],
+						"5.0": [0, 0, 0]
+					},
+					"scale": {
+						"0.0": [1, 1, 1],
+						"5.0": [1, 1, 1]
 					}
 				}
 			}
 		},
 		"18": {
-			"loop": "hold_on_last_frame",
+			"loop": true,
+			"animation_length": 5,
 			"bones": {
 				"pot": {
-					"rotation": {
-						"vector": [0, 0, 0]
-					},
-					"position": {
-						"vector": [0, 0, 0]
-					},
-					"scale": {
-						"vector": [1, 1, 1]
-					}
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0],
+					"scale": 1
 				},
 				"grape": {
-					"rotation": {
-						"vector": [0, 0, 0]
-					},
-					"position": {
-						"vector": [0, 0.1, 0]
-					},
-					"scale": {
-						"vector": [1, 0, 1]
-					}
+					"rotation": [0, 0, 0],
+					"position": [0, 0.1, 0],
+					"scale": [1, 0, 1]
 				},
 				"glowberry": {
-					"rotation": {
-						"vector": [0, 0, 0]
-					},
-					"position": {
-						"vector": [0, 0.1, 0]
-					},
-					"scale": {
-						"vector": [1, 0, 1]
-					}
+					"rotation": [0, 0, 0],
+					"position": [0, 0.1, 0],
+					"scale": [1, 0, 1]
 				},
 				"sweetberry": {
-					"rotation": {
-						"vector": [0, 0, 0]
-					},
-					"position": {
-						"vector": [0, 0.1, 0]
-					},
-					"scale": {
-						"vector": [1, 0, 1]
-					}
+					"rotation": [0, 0, 0],
+					"position": [0, 0.1, 0],
+					"scale": [1, 0, 1]
 				},
 				"grape_juice": {
-					"rotation": {
-						"vector": [0, 0, 0]
-					},
-					"position": {
-						"vector": [0, 0.1, 0]
-					},
-					"scale": {
-						"vector": [1, 0, 1]
-					}
+					"rotation": [0, 0, 0],
+					"position": [0, 0.1, 0],
+					"scale": [1, 0, 1]
 				},
 				"glowberry_juice": {
-					"rotation": {
-						"vector": [0, 0, 0]
-					},
-					"position": {
-						"vector": [0, 0.1, 0]
-					},
-					"scale": {
-						"vector": [1, 0, 1]
-					}
+					"rotation": [0, 0, 0],
+					"position": [0, 0.1, 0],
+					"scale": [1, 0, 1]
 				},
 				"sweetberry_juice": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0.1, 0],
+					"scale": 1
+				},
+				"sweetberries1": {
 					"rotation": {
-						"vector": [0, 0, 0]
+						"0.0": [0, 0, 0],
+						"5.0": [0, 0, 0]
 					},
 					"position": {
-						"vector": [0, 0.1, 0]
+						"0.0": [0, 0, 0],
+						"1.75": [2, 0, -2],
+						"3.25": [3, 0, 1],
+						"5.0": [0, 0, 0]
 					},
 					"scale": {
-						"vector": [1, 1, 1]
+						"0.0": [1, 1, 1],
+						"5.0": [1, 1, 1]
+					}
+				},
+				"sweetberries2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"5.0": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"1.5": [-2, 0, -2],
+						"3.0": [-3, 0, 2],
+						"5.0": [0, 0, 0]
+					},
+					"scale": {
+						"0.0": [1, 1, 1],
+						"5.0": [1, 1, 1]
+					}
+				},
+				"sweetberries3": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"5.0": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"1.25": [2, 0, -2],
+						"3.375": [1, 0, 2],
+						"5.0": [0, 0, 0]
+					},
+					"scale": {
+						"0.0": [1, 1, 1],
+						"5.0": [1, 1, 1]
 					}
 				}
 			}
