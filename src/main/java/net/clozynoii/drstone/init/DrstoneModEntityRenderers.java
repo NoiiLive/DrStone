@@ -9,6 +9,8 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.client.renderer.entity.ThrownItemRenderer;
+
 import net.clozynoii.drstone.client.renderer.StoneVillagerRenderer;
 import net.clozynoii.drstone.client.renderer.StoneVillagerBrokenRenderer;
 import net.clozynoii.drstone.client.renderer.StoneHumanPlayer4Renderer;
@@ -28,5 +30,6 @@ public class DrstoneModEntityRenderers {
 		event.registerEntityRenderer(DrstoneModEntities.STONE_VILLAGER.get(), StoneVillagerRenderer::new);
 		event.registerEntityRenderer(DrstoneModEntities.STONE_VILLAGER_BROKEN.get(), StoneVillagerBrokenRenderer::new);
 		event.registerEntityRenderer(DrstoneModEntities.PETRIFICATION_THROWN.get(), PetrificationThrownRenderer::new);
+		event.registerEntityRenderer(DrstoneModEntities.PETRIFICATION_DEVICE_PROJECTILE.get(), ThrownItemRenderer::new);
 	}
 }

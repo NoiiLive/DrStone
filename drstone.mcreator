@@ -119,8 +119,8 @@
       "registry_name": "petrification_device",
       "metadata": {
         "files": [
-          "src/main/resources/assets/drstone/models/item/petrification_device.json",
-          "src/main/java/net/clozynoii/drstone/item/PetrificationDeviceItem.java"
+          "src/main/java/net/clozynoii/drstone/item/PetrificationDeviceItem.java",
+          "src/main/resources/assets/drstone/models/item/petrification_device.json"
         ]
       },
       "path": "~/Items/Tools"
@@ -687,6 +687,10 @@
             "type": "entity"
           },
           {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -912,6 +916,58 @@
         ]
       },
       "path": "~/Blocks"
+    },
+    {
+      "name": "PetrificationDeviceProjectileWhileProjectileFlyingTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "petrification_device_projectile_while_projectile_flying_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/procedures/PetrificationDeviceProjectileWhileProjectileFlyingTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Projectile"
+    },
+    {
+      "name": "PetrificationDeviceProjectile",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "petrification_device_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/entity/PetrificationDeviceProjectileEntity.java"
+        ]
+      },
+      "path": "~/Projectile"
     }
   ],
   "variable_elements": [
@@ -1071,6 +1127,10 @@
       },
       {
         "name": "GUI",
+        "children": []
+      },
+      {
+        "name": "Projectile",
         "children": []
       }
     ]

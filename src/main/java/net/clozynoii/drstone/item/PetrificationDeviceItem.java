@@ -51,7 +51,7 @@ public class PetrificationDeviceItem extends Item {
 			ar = InteractionResultHolder.success(entity.getItemInHand(hand));
 			entity.startUsingItem(hand);
 		}
-		PetrificationMenuProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity);
+		PetrificationMenuProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity, ar.getObject());
 		return ar;
 	}
 
