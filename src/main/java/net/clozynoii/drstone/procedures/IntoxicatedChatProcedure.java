@@ -1,6 +1,20 @@
 package net.clozynoii.drstone.procedures;
 
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
+import net.minecraftforge.event.ServerChatEvent;
+
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.util.RandomSource;
+import net.minecraft.util.Mth;
+import net.minecraft.network.chat.Component;
+
+import net.clozynoii.drstone.init.DrstoneModMobEffects;
+
+import javax.annotation.Nullable;
 
 @Mod.EventBusSubscriber
 public class IntoxicatedChatProcedure {

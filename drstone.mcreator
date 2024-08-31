@@ -687,6 +687,10 @@
             "type": "entity"
           },
           {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -1749,9 +1753,9 @@
       "item.drstone.clay_cup": "Clay Cup",
       "gamerule.noVillagers.description": "Disables Vanilla Villagers",
       "item.drstone.senkuu_armor_leggings": "Senkuu\u0027s Pants",
-      "block.drstone.grape_bush_vine_mature": "Grape Bush Vine",
-      "item.drstone.stone_human_player_1_spawn_egg": "Stone Human Spawn Egg",
       "block.drstone.glowberry_juice_cup": "Glowberry Juice Cup",
+      "item.drstone.stone_human_player_1_spawn_egg": "Stone Human Spawn Egg",
+      "block.drstone.grape_bush_vine_mature": "Grape Bush Vine",
       "item_group.drstone.dr_drip": "Dr. Stone Armor",
       "block.drstone.sweetberry_wine_clay_pot": "Clay Pot (Sweetberry Wine)",
       "item.drstone.cup_glowberry_juice": "Cup of Glowberry Juice",

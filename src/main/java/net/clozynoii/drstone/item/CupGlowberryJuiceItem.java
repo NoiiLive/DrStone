@@ -1,7 +1,19 @@
 
 package net.clozynoii.drstone.item;
 
-import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.context.UseOnContext;
+import net.minecraft.world.item.UseAnim;
+import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.InteractionResult;
+
+import net.clozynoii.drstone.procedures.PlaceGlowberryCupProcedure;
+import net.clozynoii.drstone.init.DrstoneModItems;
 
 public class CupGlowberryJuiceItem extends Item {
 	public CupGlowberryJuiceItem() {
