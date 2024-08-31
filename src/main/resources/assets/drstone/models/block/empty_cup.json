@@ -1,0 +1,9 @@
+{
+  "parent": "drstone:custom/emptycup",
+  "textures": {
+    "all": "drstone:block/emptycuptexture",
+    "particle": "drstone:block/emptycuptexture",
+    "0": "drstone:block/emptycuptexture"
+  },
+  "render_type": "cutout"
+}

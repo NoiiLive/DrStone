@@ -3,11 +3,11 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "sweetberry_sake",
+    "texture": "grape_wine",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Cup of Sweetberry Wine",
+    "name": "Cup of Grape Wine",
     "rarity": "COMMON",
     "creativeTabs": [
       {
@@ -37,6 +37,9 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onFinishUsingItem": {
+      "name": "DrinkAlcohol"
+    },
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,

@@ -10,8 +10,8 @@
     },
     "isInstant": false,
     "mobEffectCategory": "HARMFUL",
-    "renderStatusInInventory": false,
-    "renderStatusInHUD": false,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
     "onActiveTick": {
       "name": "PetrifiedEffect"
     }

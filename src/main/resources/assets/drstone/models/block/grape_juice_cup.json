@@ -1,0 +1,9 @@
+{
+  "parent": "drstone:custom/grapejuicecup",
+  "textures": {
+    "all": "drstone:block/grapecuptexture",
+    "particle": "drstone:block/grapecuptexture",
+    "0": "drstone:block/grapecuptexture"
+  },
+  "render_type": "cutout"
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "drstone:custom/glowberryjuicecup",
+  "textures": {
+    "all": "drstone:block/glowberrycuptexture",
+    "particle": "drstone:block/glowberrycuptexture",
+    "0": "drstone:block/glowberrycuptexture"
+  },
+  "render_type": "cutout"
+}

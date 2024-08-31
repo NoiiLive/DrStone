@@ -119,8 +119,8 @@
       "registry_name": "petrification_device",
       "metadata": {
         "files": [
-          "src/main/java/net/clozynoii/drstone/item/PetrificationDeviceItem.java",
-          "src/main/resources/assets/drstone/models/item/petrification_device.json"
+          "src/main/resources/assets/drstone/models/item/petrification_device.json",
+          "src/main/java/net/clozynoii/drstone/item/PetrificationDeviceItem.java"
         ]
       },
       "path": "~/Items/Tools"
@@ -687,10 +687,6 @@
             "type": "entity"
           },
           {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
             "name": "x",
             "type": "number"
           },
@@ -771,48 +767,6 @@
         ]
       },
       "path": "~/Procedures/Items"
-    },
-    {
-      "name": "CupWineGrape",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cup_wine_grape",
-      "metadata": {
-        "files": [
-          "src/main/java/net/clozynoii/drstone/item/CupWineGrapeItem.java",
-          "src/main/resources/assets/drstone/models/item/cup_wine_grape.json"
-        ]
-      },
-      "path": "~/Items/Food"
-    },
-    {
-      "name": "CupWineSweetberry",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cup_wine_sweetberry",
-      "metadata": {
-        "files": [
-          "src/main/java/net/clozynoii/drstone/item/CupWineSweetberryItem.java",
-          "src/main/resources/assets/drstone/models/item/cup_wine_sweetberry.json"
-        ]
-      },
-      "path": "~/Items/Food"
-    },
-    {
-      "name": "CupWineGlowberry",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cup_wine_glowberry",
-      "metadata": {
-        "files": [
-          "src/main/java/net/clozynoii/drstone/item/CupWineGlowberryItem.java",
-          "src/main/resources/assets/drstone/models/item/cup_wine_glowberry.json"
-        ]
-      },
-      "path": "~/Items/Food"
     },
     {
       "name": "ClayCup",
@@ -968,6 +922,424 @@
         ]
       },
       "path": "~/Projectile"
+    },
+    {
+      "name": "EmptyCup",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "empty_cup",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/drstone/models/block/empty_cup.json",
+          "src/main/resources/assets/drstone/blockstates/empty_cup.json",
+          "src/main/resources/data/drstone/loot_tables/blocks/empty_cup.json",
+          "src/main/resources/assets/drstone/models/item/empty_cup.json",
+          "src/main/java/net/clozynoii/drstone/block/EmptyCupBlock.java"
+        ]
+      },
+      "path": "~/Blocks/Placeable"
+    },
+    {
+      "name": "GrapeWine",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grape_wine",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/drstone/models/item/grape_wine.json",
+          "src/main/java/net/clozynoii/drstone/item/GrapeWineItem.java"
+        ]
+      },
+      "path": "~/Items/Food"
+    },
+    {
+      "name": "IntoxicatedEffect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "intoxicated_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/procedures/IntoxicatedEffectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Player"
+    },
+    {
+      "name": "CupGrapeJuice",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cup_grape_juice",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/item/CupGrapeJuiceItem.java",
+          "src/main/resources/assets/drstone/models/item/cup_grape_juice.json"
+        ]
+      },
+      "path": "~/Items/Food"
+    },
+    {
+      "name": "GlowberryJuiceCup",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowberry_juice_cup",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/drstone/models/block/glowberry_juice_cup.json",
+          "src/main/resources/data/drstone/loot_tables/blocks/glowberry_juice_cup.json",
+          "src/main/resources/assets/drstone/blockstates/glowberry_juice_cup.json",
+          "src/main/resources/assets/drstone/models/item/glowberry_juice_cup.json",
+          "src/main/java/net/clozynoii/drstone/block/GlowberryJuiceCupBlock.java"
+        ]
+      },
+      "path": "~/Blocks/Placeable"
+    },
+    {
+      "name": "SweetberryJuiceCup",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sweetberry_juice_cup",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/drstone/loot_tables/blocks/sweetberry_juice_cup.json",
+          "src/main/java/net/clozynoii/drstone/block/SweetberryJuiceCupBlock.java",
+          "src/main/resources/assets/drstone/blockstates/sweetberry_juice_cup.json",
+          "src/main/resources/assets/drstone/models/block/sweetberry_juice_cup.json",
+          "src/main/resources/assets/drstone/models/item/sweetberry_juice_cup.json"
+        ]
+      },
+      "path": "~/Blocks/Placeable"
+    },
+    {
+      "name": "PlaceSweetberryCup",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "place_sweetberry_cup",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/procedures/PlaceSweetberryCupProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Block"
+    },
+    {
+      "name": "DrinkAlcohol",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "drink_alcohol",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/procedures/DrinkAlcoholProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Items"
+    },
+    {
+      "name": "Intoxicated",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "intoxicated",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/potion/IntoxicatedMobEffect.java"
+        ]
+      },
+      "path": "~/Effect"
+    },
+    {
+      "name": "CupSweetberryJuice",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cup_sweetberry_juice",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/item/CupSweetberryJuiceItem.java",
+          "src/main/resources/assets/drstone/models/item/cup_sweetberry_juice.json"
+        ]
+      },
+      "path": "~/Items/Food"
+    },
+    {
+      "name": "PlaceGlowberryCup",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "place_glowberry_cup",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/procedures/PlaceGlowberryCupProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Block"
+    },
+    {
+      "name": "GlowberryWine",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowberry_wine",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/drstone/models/item/glowberry_wine.json",
+          "src/main/java/net/clozynoii/drstone/item/GlowberryWineItem.java"
+        ]
+      },
+      "path": "~/Items/Food"
+    },
+    {
+      "name": "PlaceGrapeCup",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "place_grape_cup",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/procedures/PlaceGrapeCupProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Block"
+    },
+    {
+      "name": "IntoxicatedChat",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "intoxicated_chat",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/procedures/IntoxicatedChatProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "text",
+            "type": "string"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Player"
+    },
+    {
+      "name": "GrapeJuiceCup",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grape_juice_cup",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/block/GrapeJuiceCupBlock.java",
+          "src/main/resources/assets/drstone/models/item/grape_juice_cup.json",
+          "src/main/resources/assets/drstone/blockstates/grape_juice_cup.json",
+          "src/main/resources/assets/drstone/models/block/grape_juice_cup.json",
+          "src/main/resources/data/drstone/loot_tables/blocks/grape_juice_cup.json"
+        ]
+      },
+      "path": "~/Blocks/Placeable"
+    },
+    {
+      "name": "StompingPotRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stomping_pot_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/drstone/recipes/stomping_pot_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "StompingPotUse",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stomping_pot_use",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/procedures/StompingPotUseProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Block"
+    },
+    {
+      "name": "PlaceEmptyCup",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "place_empty_cup",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/procedures/PlaceEmptyCupProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Block"
+    },
+    {
+      "name": "SweetberryWine",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sweetberry_wine",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/drstone/models/item/sweetberry_wine.json",
+          "src/main/java/net/clozynoii/drstone/item/SweetberryWineItem.java"
+        ]
+      },
+      "path": "~/Items/Food"
+    },
+    {
+      "name": "CupGlowberryJuice",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cup_glowberry_juice",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/item/CupGlowberryJuiceItem.java",
+          "src/main/resources/assets/drstone/models/item/cup_glowberry_juice.json"
+        ]
+      },
+      "path": "~/Items/Food"
     }
   ],
   "variable_elements": [
@@ -997,55 +1369,100 @@
       "CupWineGlowberry",
       "Grapes",
       "FiredClayBrick",
-      "StompingPot"
+      "StompingPot",
+      "GrapeWine",
+      "CupGrapeJuice",
+      "CupSweetberryJuice",
+      "GlowberryWine",
+      "SweetberryWine",
+      "CupGlowberryJuice"
     ]
   },
   "language_map": {
     "en_us": {
-      "item.drstone.cooked_clay_cup": "Clay Cup",
       "entity.drstone.stone_villager": "Stone Villager",
-      "entity.drstone.stone_villager_broken": "Stone Villager",
-      "item.drstone.cup_wine_glowberry": "Cup of Glowberry Wine",
       "effect.drstone.petrified": "Petrified",
       "gamerule.spawnPetrified": "Spawn Petrified",
-      "gui.drstone.petrification_device_gui.button_set_conditions": "Set Conditions",
-      "item.drstone.stone_human_player_3_spawn_egg": "Stone Human Spawn Egg",
-      "gui.drstone.petrification_device_gui.Meters": "0",
       "gamerule.noVillagers": "No Vanilla Villagers",
       "item.drstone.clay_cup": "Clay Cup",
       "gamerule.noVillagers.description": "Disables Vanilla Villagers",
       "item.drstone.senkuu_armor_leggings": "Senkuu\u0027s Pants",
-      "item.drstone.cup_wine_sweetberry": "Cup of Sweetberry Wine",
-      "item.drstone.grapes": "Grapes",
-      "item.drstone.stone_human_player_1_spawn_egg": "Stone Human Spawn Egg",
       "block.drstone.grape_bush_vine_mature": "Grape Bush Vine",
-      "gui.drstone.petrification_device_gui.label_meters": "Meters",
-      "block.drstone.stomping_pot": "Stomping Pot",
-      "entity.drstone.stone_human_player_4": "Stone Human",
+      "item.drstone.stone_human_player_1_spawn_egg": "Stone Human Spawn Egg",
       "item_group.drstone.dr_drip": "Dr. Stone Armor",
+      "item.drstone.senkuu_armor_chestplate": "Senkuu\u0027s Coat",
+      "item.drstone.stone_villager_broken_spawn_egg": "Stone Villager Spawn Egg",
+      "item.drstone.stone_human_player_4_spawn_egg": "Stone Human Spawn Egg",
+      "item_group.drstone.dr_stone": "Dr. Stone",
+      "gamerule.spawnPetrified.description": "Changes players being petrified when joining AFTER mass petrification.",
+      "gui.drstone.petrification_device_gui.Seconds": "0",
+      "item.drstone.stone_villager_spawn_egg": "Stone Villager Spawn Egg",
+      "item.drstone.cooked_clay_cup": "Clay Cup",
+      "entity.drstone.stone_villager_broken": "Stone Villager",
+      "gui.drstone.petrification_device_gui.button_set_conditions": "Set Conditions",
+      "item.drstone.stone_human_player_3_spawn_egg": "Stone Human Spawn Egg",
+      "gui.drstone.petrification_device_gui.Meters": "0",
+      "item.drstone.grapes": "Grapes",
+      "block.drstone.stomping_pot": "Stomping Pot",
+      "gui.drstone.petrification_device_gui.label_meters": "Meters",
+      "entity.drstone.stone_human_player_4": "Stone Human",
       "item.drstone.senkuu_armor_boots": "Senkuu\u0027s Shoes",
       "entity.drstone.stone_human_player_1": "Stone Human",
       "entity.drstone.stone_human_player_2": "Stone Human",
-      "item.drstone.senkuu_armor_chestplate": "Senkuu\u0027s Coat",
       "item.drstone.stone_human_player_2_spawn_egg": "Stone Human Spawn Egg",
       "entity.drstone.stone_human_player_3": "Stone Human",
-      "item.drstone.stone_villager_broken_spawn_egg": "Stone Villager Spawn Egg",
       "gui.drstone.petrification_device_gui.label_seconds": "Seconds",
-      "item.drstone.stone_human_player_4_spawn_egg": "Stone Human Spawn Egg",
-      "item_group.drstone.dr_stone": "Dr. Stone",
       "item.drstone.fired_clay_brick": "Clay Brick",
       "item.drstone.petrification_device": "Petrification Device",
-      "gamerule.spawnPetrified.description": "Changes players being petrified when joining AFTER mass petrification.",
-      "gui.drstone.petrification_device_gui.Seconds": "0",
       "block.drstone.grape_bush_vine": "Grape Bush Vine",
-      "item.drstone.stone_villager_spawn_egg": "Stone Villager Spawn Egg",
-      "item.drstone.cup_wine_grape": "Cup of Grape Wine",
       "item.drstone.revival_fluid": "Miracle Fluid"
     }
   },
   "foldersRoot": {
     "name": "~",
     "children": [
+      {
+        "name": "Items",
+        "children": [
+          {
+            "name": "Materials",
+            "children": []
+          },
+          {
+            "name": "Tools",
+            "children": []
+          },
+          {
+            "name": "Food",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Armor",
+        "children": []
+      },
+      {
+        "name": "Misc",
+        "children": [
+          {
+            "name": "Projectile",
+            "children": []
+          },
+          {
+            "name": "Commands",
+            "children": []
+          },
+          {
+            "name": "Tabs",
+            "children": []
+          },
+          {
+            "name": "Gamerules",
+            "children": []
+          }
+        ]
+      },
       {
         "name": "Procedures",
         "children": [
@@ -1054,15 +1471,15 @@
             "children": []
           },
           {
-            "name": "Player",
-            "children": []
-          },
-          {
             "name": "Entities",
             "children": []
           },
           {
             "name": "Items",
+            "children": []
+          },
+          {
+            "name": "Player",
             "children": []
           }
         ]
@@ -1076,61 +1493,32 @@
         "children": []
       },
       {
-        "name": "Items",
-        "children": [
-          {
-            "name": "Food",
-            "children": []
-          },
-          {
-            "name": "Tools",
-            "children": []
-          },
-          {
-            "name": "Materials",
-            "children": []
-          }
-        ]
-      },
-      {
-        "name": "Blocks",
-        "children": []
-      },
-      {
         "name": "Recipes",
         "children": []
       },
       {
-        "name": "Armor",
+        "name": "Projectile",
         "children": []
       },
       {
-        "name": "Misc",
+        "name": "Blocks",
         "children": [
           {
-            "name": "Tabs",
+            "name": "Placeable",
             "children": []
           },
           {
-            "name": "Gamerules",
+            "name": "Plants",
             "children": []
           },
           {
-            "name": "Commands",
-            "children": []
-          },
-          {
-            "name": "Projectile",
+            "name": "Interactable",
             "children": []
           }
         ]
       },
       {
         "name": "GUI",
-        "children": []
-      },
-      {
-        "name": "Projectile",
         "children": []
       }
     ]

@@ -1,34 +1,6 @@
 package net.clozynoii.drstone.procedures;
 
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.phys.AABB;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.item.ItemEntity;
-import net.minecraft.world.entity.TamableAnimal;
-import net.minecraft.world.entity.MobSpawnType;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.util.RandomSource;
-import net.minecraft.util.Mth;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.core.particles.ParticleTypes;
-import net.minecraft.core.BlockPos;
-
-import net.clozynoii.drstone.network.DrstoneModVariables;
-import net.clozynoii.drstone.init.DrstoneModMobEffects;
-import net.clozynoii.drstone.init.DrstoneModItems;
-import net.clozynoii.drstone.init.DrstoneModEntities;
-import net.clozynoii.drstone.entity.StoneVillagerEntity;
-import net.clozynoii.drstone.entity.StoneHumanPlayer4Entity;
-import net.clozynoii.drstone.entity.StoneHumanPlayer3Entity;
-import net.clozynoii.drstone.entity.StoneHumanPlayer2Entity;
-import net.clozynoii.drstone.entity.StoneHumanPlayer1Entity;
-
-import java.util.List;
-import java.util.Comparator;
+import net.minecraftforge.eventbus.api.Event;
 
 public class PetrificationDeviceProjectileWhileProjectileFlyingTickProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, Entity immediatesourceentity) {

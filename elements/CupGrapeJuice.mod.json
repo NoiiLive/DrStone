@@ -3,11 +3,11 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "glowberry_sake",
+    "texture": "grape_sake",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Cup of Glowberry Wine",
+    "name": "Cup of Grape Juice",
     "rarity": "COMMON",
     "creativeTabs": [
       {
@@ -37,6 +37,9 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onRightClickedOnBlock": {
+      "name": "PlaceGrapeCup"
+    },
     "enableRanged": false,
     "shootConstantly": false,
     "rangedItemChargesPower": false,
