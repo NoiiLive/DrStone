@@ -11,6 +11,6 @@ public class DrinkAlcoholProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-			_entity.addEffect(new MobEffectInstance(DrstoneModMobEffects.INTOXICATED.get(), 600, 0, true, true));
+			_entity.addEffect(new MobEffectInstance(DrstoneModMobEffects.INTOXICATED.get(), 3500, 0, true, true));
 	}
 }

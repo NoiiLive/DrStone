@@ -29,6 +29,7 @@ public class DrstoneModTabs {
 				tabData.accept(DrstoneModItems.PETRIFICATION_DEVICE.get());
 				tabData.accept(DrstoneModItems.REVIVAL_FLUID.get());
 				tabData.accept(DrstoneModBlocks.STOMPING_POT.get().asItem());
+				tabData.accept(DrstoneModBlocks.CLAY_POT.get().asItem());
 				tabData.accept(DrstoneModItems.FIRED_CLAY_BRICK.get());
 				tabData.accept(DrstoneModItems.GRAPES.get());
 				tabData.accept(DrstoneModItems.CLAY_CUP.get());

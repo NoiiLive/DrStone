@@ -52,6 +52,10 @@ public class DrstoneModItems {
 	public static final RegistryObject<Item> GRAPE_WINE = REGISTRY.register("grape_wine", () -> new GrapeWineItem());
 	public static final RegistryObject<Item> SWEETBERRY_WINE = REGISTRY.register("sweetberry_wine", () -> new SweetberryWineItem());
 	public static final RegistryObject<Item> GLOWBERRY_WINE = REGISTRY.register("glowberry_wine", () -> new GlowberryWineItem());
+	public static final RegistryObject<Item> CLAY_POT = block(DrstoneModBlocks.CLAY_POT);
+	public static final RegistryObject<Item> GRAPE_WINE_CLAY_POT = block(DrstoneModBlocks.GRAPE_WINE_CLAY_POT);
+	public static final RegistryObject<Item> GLOWBERRY_WINE_CLAY_POT = block(DrstoneModBlocks.GLOWBERRY_WINE_CLAY_POT);
+	public static final RegistryObject<Item> SWEETBERRY_WINE_CLAY_POT = block(DrstoneModBlocks.SWEETBERRY_WINE_CLAY_POT);
 
 	// Start of user code block custom items
 	// End of user code block custom items

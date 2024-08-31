@@ -18,6 +18,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.clozynoii.drstone.init.DrstoneModTabs;
+import net.clozynoii.drstone.init.DrstoneModParticleTypes;
 import net.clozynoii.drstone.init.DrstoneModMobEffects;
 import net.clozynoii.drstone.init.DrstoneModMenus;
 import net.clozynoii.drstone.init.DrstoneModItems;
@@ -53,6 +54,8 @@ public class DrstoneMod {
 		DrstoneModTabs.REGISTRY.register(bus);
 
 		DrstoneModMobEffects.REGISTRY.register(bus);
+
+		DrstoneModParticleTypes.REGISTRY.register(bus);
 
 		DrstoneModMenus.REGISTRY.register(bus);
 		// Start of user code block mod init

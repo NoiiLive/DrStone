@@ -1,0 +1,9 @@
+{
+  "parent": "drstone:custom/claypotsweetberry",
+  "textures": {
+    "all": "drstone:block/claypotsweetberrytexture",
+    "particle": "drstone:block/claypotsweetberrytexture",
+    "0": "drstone:block/claypotsweetberrytexture"
+  },
+  "render_type": "cutout"
+}
