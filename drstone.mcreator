@@ -1290,140 +1290,6 @@
       "path": "~/Items/Food"
     },
     {
-      "name": "ClayPot",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "clay_pot",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/drstone/models/block/clay_pot.json",
-          "src/main/resources/assets/drstone/models/item/clay_pot.json",
-          "src/main/java/net/clozynoii/drstone/block/entity/ClayPotBlockEntity.java",
-          "src/main/resources/assets/drstone/blockstates/clay_pot.json",
-          "src/main/resources/data/drstone/loot_tables/blocks/clay_pot.json",
-          "src/main/java/net/clozynoii/drstone/block/ClayPotBlock.java"
-        ]
-      },
-      "path": "~/Blocks/Interactable"
-    },
-    {
-      "name": "GrapeWineClayPot",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "grape_wine_clay_pot",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/drstone/blockstates/grape_wine_clay_pot.json",
-          "src/main/resources/assets/drstone/models/block/grape_wine_clay_pot.json",
-          "src/main/java/net/clozynoii/drstone/block/GrapeWineClayPotBlock.java",
-          "src/main/java/net/clozynoii/drstone/block/entity/GrapeWineClayPotBlockEntity.java",
-          "src/main/resources/data/drstone/loot_tables/blocks/grape_wine_clay_pot.json",
-          "src/main/resources/assets/drstone/models/item/grape_wine_clay_pot.json"
-        ]
-      },
-      "path": "~/Blocks/Interactable"
-    },
-    {
-      "name": "GlowberryWineClayPot",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "glowberry_wine_clay_pot",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/drstone/models/item/glowberry_wine_clay_pot.json",
-          "src/main/java/net/clozynoii/drstone/block/entity/GlowberryWineClayPotBlockEntity.java",
-          "src/main/java/net/clozynoii/drstone/block/GlowberryWineClayPotBlock.java",
-          "src/main/resources/data/drstone/loot_tables/blocks/glowberry_wine_clay_pot.json",
-          "src/main/resources/assets/drstone/blockstates/glowberry_wine_clay_pot.json",
-          "src/main/resources/assets/drstone/models/block/glowberry_wine_clay_pot.json"
-        ]
-      },
-      "path": "~/Blocks/Interactable"
-    },
-    {
-      "name": "SweetberryWineClayPot",
-      "type": "block",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sweetberry_wine_clay_pot",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/drstone/models/block/sweetberry_wine_clay_pot.json",
-          "src/main/java/net/clozynoii/drstone/block/SweetberryWineClayPotBlock.java",
-          "src/main/resources/data/drstone/loot_tables/blocks/sweetberry_wine_clay_pot.json",
-          "src/main/resources/assets/drstone/blockstates/sweetberry_wine_clay_pot.json",
-          "src/main/java/net/clozynoii/drstone/block/entity/SweetberryWineClayPotBlockEntity.java",
-          "src/main/resources/assets/drstone/models/item/sweetberry_wine_clay_pot.json"
-        ]
-      },
-      "path": "~/Blocks/Interactable"
-    },
-    {
-      "name": "ClayPotRecipe",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "clay_pot_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/drstone/recipes/clay_pot_recipe.json"
-        ]
-      },
-      "path": "~/Recipes"
-    },
-    {
-      "name": "ClayPotWineFilling",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "clay_pot_wine_filling",
-      "metadata": {
-        "files": [
-          "src/main/java/net/clozynoii/drstone/procedures/ClayPotWineFillingProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Procedures/Block"
-    },
-    {
-      "name": "GrapeBubbles",
-      "type": "particle",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "grape_bubbles",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/drstone/particles/grape_bubbles.json",
-          "src/main/java/net/clozynoii/drstone/client/particle/GrapeBubblesParticle.java"
-        ]
-      },
-      "path": "~/Particles"
-    },
-    {
       "name": "GrapeWineReady",
       "type": "procedure",
       "compiles": true,
@@ -1455,16 +1321,20 @@
       "path": "~/Procedures/Block"
     },
     {
-      "name": "SweetberryWineReady",
+      "name": "GrapeWineStir",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "sweetberry_wine_ready",
+      "registry_name": "grape_wine_stir",
       "metadata": {
         "files": [
-          "src/main/java/net/clozynoii/drstone/procedures/SweetberryWineReadyProcedure.java"
+          "src/main/java/net/clozynoii/drstone/procedures/GrapeWineStirProcedure.java"
         ],
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "x",
             "type": "number"
@@ -1517,42 +1387,68 @@
       "path": "~/Procedures/Block"
     },
     {
-      "name": "SweetberryBubbles",
-      "type": "particle",
+      "name": "ClayPot",
+      "type": "block",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "sweetberry_bubbles",
+      "registry_name": "clay_pot",
       "metadata": {
         "files": [
-          "src/main/resources/assets/drstone/particles/sweetberry_bubbles.json",
-          "src/main/java/net/clozynoii/drstone/client/particle/SweetberryBubblesParticle.java"
+          "src/main/resources/assets/drstone/models/block/clay_pot.json",
+          "src/main/resources/assets/drstone/models/item/clay_pot.json",
+          "src/main/java/net/clozynoii/drstone/block/entity/ClayPotBlockEntity.java",
+          "src/main/resources/assets/drstone/blockstates/clay_pot.json",
+          "src/main/resources/data/drstone/loot_tables/blocks/clay_pot.json",
+          "src/main/java/net/clozynoii/drstone/block/ClayPotBlock.java"
         ]
       },
-      "path": "~/Particles"
+      "path": "~/Blocks/Interactable"
     },
     {
-      "name": "GlowberryBubbles",
-      "type": "particle",
+      "name": "GlowberryWineClayPot",
+      "type": "block",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "glowberry_bubbles",
+      "registry_name": "glowberry_wine_clay_pot",
       "metadata": {
         "files": [
-          "src/main/java/net/clozynoii/drstone/client/particle/GlowberryBubblesParticle.java",
-          "src/main/resources/assets/drstone/particles/glowberry_bubbles.json"
+          "src/main/resources/assets/drstone/models/item/glowberry_wine_clay_pot.json",
+          "src/main/java/net/clozynoii/drstone/block/entity/GlowberryWineClayPotBlockEntity.java",
+          "src/main/java/net/clozynoii/drstone/block/GlowberryWineClayPotBlock.java",
+          "src/main/resources/data/drstone/loot_tables/blocks/glowberry_wine_clay_pot.json",
+          "src/main/resources/assets/drstone/blockstates/glowberry_wine_clay_pot.json",
+          "src/main/resources/assets/drstone/models/block/glowberry_wine_clay_pot.json"
         ]
       },
-      "path": "~/Particles"
+      "path": "~/Blocks/Interactable"
     },
     {
-      "name": "GrapeWineStir",
+      "name": "GrapeWineClayPot",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grape_wine_clay_pot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/drstone/blockstates/grape_wine_clay_pot.json",
+          "src/main/resources/assets/drstone/models/block/grape_wine_clay_pot.json",
+          "src/main/java/net/clozynoii/drstone/block/GrapeWineClayPotBlock.java",
+          "src/main/java/net/clozynoii/drstone/block/entity/GrapeWineClayPotBlockEntity.java",
+          "src/main/resources/data/drstone/loot_tables/blocks/grape_wine_clay_pot.json",
+          "src/main/resources/assets/drstone/models/item/grape_wine_clay_pot.json"
+        ]
+      },
+      "path": "~/Blocks/Interactable"
+    },
+    {
+      "name": "ClayPotWineFilling",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "grape_wine_stir",
+      "registry_name": "clay_pot_wine_filling",
       "metadata": {
         "files": [
-          "src/main/java/net/clozynoii/drstone/procedures/GrapeWineStirProcedure.java"
+          "src/main/java/net/clozynoii/drstone/procedures/ClayPotWineFillingProcedure.java"
         ],
         "dependencies": [
           {
@@ -1578,6 +1474,118 @@
         ]
       },
       "path": "~/Procedures/Block"
+    },
+    {
+      "name": "SweetberryWineReady",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sweetberry_wine_ready",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/procedures/SweetberryWineReadyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Block"
+    },
+    {
+      "name": "GrapeBubbles",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grape_bubbles",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/drstone/particles/grape_bubbles.json",
+          "src/main/java/net/clozynoii/drstone/client/particle/GrapeBubblesParticle.java"
+        ]
+      },
+      "path": "~/Particles"
+    },
+    {
+      "name": "GlowberryWineStir",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowberry_wine_stir",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/procedures/GlowberryWineStirProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Block"
+    },
+    {
+      "name": "SweetberryWineClayPot",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sweetberry_wine_clay_pot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/drstone/models/block/sweetberry_wine_clay_pot.json",
+          "src/main/java/net/clozynoii/drstone/block/SweetberryWineClayPotBlock.java",
+          "src/main/resources/data/drstone/loot_tables/blocks/sweetberry_wine_clay_pot.json",
+          "src/main/resources/assets/drstone/blockstates/sweetberry_wine_clay_pot.json",
+          "src/main/java/net/clozynoii/drstone/block/entity/SweetberryWineClayPotBlockEntity.java",
+          "src/main/resources/assets/drstone/models/item/sweetberry_wine_clay_pot.json"
+        ]
+      },
+      "path": "~/Blocks/Interactable"
+    },
+    {
+      "name": "GlowberryBubbles",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowberry_bubbles",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/client/particle/GlowberryBubblesParticle.java",
+          "src/main/resources/assets/drstone/particles/glowberry_bubbles.json"
+        ]
+      },
+      "path": "~/Particles"
     },
     {
       "name": "SweetberryWineStir",
@@ -1615,18 +1623,49 @@
       "path": "~/Procedures/Block"
     },
     {
-      "name": "GlowberryWineStir",
+      "name": "ClayPotRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clay_pot_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/drstone/recipes/clay_pot_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "SweetberryBubbles",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sweetberry_bubbles",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/drstone/particles/sweetberry_bubbles.json",
+          "src/main/java/net/clozynoii/drstone/client/particle/SweetberryBubblesParticle.java"
+        ]
+      },
+      "path": "~/Particles"
+    },
+    {
+      "name": "PetrificationDeviceProjectileWhileProjectileFlyingTick",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "glowberry_wine_stir",
+      "registry_name": "petrification_device_projectile_while_projectile_flying_tick",
       "metadata": {
         "files": [
-          "src/main/java/net/clozynoii/drstone/procedures/GlowberryWineStirProcedure.java"
+          "src/main/java/net/clozynoii/drstone/procedures/PetrificationDeviceProjectileWhileProjectileFlyingTickProcedure.java"
         ],
         "dependencies": [
           {
             "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "immediatesourceentity",
             "type": "entity"
           },
           {
@@ -1647,7 +1686,20 @@
           }
         ]
       },
-      "path": "~/Procedures/Block"
+      "path": "~/Projectile"
+    },
+    {
+      "name": "PetrificationDeviceProjectile",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "petrification_device_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/entity/PetrificationDeviceProjectileEntity.java"
+        ]
+      },
+      "path": "~/Projectile"
     }
   ],
   "variable_elements": [
@@ -1671,7 +1723,6 @@
       "PetrificationDevice",
       "RevivalFluid",
       "StompingPot",
-      "ClayPot",
       "FiredClayBrick",
       "Grapes",
       "ClayCup",
@@ -1681,7 +1732,8 @@
       "CupSweetberryJuice",
       "SweetberryWine",
       "CupGlowberryJuice",
-      "GlowberryWine"
+      "GlowberryWine",
+      "ClayPot"
     ]
   },
   "language_map": {
@@ -1743,14 +1795,56 @@
     "name": "~",
     "children": [
       {
+        "name": "Items",
+        "children": [
+          {
+            "name": "Materials",
+            "children": []
+          },
+          {
+            "name": "Tools",
+            "children": []
+          },
+          {
+            "name": "Food",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Armor",
+        "children": []
+      },
+      {
+        "name": "Misc",
+        "children": [
+          {
+            "name": "Projectile",
+            "children": []
+          },
+          {
+            "name": "Commands",
+            "children": []
+          },
+          {
+            "name": "Tabs",
+            "children": []
+          },
+          {
+            "name": "Gamerules",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Particles",
+        "children": []
+      },
+      {
         "name": "Procedures",
         "children": [
           {
             "name": "Block",
-            "children": []
-          },
-          {
-            "name": "Player",
             "children": []
           },
           {
@@ -1759,6 +1853,10 @@
           },
           {
             "name": "Items",
+            "children": []
+          },
+          {
+            "name": "Player",
             "children": []
           }
         ]
@@ -1772,25 +1870,20 @@
         "children": []
       },
       {
-        "name": "Items",
-        "children": [
-          {
-            "name": "Food",
-            "children": []
-          },
-          {
-            "name": "Tools",
-            "children": []
-          },
-          {
-            "name": "Materials",
-            "children": []
-          }
-        ]
+        "name": "Recipes",
+        "children": []
+      },
+      {
+        "name": "Projectile",
+        "children": []
       },
       {
         "name": "Blocks",
         "children": [
+          {
+            "name": "Placeable",
+            "children": []
+          },
           {
             "name": "Plants",
             "children": []
@@ -1798,48 +1891,11 @@
           {
             "name": "Interactable",
             "children": []
-          },
-          {
-            "name": "Placeable",
-            "children": []
-          }
-        ]
-      },
-      {
-        "name": "Recipes",
-        "children": []
-      },
-      {
-        "name": "Armor",
-        "children": []
-      },
-      {
-        "name": "Misc",
-        "children": [
-          {
-            "name": "Tabs",
-            "children": []
-          },
-          {
-            "name": "Gamerules",
-            "children": []
-          },
-          {
-            "name": "Commands",
-            "children": []
-          },
-          {
-            "name": "Projectile",
-            "children": []
           }
         ]
       },
       {
         "name": "GUI",
-        "children": []
-      },
-      {
-        "name": "Particles",
         "children": []
       }
     ]

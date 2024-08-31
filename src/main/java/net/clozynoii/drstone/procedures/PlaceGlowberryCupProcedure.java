@@ -1,25 +1,6 @@
 package net.clozynoii.drstone.procedures;
 
-import net.minecraftforge.registries.ForgeRegistries;
-
-import net.minecraft.world.level.block.state.properties.Property;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.level.GameType;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.sounds.SoundSource;
-import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.core.BlockPos;
-import net.minecraft.client.Minecraft;
-
-import net.clozynoii.drstone.init.DrstoneModItems;
-import net.clozynoii.drstone.init.DrstoneModBlocks;
-
-import java.util.Map;
+import net.minecraftforge.eventbus.api.Event;
 
 public class PlaceGlowberryCupProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -40,7 +21,7 @@ public class PlaceGlowberryCupProcedure {
 						}
 					}.checkGamemode(entity))) {
 						if (entity instanceof Player _player) {
-							ItemStack _stktoremove = new ItemStack(DrstoneModItems.CUP_GLOWBERRY_JUICE.get());
+							ItemStack _stktoremove = new ItemStack(DrstoneModItems.DELETED_MOD_ELEMENT.get());
 							_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 						}
 					}

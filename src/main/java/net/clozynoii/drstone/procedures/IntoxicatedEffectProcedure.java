@@ -1,12 +1,6 @@
 package net.clozynoii.drstone.procedures;
 
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.util.RandomSource;
-import net.minecraft.util.Mth;
+import net.minecraftforge.eventbus.api.Event;
 
 public class IntoxicatedEffectProcedure {
 	public static void execute(Entity entity) {

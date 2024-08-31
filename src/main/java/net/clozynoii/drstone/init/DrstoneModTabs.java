@@ -29,7 +29,6 @@ public class DrstoneModTabs {
 				tabData.accept(DrstoneModItems.PETRIFICATION_DEVICE.get());
 				tabData.accept(DrstoneModItems.REVIVAL_FLUID.get());
 				tabData.accept(DrstoneModBlocks.STOMPING_POT.get().asItem());
-				tabData.accept(DrstoneModBlocks.CLAY_POT.get().asItem());
 				tabData.accept(DrstoneModItems.FIRED_CLAY_BRICK.get());
 				tabData.accept(DrstoneModItems.GRAPES.get());
 				tabData.accept(DrstoneModItems.CLAY_CUP.get());
@@ -40,5 +39,6 @@ public class DrstoneModTabs {
 				tabData.accept(DrstoneModItems.SWEETBERRY_WINE.get());
 				tabData.accept(DrstoneModItems.CUP_GLOWBERRY_JUICE.get());
 				tabData.accept(DrstoneModItems.GLOWBERRY_WINE.get());
+				tabData.accept(DrstoneModBlocks.CLAY_POT.get().asItem());
 			}).withSearchBar().build());
 }

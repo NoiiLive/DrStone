@@ -1,15 +1,6 @@
 package net.clozynoii.drstone.procedures;
 
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.Level;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.core.particles.SimpleParticleType;
-import net.minecraft.core.particles.ParticleTypes;
-import net.minecraft.core.BlockPos;
-
-import net.clozynoii.drstone.init.DrstoneModParticleTypes;
+import net.minecraftforge.eventbus.api.Event;
 
 public class GrapeWineReadyProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
@@ -22,7 +13,7 @@ public class GrapeWineReadyProcedure {
 			}
 		}.getValue(world, BlockPos.containing(x, y, z), "StirTimer") <= 0) {
 			if (world instanceof ServerLevel _level)
-				_level.sendParticles((SimpleParticleType) (DrstoneModParticleTypes.GRAPE_BUBBLES.get()), (x + 0.5), (y + 1), (z + 0.5), 1, 0.25, 0.25, 0.25, 0);
+				_level.sendParticles((SimpleParticleType) (DrstoneModParticleTypes.DELETED_MOD_ELEMENT.get()), (x + 0.5), (y + 1), (z + 0.5), 1, 0.25, 0.25, 0.25, 0);
 			if (new Object() {
 				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 					BlockEntity blockEntity = world.getBlockEntity(pos);

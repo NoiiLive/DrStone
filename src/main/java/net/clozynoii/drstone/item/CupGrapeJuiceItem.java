@@ -1,19 +1,7 @@
 
 package net.clozynoii.drstone.item;
 
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.context.UseOnContext;
-import net.minecraft.world.item.UseAnim;
-import net.minecraft.world.item.Rarity;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.InteractionResult;
-
-import net.clozynoii.drstone.procedures.PlaceGrapeCupProcedure;
-import net.clozynoii.drstone.init.DrstoneModItems;
+import net.minecraft.world.entity.ai.attributes.Attributes;
 
 public class CupGrapeJuiceItem extends Item {
 	public CupGrapeJuiceItem() {
@@ -48,7 +36,7 @@ public class CupGrapeJuiceItem extends Item {
 	@Override
 	public InteractionResult useOn(UseOnContext context) {
 		super.useOn(context);
-		PlaceGrapeCupProcedure.execute(context.getLevel(), context.getClickedPos().getX(), context.getClickedPos().getY(), context.getClickedPos().getZ(), context.getPlayer());
+		PlaceGrapeCupProcedure.execute();
 		return InteractionResult.SUCCESS;
 	}
 }

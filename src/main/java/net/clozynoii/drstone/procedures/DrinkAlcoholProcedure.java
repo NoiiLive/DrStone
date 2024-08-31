@@ -1,10 +1,6 @@
 package net.clozynoii.drstone.procedures;
 
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.effect.MobEffectInstance;
-
-import net.clozynoii.drstone.init.DrstoneModMobEffects;
+import net.minecraftforge.eventbus.api.Event;
 
 public class DrinkAlcoholProcedure {
 	public static void execute(Entity entity) {

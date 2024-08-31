@@ -18,7 +18,7 @@ public class DrstoneModParticles {
 	@SubscribeEvent
 	public static void registerParticles(RegisterParticleProvidersEvent event) {
 		event.registerSpriteSet(DrstoneModParticleTypes.GRAPE_BUBBLES.get(), GrapeBubblesParticle::provider);
-		event.registerSpriteSet(DrstoneModParticleTypes.SWEETBERRY_BUBBLES.get(), SweetberryBubblesParticle::provider);
 		event.registerSpriteSet(DrstoneModParticleTypes.GLOWBERRY_BUBBLES.get(), GlowberryBubblesParticle::provider);
+		event.registerSpriteSet(DrstoneModParticleTypes.SWEETBERRY_BUBBLES.get(), SweetberryBubblesParticle::provider);
 	}
 }

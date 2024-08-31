@@ -22,8 +22,8 @@ public class DrstoneModBlockEntities {
 	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, DrstoneMod.MODID);
 	public static final RegistryObject<BlockEntityType<StompingPotTileEntity>> STOMPING_POT = REGISTRY.register("stomping_pot", () -> BlockEntityType.Builder.of(StompingPotTileEntity::new, DrstoneModBlocks.STOMPING_POT.get()).build(null));
 	public static final RegistryObject<BlockEntityType<?>> CLAY_POT = register("clay_pot", DrstoneModBlocks.CLAY_POT, ClayPotBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> GRAPE_WINE_CLAY_POT = register("grape_wine_clay_pot", DrstoneModBlocks.GRAPE_WINE_CLAY_POT, GrapeWineClayPotBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> GLOWBERRY_WINE_CLAY_POT = register("glowberry_wine_clay_pot", DrstoneModBlocks.GLOWBERRY_WINE_CLAY_POT, GlowberryWineClayPotBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> GRAPE_WINE_CLAY_POT = register("grape_wine_clay_pot", DrstoneModBlocks.GRAPE_WINE_CLAY_POT, GrapeWineClayPotBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> SWEETBERRY_WINE_CLAY_POT = register("sweetberry_wine_clay_pot", DrstoneModBlocks.SWEETBERRY_WINE_CLAY_POT, SweetberryWineClayPotBlockEntity::new);
 
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block, BlockEntityType.BlockEntitySupplier<?> supplier) {
