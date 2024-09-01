@@ -23,9 +23,13 @@ import net.clozynoii.drstone.item.FiredClayBrickItem;
 import net.clozynoii.drstone.item.CupSweetberryJuiceItem;
 import net.clozynoii.drstone.item.CupGrapeJuiceItem;
 import net.clozynoii.drstone.item.CupGlowberryJuiceItem;
+import net.clozynoii.drstone.item.CupDistilledAlcoholItem;
 import net.clozynoii.drstone.item.CookedClayCupItem;
 import net.clozynoii.drstone.item.ClayCupItem;
+import net.clozynoii.drstone.item.BatGuanoCupItem;
 import net.clozynoii.drstone.block.display.StompingPotDisplayItem;
+import net.clozynoii.drstone.block.display.MixingPotDisplayItem;
+import net.clozynoii.drstone.block.display.DistillingPotDisplayItem;
 import net.clozynoii.drstone.DrstoneMod;
 
 public class DrstoneModItems {
@@ -56,6 +60,12 @@ public class DrstoneModItems {
 	public static final RegistryObject<Item> GLOWBERRY_WINE_CLAY_POT = block(DrstoneModBlocks.GLOWBERRY_WINE_CLAY_POT);
 	public static final RegistryObject<Item> GRAPE_WINE_CLAY_POT = block(DrstoneModBlocks.GRAPE_WINE_CLAY_POT);
 	public static final RegistryObject<Item> SWEETBERRY_WINE_CLAY_POT = block(DrstoneModBlocks.SWEETBERRY_WINE_CLAY_POT);
+	public static final RegistryObject<Item> MIRACLE_DRIPSTONE = block(DrstoneModBlocks.MIRACLE_DRIPSTONE);
+	public static final RegistryObject<Item> MIRACLE_FLUID_POT = block(DrstoneModBlocks.MIRACLE_FLUID_POT);
+	public static final RegistryObject<Item> BAT_GUANO_CUP = REGISTRY.register("bat_guano_cup", () -> new BatGuanoCupItem());
+	public static final RegistryObject<Item> CUP_DISTILLED_ALCOHOL = REGISTRY.register("cup_distilled_alcohol", () -> new CupDistilledAlcoholItem());
+	public static final RegistryObject<Item> MIXING_POT = REGISTRY.register(DrstoneModBlocks.MIXING_POT.getId().getPath(), () -> new MixingPotDisplayItem(DrstoneModBlocks.MIXING_POT.get(), new Item.Properties()));
+	public static final RegistryObject<Item> DISTILLING_POT = REGISTRY.register(DrstoneModBlocks.DISTILLING_POT.getId().getPath(), () -> new DistillingPotDisplayItem(DrstoneModBlocks.DISTILLING_POT.get(), new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

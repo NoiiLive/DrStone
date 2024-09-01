@@ -25,13 +25,16 @@
   "gui.drstone.petrification_device_gui.Seconds": "0",
   "item.drstone.stone_villager_spawn_egg": "Stone Villager Spawn Egg",
   "block.drstone.clay_pot": "Clay Pot",
+  "block.drstone.miracle_fluid_pot": "Clay Pot (Bat Guano)",
   "item.drstone.cooked_clay_cup": "Clay Cup",
   "entity.drstone.stone_villager_broken": "Stone Villager",
   "gui.drstone.petrification_device_gui.button_set_conditions": "Set Conditions",
   "item.drstone.stone_human_player_3_spawn_egg": "Stone Human Spawn Egg",
   "gui.drstone.petrification_device_gui.Meters": "0",
+  "item.drstone.bat_guano_cup": "Cup of Bat Guano",
   "item.drstone.glowberry_wine": "Cup of Glowberry Wine",
   "item.drstone.cup_grape_juice": "Cup of Grape Juice",
+  "block.drstone.mixing_pot": "Mixing Pot",
   "item.drstone.grapes": "Grapes",
   "block.drstone.grape_juice_cup": "Grape Juice Cup",
   "block.drstone.stomping_pot": "Stomping Pot",
@@ -49,5 +52,8 @@
   "effect.drstone.intoxicated": "Intoxicated",
   "item.drstone.petrification_device": "Petrification Device",
   "block.drstone.grape_bush_vine": "Grape Bush Vine",
-  "item.drstone.revival_fluid": "Miracle Fluid"
+  "item.drstone.revival_fluid": "Miracle Fluid",
+  "block.drstone.miracle_dripstone": "Miracle Dripstone",
+  "item.drstone.cup_distilled_alcohol": "Cup of Distilled Alcohol",
+  "block.drstone.distilling_pot": "Distilling Pot"
 }

@@ -13,6 +13,9 @@ import net.minecraft.world.level.block.Block;
 import net.clozynoii.drstone.block.SweetberryWineClayPotBlock;
 import net.clozynoii.drstone.block.SweetberryJuiceCupBlock;
 import net.clozynoii.drstone.block.StompingPotBlock;
+import net.clozynoii.drstone.block.MixingPotBlock;
+import net.clozynoii.drstone.block.MiracleFluidPotBlock;
+import net.clozynoii.drstone.block.MiracleDripstoneBlock;
 import net.clozynoii.drstone.block.GrapeWineClayPotBlock;
 import net.clozynoii.drstone.block.GrapeJuiceCupBlock;
 import net.clozynoii.drstone.block.GrapeBushVineMatureBlock;
@@ -20,6 +23,7 @@ import net.clozynoii.drstone.block.GrapeBushVineBlock;
 import net.clozynoii.drstone.block.GlowberryWineClayPotBlock;
 import net.clozynoii.drstone.block.GlowberryJuiceCupBlock;
 import net.clozynoii.drstone.block.EmptyCupBlock;
+import net.clozynoii.drstone.block.DistillingPotBlock;
 import net.clozynoii.drstone.block.ClayPotBlock;
 import net.clozynoii.drstone.DrstoneMod;
 
@@ -36,6 +40,10 @@ public class DrstoneModBlocks {
 	public static final RegistryObject<Block> GLOWBERRY_WINE_CLAY_POT = REGISTRY.register("glowberry_wine_clay_pot", () -> new GlowberryWineClayPotBlock());
 	public static final RegistryObject<Block> GRAPE_WINE_CLAY_POT = REGISTRY.register("grape_wine_clay_pot", () -> new GrapeWineClayPotBlock());
 	public static final RegistryObject<Block> SWEETBERRY_WINE_CLAY_POT = REGISTRY.register("sweetberry_wine_clay_pot", () -> new SweetberryWineClayPotBlock());
+	public static final RegistryObject<Block> MIRACLE_DRIPSTONE = REGISTRY.register("miracle_dripstone", () -> new MiracleDripstoneBlock());
+	public static final RegistryObject<Block> MIRACLE_FLUID_POT = REGISTRY.register("miracle_fluid_pot", () -> new MiracleFluidPotBlock());
+	public static final RegistryObject<Block> MIXING_POT = REGISTRY.register("mixing_pot", () -> new MixingPotBlock());
+	public static final RegistryObject<Block> DISTILLING_POT = REGISTRY.register("distilling_pot", () -> new DistillingPotBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

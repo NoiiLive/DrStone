@@ -2,7 +2,7 @@
   "parent": "drstone:custom/sweetberryjuicecup",
   "textures": {
     "all": "drstone:block/sweetberrycuptexture",
-    "particle": "drstone:block/sweetberrycuptexture",
+    "particle": "drstone:block/clay_break",
     "0": "drstone:block/sweetberrycuptexture"
   },
   "render_type": "cutout"

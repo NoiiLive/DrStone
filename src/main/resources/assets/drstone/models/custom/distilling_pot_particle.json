@@ -1,0 +1,7 @@
+
+{
+  "parent": "drstone:displaysettings/distillingpot.item",
+  "textures": {
+    "particle": "drstone:block/clay_break"
+  }
+}

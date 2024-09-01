@@ -2,7 +2,7 @@
   "parent": "drstone:custom/emptycup",
   "textures": {
     "all": "drstone:block/emptycuptexture",
-    "particle": "drstone:block/emptycuptexture",
+    "particle": "drstone:block/clay_break",
     "0": "drstone:block/emptycuptexture"
   },
   "render_type": "cutout"

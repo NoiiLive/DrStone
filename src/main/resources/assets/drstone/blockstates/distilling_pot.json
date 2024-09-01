@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "drstone:custom/distilling_pot_particle"
+    },
+    "facing=east": {
+      "model": "drstone:custom/distilling_pot_particle",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "drstone:custom/distilling_pot_particle",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "drstone:custom/distilling_pot_particle",
+      "y": 270
+    }
+  }
+}

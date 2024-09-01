@@ -28,17 +28,21 @@ public class DrstoneModTabs {
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.drstone.dr_stone")).icon(() -> new ItemStack(DrstoneModItems.PETRIFICATION_DEVICE.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(DrstoneModItems.PETRIFICATION_DEVICE.get());
 				tabData.accept(DrstoneModItems.REVIVAL_FLUID.get());
+				tabData.accept(DrstoneModBlocks.DISTILLING_POT.get().asItem());
 				tabData.accept(DrstoneModBlocks.STOMPING_POT.get().asItem());
+				tabData.accept(DrstoneModBlocks.MIXING_POT.get().asItem());
+				tabData.accept(DrstoneModBlocks.CLAY_POT.get().asItem());
 				tabData.accept(DrstoneModItems.FIRED_CLAY_BRICK.get());
-				tabData.accept(DrstoneModItems.GRAPES.get());
 				tabData.accept(DrstoneModItems.CLAY_CUP.get());
 				tabData.accept(DrstoneModItems.COOKED_CLAY_CUP.get());
+				tabData.accept(DrstoneModItems.BAT_GUANO_CUP.get());
+				tabData.accept(DrstoneModItems.CUP_DISTILLED_ALCOHOL.get());
+				tabData.accept(DrstoneModItems.GRAPES.get());
 				tabData.accept(DrstoneModItems.CUP_GRAPE_JUICE.get());
 				tabData.accept(DrstoneModItems.GRAPE_WINE.get());
 				tabData.accept(DrstoneModItems.CUP_SWEETBERRY_JUICE.get());
 				tabData.accept(DrstoneModItems.SWEETBERRY_WINE.get());
 				tabData.accept(DrstoneModItems.CUP_GLOWBERRY_JUICE.get());
 				tabData.accept(DrstoneModItems.GLOWBERRY_WINE.get());
-				tabData.accept(DrstoneModBlocks.CLAY_POT.get().asItem());
 			}).withSearchBar().build());
 }

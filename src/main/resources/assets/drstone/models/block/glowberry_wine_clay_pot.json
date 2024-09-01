@@ -2,7 +2,7 @@
   "parent": "drstone:custom/claypotglowberry",
   "textures": {
     "all": "drstone:block/claypotglowberrytexture",
-    "particle": "drstone:block/claypotglowberrytexture",
+    "particle": "drstone:block/clay_break",
     "0": "drstone:block/claypotglowberrytexture"
   },
   "render_type": "cutout"

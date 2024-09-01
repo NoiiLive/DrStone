@@ -14,7 +14,7 @@
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
-    "particleTexture": "",
+    "particleTexture": "clay_break",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": true,

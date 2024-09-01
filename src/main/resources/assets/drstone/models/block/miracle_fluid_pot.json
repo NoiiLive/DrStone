@@ -1,0 +1,9 @@
+{
+  "parent": "drstone:custom/claypotmiracle",
+  "textures": {
+    "all": "drstone:block/claypotmiracletexture",
+    "particle": "drstone:block/clay_break",
+    "0": "drstone:block/claypotmiracletexture"
+  },
+  "render_type": "cutout"
+}

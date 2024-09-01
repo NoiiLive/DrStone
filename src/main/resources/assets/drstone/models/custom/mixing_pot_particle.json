@@ -1,0 +1,7 @@
+
+{
+  "parent": "drstone:displaysettings/mixingpot.item",
+  "textures": {
+    "particle": "drstone:block/clay_break"
+  }
+}

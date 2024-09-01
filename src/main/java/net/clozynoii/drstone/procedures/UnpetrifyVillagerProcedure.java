@@ -15,10 +15,12 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.particles.BlockParticleOption;
 import net.minecraft.core.BlockPos;
 
+import net.clozynoii.drstone.init.DrstoneModParticleTypes;
 import net.clozynoii.drstone.init.DrstoneModItems;
 import net.clozynoii.drstone.DrstoneMod;
 
@@ -38,6 +40,8 @@ public class UnpetrifyVillagerProcedure {
 					ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 				}
 			});
+			if (world instanceof ServerLevel _level)
+				_level.sendParticles((SimpleParticleType) (DrstoneModParticleTypes.MIRACLE_DRIP.get()), x, (y + 2), z, 20, 0.25, 0.25, 0.25, 0);
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.fire.extinguish")), SoundSource.BLOCKS, 1, 1);

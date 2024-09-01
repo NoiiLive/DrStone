@@ -10,6 +10,7 @@ import net.minecraftforge.client.event.RegisterParticleProvidersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.clozynoii.drstone.client.particle.SweetberryBubblesParticle;
+import net.clozynoii.drstone.client.particle.MiracleDripParticle;
 import net.clozynoii.drstone.client.particle.GrapeBubblesParticle;
 import net.clozynoii.drstone.client.particle.GlowberryBubblesParticle;
 
@@ -20,5 +21,6 @@ public class DrstoneModParticles {
 		event.registerSpriteSet(DrstoneModParticleTypes.GRAPE_BUBBLES.get(), GrapeBubblesParticle::provider);
 		event.registerSpriteSet(DrstoneModParticleTypes.GLOWBERRY_BUBBLES.get(), GlowberryBubblesParticle::provider);
 		event.registerSpriteSet(DrstoneModParticleTypes.SWEETBERRY_BUBBLES.get(), SweetberryBubblesParticle::provider);
+		event.registerSpriteSet(DrstoneModParticleTypes.MIRACLE_DRIP.get(), MiracleDripParticle::provider);
 	}
 }

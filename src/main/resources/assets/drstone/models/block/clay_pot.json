@@ -2,7 +2,7 @@
   "parent": "drstone:custom/claypot",
   "textures": {
     "all": "drstone:block/claypottexture",
-    "particle": "drstone:block/claypottexture",
+    "particle": "drstone:block/clay_break",
     "0": "drstone:block/claypottexture"
   },
   "render_type": "cutout"

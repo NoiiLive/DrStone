@@ -8,6 +8,8 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.clozynoii.drstone.init.DrstoneModBlockEntities;
 import net.clozynoii.drstone.block.renderer.StompingPotTileRenderer;
+import net.clozynoii.drstone.block.renderer.MixingPotTileRenderer;
+import net.clozynoii.drstone.block.renderer.DistillingPotTileRenderer;
 import net.clozynoii.drstone.DrstoneMod;
 
 @Mod.EventBusSubscriber(modid = DrstoneMod.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -16,5 +18,7 @@ public class ClientListener {
 	@SubscribeEvent
 	public static void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerBlockEntityRenderer(DrstoneModBlockEntities.STOMPING_POT.get(), context -> new StompingPotTileRenderer());
+		event.registerBlockEntityRenderer(DrstoneModBlockEntities.MIXING_POT.get(), context -> new MixingPotTileRenderer());
+		event.registerBlockEntityRenderer(DrstoneModBlockEntities.DISTILLING_POT.get(), context -> new DistillingPotTileRenderer());
 	}
 }

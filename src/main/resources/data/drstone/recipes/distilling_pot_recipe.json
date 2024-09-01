@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aa ",
+    "bac",
+    "de "
+  ],
+  "key": {
+    "a": {
+      "item": "drstone:fired_clay_brick"
+    },
+    "b": {
+      "item": "minecraft:cobblestone"
+    },
+    "c": {
+      "item": "minecraft:bamboo"
+    },
+    "d": {
+      "item": "minecraft:campfire"
+    },
+    "e": {
+      "item": "drstone:clay_pot"
+    }
+  },
+  "result": {
+    "item": "drstone:distilling_pot",
+    "count": 1
+  }
+}

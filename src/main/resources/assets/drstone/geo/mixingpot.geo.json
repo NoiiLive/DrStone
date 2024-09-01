@@ -1,0 +1,71 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.MixingPot",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "mixing_pot",
+					"pivot": [0, 1, 0],
+					"cubes": [
+						{"origin": [-4, 0, -4], "size": [8, 1, 8], "uv": [32, 19]},
+						{"origin": [-6, 1, -6], "size": [12, 7, 12], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "stick",
+					"parent": "mixing_pot",
+					"pivot": [0, 1, 0],
+					"cubes": [
+						{"origin": [1.75, 1, 1.5], "size": [2, 9, 2], "pivot": [2.75, 5.5, 2.5], "rotation": [-25, 0, 25], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "liquid1",
+					"parent": "mixing_pot",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-6, 5, -6],
+							"size": [12, 1, 12],
+							"uv": {
+								"north": {"uv": [28, 63], "uv_size": [12, 1]},
+								"east": {"uv": [16, 63], "uv_size": [12, 1]},
+								"south": {"uv": [52, 63], "uv_size": [12, 1]},
+								"west": {"uv": [40, 63], "uv_size": [12, 1]},
+								"up": {"uv": [0, 19], "uv_size": [12, 12]},
+								"down": {"uv": [40, 63], "uv_size": [12, -12]}
+							}
+						}
+					]
+				},
+				{
+					"name": "liquid2",
+					"parent": "mixing_pot",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-6, 5, -6],
+							"size": [12, 1, 12],
+							"uv": {
+								"north": {"uv": [28, 63], "uv_size": [12, 1]},
+								"east": {"uv": [16, 63], "uv_size": [12, 1]},
+								"south": {"uv": [52, 63], "uv_size": [12, 1]},
+								"west": {"uv": [40, 63], "uv_size": [12, 1]},
+								"up": {"uv": [0, 43], "uv_size": [12, 12]},
+								"down": {"uv": [40, 63], "uv_size": [12, -12]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

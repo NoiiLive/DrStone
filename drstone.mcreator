@@ -1704,6 +1704,441 @@
         ]
       },
       "path": "~/Projectile"
+    },
+    {
+      "name": "MiracleDrip",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "miracle_drip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/client/particle/MiracleDripParticle.java",
+          "src/main/resources/assets/drstone/particles/miracle_drip.json"
+        ]
+      },
+      "path": "~/Particles"
+    },
+    {
+      "name": "MiracleDripstone",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "miracle_dripstone",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/drstone/blockstates/miracle_dripstone.json",
+          "src/main/resources/assets/drstone/models/block/miracle_dripstone.json",
+          "src/main/java/net/clozynoii/drstone/block/MiracleDripstoneBlock.java",
+          "src/main/resources/assets/drstone/models/item/miracle_dripstone.json",
+          "src/main/resources/data/drstone/loot_tables/blocks/miracle_dripstone.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "MiracleDripstoneParticles",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "miracle_dripstone_particles",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/procedures/MiracleDripstoneParticlesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Block"
+    },
+    {
+      "name": "MiracleDripstoneCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "miracle_dripstone_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/clozynoii/drstone/procedures/MiracleDripstoneConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Block"
+    },
+    {
+      "name": "ClayPotTimer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clay_pot_timer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/procedures/ClayPotTimerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Block"
+    },
+    {
+      "name": "MiracleFluidPot",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "miracle_fluid_pot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/block/MiracleFluidPotBlock.java",
+          "src/main/resources/assets/drstone/models/item/miracle_fluid_pot.json",
+          "src/main/resources/assets/drstone/blockstates/miracle_fluid_pot.json",
+          "src/main/resources/assets/drstone/models/block/miracle_fluid_pot.json",
+          "src/main/resources/data/drstone/loot_tables/blocks/miracle_fluid_pot.json"
+        ]
+      },
+      "path": "~/Blocks/Interactable"
+    },
+    {
+      "name": "BatGuanoCup",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bat_guano_cup",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/item/BatGuanoCupItem.java",
+          "src/main/resources/assets/drstone/models/item/bat_guano_cup.json"
+        ]
+      },
+      "path": "~/Items/Misc"
+    },
+    {
+      "name": "CupDistilledAlcohol",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cup_distilled_alcohol",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/drstone/models/item/cup_distilled_alcohol.json",
+          "src/main/java/net/clozynoii/drstone/item/CupDistilledAlcoholItem.java"
+        ]
+      },
+      "path": "~/Items/Food"
+    },
+    {
+      "name": "MixingPot",
+      "type": "animatedblock",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mixing_pot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/block/renderer/MixingPotDisplayItemRenderer.java",
+          "src/main/java/net/clozynoii/drstone/block/entity/MixingPotTileEntity.java",
+          "src/main/java/net/clozynoii/drstone/block/MixingPotBlock.java",
+          "src/main/java/net/clozynoii/drstone/block/model/MixingPotBlockModel.java",
+          "src/main/java/net/clozynoii/drstone/block/model/MixingPotDisplayModel.java",
+          "src/main/resources/assets/drstone/blockstates/mixing_pot.json",
+          "src/main/resources/assets/drstone/models/item/mixing_pot.json",
+          "src/main/java/net/clozynoii/drstone/block/display/MixingPotDisplayItem.java",
+          "src/main/resources/assets/drstone/models/custom/mixing_pot_particle.json",
+          "src/main/java/net/clozynoii/drstone/block/renderer/MixingPotTileRenderer.java"
+        ]
+      },
+      "path": "~/Blocks/Interactable"
+    },
+    {
+      "name": "MixingPotUse",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mixing_pot_use",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/procedures/MixingPotUseProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Block"
+    },
+    {
+      "name": "MixingPotTimer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mixing_pot_timer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/procedures/MixingPotTimerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Block"
+    },
+    {
+      "name": "MixingPotRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mixing_pot_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/drstone/recipes/mixing_pot_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "BatGuanoCollect",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bat_guano_collect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/procedures/BatGuanoCollectProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Block"
+    },
+    {
+      "name": "DistillingPot",
+      "type": "animatedblock",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "distilling_pot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/block/DistillingPotBlock.java",
+          "src/main/java/net/clozynoii/drstone/block/model/DistillingPotDisplayModel.java",
+          "src/main/java/net/clozynoii/drstone/block/model/DistillingPotBlockModel.java",
+          "src/main/java/net/clozynoii/drstone/block/entity/DistillingPotTileEntity.java",
+          "src/main/resources/assets/drstone/blockstates/distilling_pot.json",
+          "src/main/resources/assets/drstone/models/item/distilling_pot.json",
+          "src/main/resources/assets/drstone/models/custom/distilling_pot_particle.json",
+          "src/main/java/net/clozynoii/drstone/block/display/DistillingPotDisplayItem.java",
+          "src/main/java/net/clozynoii/drstone/block/renderer/DistillingPotDisplayItemRenderer.java",
+          "src/main/java/net/clozynoii/drstone/block/renderer/DistillingPotTileRenderer.java"
+        ]
+      },
+      "path": "~/Blocks/Interactable"
+    },
+    {
+      "name": "DistillingPotFill",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "distilling_pot_fill",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/procedures/DistillingPotFillProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Block"
+    },
+    {
+      "name": "DistillingPotTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "distilling_pot_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/procedures/DistillingPotTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Block"
+    },
+    {
+      "name": "DistillingPotRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "distilling_pot_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/drstone/recipes/distilling_pot_recipe.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "DistillingPotRecipe2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "distilling_pot_recipe_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/drstone/recipes/distilling_pot_recipe_2.json"
+        ]
+      },
+      "path": "~/Recipes"
+    },
+    {
+      "name": "MiracleCave",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "miracle_cave",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/drstone/worldgen/structure_set/miracle_cave.json",
+          "src/main/resources/data/drstone/worldgen/structure/miracle_cave.json",
+          "src/main/resources/data/drstone/worldgen/template_pool/miracle_cave.json"
+        ]
+      },
+      "path": "~/Structures"
     }
   ],
   "variable_elements": [
@@ -1721,23 +2156,32 @@
     }
   ],
   "sound_elements": [],
-  "tag_elements": {},
+  "tag_elements": {
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:DistillingPot",
+      "~CUSTOM:MiracleDripstone"
+    ]
+  },
   "tab_element_order": {
     "CUSTOM:DrStone": [
       "PetrificationDevice",
       "RevivalFluid",
+      "DistillingPot",
       "StompingPot",
+      "MixingPot",
+      "ClayPot",
       "FiredClayBrick",
-      "Grapes",
       "ClayCup",
       "CookedClayCup",
+      "BatGuanoCup",
+      "CupDistilledAlcohol",
+      "Grapes",
       "CupGrapeJuice",
       "GrapeWine",
       "CupSweetberryJuice",
       "SweetberryWine",
       "CupGlowberryJuice",
-      "GlowberryWine",
-      "ClayPot"
+      "GlowberryWine"
     ]
   },
   "language_map": {
@@ -1768,13 +2212,16 @@
       "gui.drstone.petrification_device_gui.Seconds": "0",
       "item.drstone.stone_villager_spawn_egg": "Stone Villager Spawn Egg",
       "block.drstone.clay_pot": "Clay Pot",
+      "block.drstone.miracle_fluid_pot": "Clay Pot (Bat Guano)",
       "item.drstone.cooked_clay_cup": "Clay Cup",
       "entity.drstone.stone_villager_broken": "Stone Villager",
       "gui.drstone.petrification_device_gui.button_set_conditions": "Set Conditions",
       "item.drstone.stone_human_player_3_spawn_egg": "Stone Human Spawn Egg",
       "gui.drstone.petrification_device_gui.Meters": "0",
+      "item.drstone.bat_guano_cup": "Cup of Bat Guano",
       "item.drstone.glowberry_wine": "Cup of Glowberry Wine",
       "item.drstone.cup_grape_juice": "Cup of Grape Juice",
+      "block.drstone.mixing_pot": "Mixing Pot",
       "item.drstone.grapes": "Grapes",
       "block.drstone.grape_juice_cup": "Grape Juice Cup",
       "block.drstone.stomping_pot": "Stomping Pot",
@@ -1792,7 +2239,10 @@
       "effect.drstone.intoxicated": "Intoxicated",
       "item.drstone.petrification_device": "Petrification Device",
       "block.drstone.grape_bush_vine": "Grape Bush Vine",
-      "item.drstone.revival_fluid": "Miracle Fluid"
+      "item.drstone.revival_fluid": "Miracle Fluid",
+      "block.drstone.miracle_dripstone": "Miracle Dripstone",
+      "item.drstone.cup_distilled_alcohol": "Cup of Distilled Alcohol",
+      "block.drstone.distilling_pot": "Distilling Pot"
     }
   },
   "foldersRoot": {
@@ -1811,6 +2261,10 @@
           },
           {
             "name": "Food",
+            "children": []
+          },
+          {
+            "name": "Misc",
             "children": []
           }
         ]
@@ -1900,6 +2354,10 @@
       },
       {
         "name": "GUI",
+        "children": []
+      },
+      {
+        "name": "Structures",
         "children": []
       }
     ]
