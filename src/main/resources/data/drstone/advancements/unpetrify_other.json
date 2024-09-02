@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "drstone:senkuu_armor_chestplate"
+    },
+    "title": {
+      "translate": "advancements.unpetrify_other.title"
+    },
+    "description": {
+      "translate": "advancements.unpetrify_other.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "unpetrify_other_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "drstone:get_miracle_fluid"
+}

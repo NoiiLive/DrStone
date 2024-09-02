@@ -16,6 +16,7 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.chat.Component;
 
+import net.clozynoii.drstone.procedures.RemoveDeviceProcedure;
 import net.clozynoii.drstone.procedures.PetrificationMenuProcedure;
 import net.clozynoii.drstone.entity.PetrificationThrownEntity;
 
@@ -40,6 +41,7 @@ public class PetrificationDeviceItem extends Item {
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
 		list.add(Component.literal("\u00A77\u00A7oA device, able to petrify people in their place."));
+		list.add(Component.literal("\u00A7b[WIP] May not work as Intended"));
 	}
 
 	@Override
@@ -51,6 +53,16 @@ public class PetrificationDeviceItem extends Item {
 		}
 		PetrificationMenuProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity);
 		return ar;
+	}
+
+	@Override
+	public ItemStack finishUsingItem(ItemStack itemstack, Level world, LivingEntity entity) {
+		ItemStack retval = super.finishUsingItem(itemstack, world, entity);
+		double x = entity.getX();
+		double y = entity.getY();
+		double z = entity.getZ();
+		RemoveDeviceProcedure.execute(entity);
+		return retval;
 	}
 
 	@Override

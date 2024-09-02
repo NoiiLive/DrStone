@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:cobblestone"
+    },
+    "title": {
+      "translate": "advancements.unpetrify_broken.title"
+    },
+    "description": {
+      "translate": "advancements.unpetrify_broken.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "unpetrify_broken_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "drstone:unpetrify_other"
+}

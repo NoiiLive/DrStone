@@ -13,6 +13,7 @@ import net.minecraft.world.level.block.Block;
 import net.clozynoii.drstone.block.SweetberryWineClayPotBlock;
 import net.clozynoii.drstone.block.SweetberryJuiceCupBlock;
 import net.clozynoii.drstone.block.StompingPotBlock;
+import net.clozynoii.drstone.block.PlayerOfflineBlock;
 import net.clozynoii.drstone.block.MixingPotBlock;
 import net.clozynoii.drstone.block.MiracleFluidPotBlock;
 import net.clozynoii.drstone.block.MiracleDripstoneBlock;
@@ -44,6 +45,7 @@ public class DrstoneModBlocks {
 	public static final RegistryObject<Block> MIRACLE_FLUID_POT = REGISTRY.register("miracle_fluid_pot", () -> new MiracleFluidPotBlock());
 	public static final RegistryObject<Block> MIXING_POT = REGISTRY.register("mixing_pot", () -> new MixingPotBlock());
 	public static final RegistryObject<Block> DISTILLING_POT = REGISTRY.register("distilling_pot", () -> new DistillingPotBlock());
+	public static final RegistryObject<Block> PLAYER_OFFLINE = REGISTRY.register("player_offline", () -> new PlayerOfflineBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

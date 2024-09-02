@@ -2,6 +2,7 @@ package net.clozynoii.drstone.procedures;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
@@ -10,9 +11,13 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.core.BlockPos;
+
+import net.clozynoii.drstone.network.DrstoneModVariables;
+import net.clozynoii.drstone.init.DrstoneModBlocks;
 
 public class PetrifiedEffectProcedure {
-	public static void execute(Entity entity) {
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
@@ -25,6 +30,12 @@ public class PetrifiedEffectProcedure {
 			_entity.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 20, 0, false, false));
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 40, 0, false, false));
+		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+			_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 20, 9, false, false));
+		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+			_entity.addEffect(new MobEffectInstance(MobEffects.WATER_BREATHING, 20, 0, false, false));
+		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+			_entity.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 20, 0, false, false));
 		if (entity.onGround()) {
 			entity.makeStuckInBlock(Blocks.AIR.defaultBlockState(), new Vec3(0.25, 0.05, 0.25));
 		}
@@ -35,6 +46,27 @@ public class PetrifiedEffectProcedure {
 				_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
 				if (_entity instanceof Player _player)
 					_player.getInventory().setChanged();
+			}
+		}
+		if ((world.getBlockState(BlockPos.containing(x, y + 2, z))).getBlock() == DrstoneModBlocks.MIRACLE_DRIPSTONE.get() || (world.getBlockState(BlockPos.containing(x, y + 3, z))).getBlock() == DrstoneModBlocks.MIRACLE_DRIPSTONE.get()
+				|| (world.getBlockState(BlockPos.containing(x, y + 4, z))).getBlock() == DrstoneModBlocks.MIRACLE_DRIPSTONE.get()) {
+			if ((entity.getCapability(DrstoneModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new DrstoneModVariables.PlayerVariables())).NaturalUnpetrify > 1) {
+				{
+					double _setval = (entity.getCapability(DrstoneModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new DrstoneModVariables.PlayerVariables())).NaturalUnpetrify - 1;
+					entity.getCapability(DrstoneModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.NaturalUnpetrify = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+			}
+		}
+		if ((entity.getCapability(DrstoneModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new DrstoneModVariables.PlayerVariables())).FirstAwaken > 1) {
+			{
+				double _setval = (entity.getCapability(DrstoneModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new DrstoneModVariables.PlayerVariables())).FirstAwaken - 1;
+				entity.getCapability(DrstoneModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.FirstAwaken = _setval;
+					capability.syncPlayerVariables(entity);
+				});
 			}
 		}
 	}

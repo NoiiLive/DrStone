@@ -66,6 +66,7 @@ public class DrstoneModItems {
 	public static final RegistryObject<Item> CUP_DISTILLED_ALCOHOL = REGISTRY.register("cup_distilled_alcohol", () -> new CupDistilledAlcoholItem());
 	public static final RegistryObject<Item> MIXING_POT = REGISTRY.register(DrstoneModBlocks.MIXING_POT.getId().getPath(), () -> new MixingPotDisplayItem(DrstoneModBlocks.MIXING_POT.get(), new Item.Properties()));
 	public static final RegistryObject<Item> DISTILLING_POT = REGISTRY.register(DrstoneModBlocks.DISTILLING_POT.getId().getPath(), () -> new DistillingPotDisplayItem(DrstoneModBlocks.DISTILLING_POT.get(), new Item.Properties()));
+	public static final RegistryObject<Item> PLAYER_OFFLINE = block(DrstoneModBlocks.PLAYER_OFFLINE);
 
 	// Start of user code block custom items
 	// End of user code block custom items

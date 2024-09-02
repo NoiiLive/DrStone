@@ -82,10 +82,13 @@ public class DrstoneModVariables {
 			event.getOriginal().revive();
 			PlayerVariables original = ((PlayerVariables) event.getOriginal().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 			PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
+			clone.DeviceMeters = original.DeviceMeters;
+			clone.DeviceSeconds = original.DeviceSeconds;
 			clone.FirstUnpetrify = original.FirstUnpetrify;
+			clone.FirstAwaken = original.FirstAwaken;
+			clone.NaturalUnpetrify = original.NaturalUnpetrify;
+			clone.JoinedWorld = original.JoinedWorld;
 			if (!event.isWasDeath()) {
-				clone.DeviceMeters = original.DeviceMeters;
-				clone.DeviceSeconds = original.DeviceSeconds;
 			}
 			if (!event.getEntity().level().isClientSide()) {
 				for (Entity entityiterator : new ArrayList<>(event.getEntity().level().players())) {
@@ -154,6 +157,8 @@ public class DrstoneModVariables {
 		public static final String DATA_NAME = "drstone_mapvars";
 		public boolean MassPetrificationEvent = false;
 		public boolean MiracleCaveSpawned = false;
+		public boolean WorldCreated = false;
+		public double PetrificationTimer = 0.0;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -164,12 +169,16 @@ public class DrstoneModVariables {
 		public void read(CompoundTag nbt) {
 			MassPetrificationEvent = nbt.getBoolean("MassPetrificationEvent");
 			MiracleCaveSpawned = nbt.getBoolean("MiracleCaveSpawned");
+			WorldCreated = nbt.getBoolean("WorldCreated");
+			PetrificationTimer = nbt.getDouble("PetrificationTimer");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt) {
 			nbt.putBoolean("MassPetrificationEvent", MassPetrificationEvent);
 			nbt.putBoolean("MiracleCaveSpawned", MiracleCaveSpawned);
+			nbt.putBoolean("WorldCreated", WorldCreated);
+			nbt.putDouble("PetrificationTimer", PetrificationTimer);
 			return nbt;
 		}
 
@@ -265,6 +274,9 @@ public class DrstoneModVariables {
 		public double DeviceMeters = 0;
 		public double DeviceSeconds = 0;
 		public boolean FirstUnpetrify = false;
+		public double FirstAwaken = 0.0;
+		public double NaturalUnpetrify = 72000.0;
+		public boolean JoinedWorld = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -276,6 +288,9 @@ public class DrstoneModVariables {
 			nbt.putDouble("DeviceMeters", DeviceMeters);
 			nbt.putDouble("DeviceSeconds", DeviceSeconds);
 			nbt.putBoolean("FirstUnpetrify", FirstUnpetrify);
+			nbt.putDouble("FirstAwaken", FirstAwaken);
+			nbt.putDouble("NaturalUnpetrify", NaturalUnpetrify);
+			nbt.putBoolean("JoinedWorld", JoinedWorld);
 			return nbt;
 		}
 
@@ -284,6 +299,9 @@ public class DrstoneModVariables {
 			DeviceMeters = nbt.getDouble("DeviceMeters");
 			DeviceSeconds = nbt.getDouble("DeviceSeconds");
 			FirstUnpetrify = nbt.getBoolean("FirstUnpetrify");
+			FirstAwaken = nbt.getDouble("FirstAwaken");
+			NaturalUnpetrify = nbt.getDouble("NaturalUnpetrify");
+			JoinedWorld = nbt.getBoolean("JoinedWorld");
 		}
 	}
 
@@ -320,6 +338,9 @@ public class DrstoneModVariables {
 					variables.DeviceMeters = message.data.DeviceMeters;
 					variables.DeviceSeconds = message.data.DeviceSeconds;
 					variables.FirstUnpetrify = message.data.FirstUnpetrify;
+					variables.FirstAwaken = message.data.FirstAwaken;
+					variables.NaturalUnpetrify = message.data.NaturalUnpetrify;
+					variables.JoinedWorld = message.data.JoinedWorld;
 				}
 			});
 			context.setPacketHandled(true);

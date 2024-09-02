@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "drstone:cup_grape_juice"
+    },
+    "title": {
+      "translate": "advancements.juice_making.title"
+    },
+    "description": {
+      "translate": "advancements.juice_making.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "juice_making_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "drstone:get_stomping_pot"
+}

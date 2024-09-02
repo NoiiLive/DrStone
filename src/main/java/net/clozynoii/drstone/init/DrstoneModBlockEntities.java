@@ -13,6 +13,7 @@ import net.minecraft.world.level.block.Block;
 
 import net.clozynoii.drstone.block.entity.SweetberryWineClayPotBlockEntity;
 import net.clozynoii.drstone.block.entity.StompingPotTileEntity;
+import net.clozynoii.drstone.block.entity.PlayerOfflineBlockEntity;
 import net.clozynoii.drstone.block.entity.MixingPotTileEntity;
 import net.clozynoii.drstone.block.entity.GrapeWineClayPotBlockEntity;
 import net.clozynoii.drstone.block.entity.GlowberryWineClayPotBlockEntity;
@@ -29,6 +30,7 @@ public class DrstoneModBlockEntities {
 	public static final RegistryObject<BlockEntityType<?>> SWEETBERRY_WINE_CLAY_POT = register("sweetberry_wine_clay_pot", DrstoneModBlocks.SWEETBERRY_WINE_CLAY_POT, SweetberryWineClayPotBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<MixingPotTileEntity>> MIXING_POT = REGISTRY.register("mixing_pot", () -> BlockEntityType.Builder.of(MixingPotTileEntity::new, DrstoneModBlocks.MIXING_POT.get()).build(null));
 	public static final RegistryObject<BlockEntityType<DistillingPotTileEntity>> DISTILLING_POT = REGISTRY.register("distilling_pot", () -> BlockEntityType.Builder.of(DistillingPotTileEntity::new, DrstoneModBlocks.DISTILLING_POT.get()).build(null));
+	public static final RegistryObject<BlockEntityType<?>> PLAYER_OFFLINE = register("player_offline", DrstoneModBlocks.PLAYER_OFFLINE, PlayerOfflineBlockEntity::new);
 
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block, BlockEntityType.BlockEntitySupplier<?> supplier) {
 		return REGISTRY.register(registryname, () -> BlockEntityType.Builder.of(supplier, block.get()).build(null));

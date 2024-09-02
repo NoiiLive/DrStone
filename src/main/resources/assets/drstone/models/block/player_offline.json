@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "drstone:block/air",
+    "particle": "drstone:block/air"
+  },
+  "render_type": "cutout"
+}

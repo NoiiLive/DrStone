@@ -14,7 +14,7 @@ import net.minecraft.client.gui.components.EditBox;
 
 import net.clozynoii.drstone.network.DrstoneModVariables;
 import net.clozynoii.drstone.init.DrstoneModItems;
-import net.clozynoii.drstone.init.DrstoneModGameRules;
+import net.clozynoii.drstone.configuration.DrStoneConfigConfiguration;
 
 import java.util.List;
 import java.util.HashMap;
@@ -33,7 +33,7 @@ public class DeviceConditionsSetProcedure {
 					}
 					return 0;
 				}
-			}.convert(guistate.containsKey("text:Meters") ? ((EditBox) guistate.get("text:Meters")).getValue() : "") <= (world.getLevelData().getGameRules().getInt(DrstoneModGameRules.DS_DEVICE_RADIUS))) {
+			}.convert(guistate.containsKey("text:Meters") ? ((EditBox) guistate.get("text:Meters")).getValue() : "") <= (double) DrStoneConfigConfiguration.DEVICERANGE.get()) {
 				(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putDouble("Meters", new Object() {
 					double convert(String s) {
 						try {
@@ -59,9 +59,9 @@ public class DeviceConditionsSetProcedure {
 					});
 				}
 			} else {
-				(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putDouble("Meters", (world.getLevelData().getGameRules().getInt(DrstoneModGameRules.DS_DEVICE_RADIUS)));
+				(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putDouble("Meters", ((double) DrStoneConfigConfiguration.DEVICERANGE.get()));
 				{
-					double _setval = (world.getLevelData().getGameRules().getInt(DrstoneModGameRules.DS_DEVICE_RADIUS));
+					double _setval = (double) DrStoneConfigConfiguration.DEVICERANGE.get();
 					entity.getCapability(DrstoneModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.DeviceMeters = _setval;
 						capability.syncPlayerVariables(entity);
@@ -127,7 +127,7 @@ public class DeviceConditionsSetProcedure {
 					}
 					return 0;
 				}
-			}.convert(guistate.containsKey("text:Meters") ? ((EditBox) guistate.get("text:Meters")).getValue() : "") <= (world.getLevelData().getGameRules().getInt(DrstoneModGameRules.DS_DEVICE_RADIUS))) {
+			}.convert(guistate.containsKey("text:Meters") ? ((EditBox) guistate.get("text:Meters")).getValue() : "") <= (double) DrStoneConfigConfiguration.DEVICERANGE.get()) {
 				(entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getOrCreateTag().putDouble("Meters", new Object() {
 					double convert(String s) {
 						try {
@@ -153,9 +153,9 @@ public class DeviceConditionsSetProcedure {
 					});
 				}
 			} else {
-				(entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getOrCreateTag().putDouble("Meters", (world.getLevelData().getGameRules().getInt(DrstoneModGameRules.DS_DEVICE_RADIUS)));
+				(entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getOrCreateTag().putDouble("Meters", ((double) DrStoneConfigConfiguration.DEVICERANGE.get()));
 				{
-					double _setval = (world.getLevelData().getGameRules().getInt(DrstoneModGameRules.DS_DEVICE_RADIUS));
+					double _setval = (double) DrStoneConfigConfiguration.DEVICERANGE.get();
 					entity.getCapability(DrstoneModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.DeviceMeters = _setval;
 						capability.syncPlayerVariables(entity);

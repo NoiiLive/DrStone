@@ -10,6 +10,6 @@ import net.minecraft.world.level.GameRules;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class DrstoneModGameRules {
-	public static final GameRules.Key<GameRules.BooleanValue> DS_SPAWN_PETRIFIED = GameRules.register("dsSpawnPetrified", GameRules.Category.PLAYER, GameRules.BooleanValue.create(true));
-	public static final GameRules.Key<GameRules.IntegerValue> DS_DEVICE_RADIUS = GameRules.register("dsDeviceRadius", GameRules.Category.MISC, GameRules.IntegerValue.create(1000));
+	public static final GameRules.Key<GameRules.BooleanValue> DS_SPAWN_PETRIFIED = GameRules.register("dsSpawnPetrified", GameRules.Category.MISC, GameRules.BooleanValue.create(true));
+	public static final GameRules.Key<GameRules.BooleanValue> DS_MASS_PETRIFICATION = GameRules.register("dsMassPetrification", GameRules.Category.MISC, GameRules.BooleanValue.create(true));
 }

@@ -5,7 +5,7 @@
     "type": "Logic",
     "displayName": "Spawn Petrified",
     "description": "Changes players being petrified when joining AFTER mass petrification.",
-    "category": "PLAYER",
+    "category": "MISC",
     "defaultValueLogic": true,
     "defaultValueNumber": 0
   }

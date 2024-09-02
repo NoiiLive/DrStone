@@ -1,0 +1,23 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "drstone:petrification_device"
+    },
+    "title": {
+      "translate": "advancements.dr_stone_ko_s.title"
+    },
+    "description": {
+      "translate": "advancements.dr_stone_ko_s.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "dr_stone_ko_s_0": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

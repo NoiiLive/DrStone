@@ -22,6 +22,7 @@ import net.clozynoii.drstone.network.DrstoneModVariables;
 import net.clozynoii.drstone.init.DrstoneModMobEffects;
 import net.clozynoii.drstone.init.DrstoneModEntities;
 import net.clozynoii.drstone.entity.PetrificationThrownEntity;
+import net.clozynoii.drstone.configuration.DrStoneConfigConfiguration;
 
 import java.util.List;
 import java.util.Comparator;
@@ -48,13 +49,44 @@ public class PetrificateProcedure {
 				}
 				if (entityiterator instanceof Player) {
 					if (!(entityiterator instanceof LivingEntity _livEnt5 && _livEnt5.hasEffect(DrstoneModMobEffects.PETRIFIED.get()))) {
+						{
+							double _setval = (double) DrStoneConfigConfiguration.NATURALUNPETRIFY.get();
+							entityiterator.getCapability(DrstoneModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+								capability.NaturalUnpetrify = _setval;
+								capability.syncPlayerVariables(entityiterator);
+							});
+						}
 						if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 							_entity.addEffect(new MobEffectInstance(DrstoneModMobEffects.PETRIFIED.get(), 9999999, 0, false, false));
-						if (world instanceof ServerLevel _level)
-							_level.getServer().getCommands().performPrefixedCommand(
-									new CommandSourceStack(CommandSource.NULL, new Vec3((entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ())), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null)
-											.withSuppressedOutput(),
-									("summon drstone:stone_human_player_1 ~ ~ ~ {Owner:" + entityiterator.getStringUUID() + "}"));
+						if (Math.random() <= 0.5) {
+							if (world instanceof ServerLevel _level)
+								_level.getServer().getCommands().performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL, new Vec3((entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ())), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null)
+												.withSuppressedOutput(),
+										("summon drstone:stone_human_player_1 ~ ~ ~ {Owner:" + entityiterator.getStringUUID() + "}"));
+						} else {
+							if (Math.random() <= 0.5) {
+								if (world instanceof ServerLevel _level)
+									_level.getServer().getCommands().performPrefixedCommand(
+											new CommandSourceStack(CommandSource.NULL, new Vec3((entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ())), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null)
+													.withSuppressedOutput(),
+											("summon drstone:stone_human_player_2 ~ ~ ~ {Owner:" + entityiterator.getStringUUID() + "}"));
+							} else {
+								if (Math.random() <= 0.5) {
+									if (world instanceof ServerLevel _level)
+										_level.getServer().getCommands().performPrefixedCommand(
+												new CommandSourceStack(CommandSource.NULL, new Vec3((entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ())), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null)
+														.withSuppressedOutput(),
+												("summon drstone:stone_human_player_3 ~ ~ ~ {Owner:" + entityiterator.getStringUUID() + "}"));
+								} else {
+									if (world instanceof ServerLevel _level)
+										_level.getServer().getCommands().performPrefixedCommand(
+												new CommandSourceStack(CommandSource.NULL, new Vec3((entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ())), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null)
+														.withSuppressedOutput(),
+												("summon drstone:stone_human_player_4 ~ ~ ~ {Owner:" + entityiterator.getStringUUID() + "}"));
+								}
+							}
+						}
 					}
 				}
 				if (entityiterator instanceof Villager) {

@@ -1,0 +1,93 @@
+{
+  "_fv": 66,
+  "_type": "config",
+  "definition": {
+    "pools": [
+      {
+        "category": "Items",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 1000.0,
+            "textDefault": "",
+            "comment": "Changes the maximum range of the petrification device, time is in ticks. (Default: 1000)",
+            "vardisplay": "Petrification Device Range",
+            "varname": "deviceRange",
+            "enablecomment": true,
+            "stringlist": []
+          }
+        ]
+      },
+      {
+        "category": "Players",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 72000.0,
+            "textDefault": "",
+            "comment": "The time it takes to naturally unpetrify when underneath a miracle dripstone, time is in ticks (Default: 72000)",
+            "vardisplay": "Natural Unpetrifying Timer",
+            "varname": "naturalUnpetrify",
+            "enablecomment": true,
+            "stringlist": []
+          },
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 4500.0,
+            "textDefault": "",
+            "comment": "Changes the time it takes for the first player to wake up, time is in ticks (Default: 4500)",
+            "vardisplay": "First Awakening Timer",
+            "varname": "firstAwakenTime",
+            "enablecomment": true,
+            "stringlist": []
+          }
+        ]
+      },
+      {
+        "category": "World",
+        "entries": [
+          {
+            "item": {
+              "value": ""
+            },
+            "silkTouchMode": 1,
+            "block": {
+              "value": ""
+            },
+            "logicField": 0,
+            "numberField": 8000.0,
+            "textDefault": "",
+            "comment": "The time that can pass before the Mass Petrification Event will trigger, time is in ticks. (Default: 8000)",
+            "vardisplay": "Mass Petrification Event Timer",
+            "varname": "massEventTime",
+            "enablecomment": true,
+            "stringlist": []
+          }
+        ]
+      }
+    ],
+    "file": "drstone_main",
+    "configType": 0
+  }
+}

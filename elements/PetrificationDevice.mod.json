@@ -30,7 +30,8 @@
     "damageVsEntity": 0.0,
     "specialInformation": {
       "fixedValue": [
-        "§7§oA device, able to petrify people in their place."
+        "§7§oA device, able to petrify people in their place.",
+        "§b[WIP] May not work as Intended"
       ]
     },
     "glowCondition": {
@@ -41,6 +42,9 @@
     "inventoryStackSize": 64,
     "onRightClickedInAir": {
       "name": "PetrificationMenu"
+    },
+    "onFinishUsingItem": {
+      "name": "RemoveDevice"
     },
     "enableRanged": true,
     "shootConstantly": false,

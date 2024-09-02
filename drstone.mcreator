@@ -87,6 +87,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -612,6 +628,10 @@
           "src/main/java/net/clozynoii/drstone/procedures/DropPetriDeviceProcedure.java"
         ],
         "dependencies": [
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
           {
             "name": "x",
             "type": "number"
@@ -2117,7 +2137,7 @@
           }
         ]
       },
-      "path": "~/Procedures/Player"
+      "path": "~/Procedures/Items"
     },
     {
       "name": "PetrifiedHidePlayer",
@@ -2178,29 +2198,392 @@
       "path": "~/Procedures/Entities"
     },
     {
-      "name": "DsDeviceRadius",
+      "name": "PlayerJoined",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_joined",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/procedures/PlayerJoinedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Player"
+    },
+    {
+      "name": "MassPetrificationEvent",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mass_petrification_event",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/procedures/MassPetrificationEventProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/World"
+    },
+    {
+      "name": "DsMassPetrification",
       "type": "gamerule",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "ds_device_radius",
+      "registry_name": "ds_mass_petrification",
       "metadata": {
         "files": [],
-        "type": "number"
+        "type": "logic"
       },
       "path": "~/Misc/Gamerules"
+    },
+    {
+      "name": "PlayerOffline",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_offline",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/block/entity/PlayerOfflineBlockEntity.java",
+          "src/main/resources/data/drstone/loot_tables/blocks/player_offline.json",
+          "src/main/resources/assets/drstone/models/item/player_offline.json",
+          "src/main/java/net/clozynoii/drstone/block/PlayerOfflineBlock.java",
+          "src/main/resources/assets/drstone/blockstates/player_offline.json",
+          "src/main/resources/assets/drstone/models/block/player_offline.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "DetectPlayerJoined",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "detect_player_joined",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/procedures/DetectPlayerJoinedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Block"
+    },
+    {
+      "name": "VillagerStoneUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "villager_stone_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/procedures/VillagerStoneUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Entities"
+    },
+    {
+      "name": "RemoveDevice",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "remove_device",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/procedures/RemoveDeviceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Items"
+    },
+    {
+      "name": "UnpetrifyCommand",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unpetrify_command",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/procedures/UnpetrifyCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Command"
+    },
+    {
+      "name": "Unpetrified",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unpetrified",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/drstone/advancements/unpetrified.json"
+        ]
+      },
+      "path": "~/Misc/Achievements"
+    },
+    {
+      "name": "DrStoneKoS",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dr_stone_ko_s",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/drstone/advancements/dr_stone_ko_s.json"
+        ]
+      },
+      "path": "~/Misc/Achievements"
+    },
+    {
+      "name": "DrStoneConfig",
+      "type": "config",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dr_stone_config",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/configuration/DrStoneConfigConfiguration.java"
+        ]
+      },
+      "path": "~/Misc/Configs"
+    },
+    {
+      "name": "WineMaking",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wine_making",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/drstone/advancements/wine_making.json"
+        ]
+      },
+      "path": "~/Misc/Achievements"
+    },
+    {
+      "name": "AlcoholMaking",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alcohol_making",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/drstone/advancements/alcohol_making.json"
+        ]
+      },
+      "path": "~/Misc/Achievements"
+    },
+    {
+      "name": "GetBatGuano",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_bat_guano",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/drstone/advancements/get_bat_guano.json"
+        ]
+      },
+      "path": "~/Misc/Achievements"
+    },
+    {
+      "name": "GetMiracleFluid",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_miracle_fluid",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/drstone/advancements/get_miracle_fluid.json"
+        ]
+      },
+      "path": "~/Misc/Achievements"
+    },
+    {
+      "name": "GetStompingPot",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_stomping_pot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/drstone/advancements/get_stomping_pot.json"
+        ]
+      },
+      "path": "~/Misc/Achievements"
+    },
+    {
+      "name": "JuiceMaking",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "juice_making",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/drstone/advancements/juice_making.json"
+        ]
+      },
+      "path": "~/Misc/Achievements"
+    },
+    {
+      "name": "GetMixingPot",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_mixing_pot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/drstone/advancements/get_mixing_pot.json"
+        ]
+      },
+      "path": "~/Misc/Achievements"
+    },
+    {
+      "name": "GetDistillingPot",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_distilling_pot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/drstone/advancements/get_distilling_pot.json"
+        ]
+      },
+      "path": "~/Misc/Achievements"
+    },
+    {
+      "name": "GetClayBricks",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_clay_bricks",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/drstone/advancements/get_clay_bricks.json"
+        ]
+      },
+      "path": "~/Misc/Achievements"
+    },
+    {
+      "name": "GetIntoxicated",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_intoxicated",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/drstone/advancements/get_intoxicated.json"
+        ]
+      },
+      "path": "~/Misc/Achievements"
+    },
+    {
+      "name": "UnpetrifyOther",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unpetrify_other",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/drstone/advancements/unpetrify_other.json"
+        ]
+      },
+      "path": "~/Misc/Achievements"
+    },
+    {
+      "name": "UnpetrifyBroken",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unpetrify_broken",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/drstone/advancements/unpetrify_broken.json"
+        ]
+      },
+      "path": "~/Misc/Achievements"
     }
   ],
   "variable_elements": [
     {
       "name": "DeviceMeters",
       "type": "number",
-      "scope": "player_lifetime",
+      "scope": "player_persistent",
       "value": "0"
     },
     {
       "name": "DeviceSeconds",
       "type": "number",
-      "scope": "player_lifetime",
+      "scope": "player_persistent",
       "value": "0"
     },
     {
@@ -2220,6 +2603,36 @@
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
+    },
+    {
+      "name": "WorldCreated",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "PetrificationTimer",
+      "type": "number",
+      "scope": "map",
+      "value": "0.0"
+    },
+    {
+      "name": "FirstAwaken",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0.0"
+    },
+    {
+      "name": "NaturalUnpetrify",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "72000.0"
+    },
+    {
+      "name": "JoinedWorld",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
     }
   ],
   "sound_elements": [],
@@ -2227,6 +2640,9 @@
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:DistillingPot",
       "~CUSTOM:MiracleDripstone"
+    ],
+    "BLOCKS:minecraft:mineable/hoe": [
+      "~CUSTOM:PlayerOffline"
     ]
   },
   "tab_element_order": {
@@ -2253,41 +2669,63 @@
   },
   "language_map": {
     "en_us": {
+      "advancements.get_distilling_pot.title": "Mesopotamian Style",
+      "advancements.get_intoxicated.title": "Where are my keys?",
       "block.drstone.glowberry_wine_clay_pot": "Clay Pot (Glowberry Wine)",
-      "entity.drstone.stone_villager": "Stone Villager",
       "block.drstone.empty_cup": "Empty Cup",
+      "entity.drstone.stone_villager": "Stone Villager",
+      "advancements.unpetrified.descr": "Awaken from your stone slumber.",
       "effect.drstone.petrified": "Petrified",
       "item.drstone.grape_wine": "Cup of Grape Wine",
       "item.drstone.cup_sweetberry_juice": "Cup of Sweetberry Juice",
+      "advancements.unpetrify_broken.title": "Why.",
       "item.drstone.clay_cup": "Clay Cup",
+      "advancements.unpetrify_broken.descr": "Unpetrify a broken statue",
+      "advancements.get_intoxicated.descr": "Become Intoxicated",
       "item.drstone.senkuu_armor_leggings": "Senkuu\u0027s Pants",
+      "advancements.unpetrified.title": "10 Billion Percent!",
       "gamerule.dsSpawnPetrified": "Spawn Petrified",
-      "block.drstone.glowberry_juice_cup": "Glowberry Juice Cup",
-      "item.drstone.stone_human_player_1_spawn_egg": "Stone Human Spawn Egg",
       "block.drstone.grape_bush_vine_mature": "Grape Bush Vine",
+      "item.drstone.stone_human_player_1_spawn_egg": "Stone Human Spawn Egg",
+      "block.drstone.glowberry_juice_cup": "Glowberry Juice Cup",
+      "advancements.get_bat_guano.title": "It stinks!",
       "item_group.drstone.dr_drip": "Dr. Stone Armor",
       "block.drstone.sweetberry_wine_clay_pot": "Clay Pot (Sweetberry Wine)",
       "item.drstone.cup_glowberry_juice": "Cup of Glowberry Juice",
       "block.drstone.grape_wine_clay_pot": "Clay Pot (Grape Wine)",
+      "advancements.dr_stone_ko_s.title": "Dr. Stone: Kingdom of Science",
       "item.drstone.senkuu_armor_chestplate": "Senkuu\u0027s Coat",
+      "advancements.get_miracle_fluid.descr": "Obtain the Miracle Fluid",
       "item.drstone.stone_villager_broken_spawn_egg": "Stone Villager Spawn Egg",
+      "advancements.unpetrify_other.descr": "Free someone from the stone using Miracle Fluid",
       "item.drstone.stone_human_player_4_spawn_egg": "Stone Human Spawn Egg",
       "item_group.drstone.dr_stone": "Dr. Stone",
+      "block.drstone.player_offline": "Player Offline",
       "gui.drstone.petrification_device_gui.Seconds": "0",
       "item.drstone.stone_villager_spawn_egg": "Stone Villager Spawn Egg",
+      "advancements.get_distilling_pot.descr": "Create a distilling pot to make alcohol",
       "gamerule.dsSpawnPetrified.description": "Changes players being petrified when joining AFTER mass petrification.",
+      "advancements.get_clay_bricks.descr": "Create your first clay brick",
       "block.drstone.clay_pot": "Clay Pot",
       "block.drstone.miracle_fluid_pot": "Clay Pot (Bat Guano)",
+      "advancements.alcohol_making.descr": "Make Distilled Alcohol",
+      "advancements.wine_making.descr": "Create some wine",
+      "advancements.alcohol_making.title": "Is this allowed?",
       "item.drstone.cooked_clay_cup": "Clay Cup",
+      "advancements.juice_making.title": "Juice Artificer",
       "entity.drstone.stone_villager_broken": "Stone Villager",
+      "advancements.get_mixing_pot.descr": "Create a mixing pot to combine your ingredients",
       "gui.drstone.petrification_device_gui.button_set_conditions": "Set Conditions",
-      "gamerule.dsDeviceRadius": "Petrification Device Radius",
       "item.drstone.stone_human_player_3_spawn_egg": "Stone Human Spawn Egg",
       "gui.drstone.petrification_device_gui.Meters": "0",
+      "advancements.juice_making.descr": "Create your first juice",
+      "advancements.get_mixing_pot.title": "Mix it up!",
       "item.drstone.bat_guano_cup": "Cup of Bat Guano",
       "item.drstone.glowberry_wine": "Cup of Glowberry Wine",
       "item.drstone.cup_grape_juice": "Cup of Grape Juice",
       "block.drstone.mixing_pot": "Mixing Pot",
+      "advancements.get_stomping_pot.descr": "Obtain a stomping pot to make juice",
+      "advancements.get_stomping_pot.title": "Brain vs Brawn",
       "item.drstone.grapes": "Grapes",
       "block.drstone.grape_juice_cup": "Grape Juice Cup",
       "block.drstone.stomping_pot": "Stomping Pot",
@@ -2295,8 +2733,8 @@
       "entity.drstone.stone_human_player_4": "Stone Human",
       "block.drstone.sweetberry_juice_cup": "Sweetberry Juice Cup",
       "item.drstone.senkuu_armor_boots": "Senkuu\u0027s Shoes",
+      "advancements.unpetrify_other.title": "Fantasy vs Science",
       "entity.drstone.stone_human_player_1": "Stone Human",
-      "gamerule.dsDeviceRadius.description": "Changes the distance cap on the petrification device",
       "entity.drstone.stone_human_player_2": "Stone Human",
       "item.drstone.stone_human_player_2_spawn_egg": "Stone Human Spawn Egg",
       "entity.drstone.stone_human_player_3": "Stone Human",
@@ -2305,10 +2743,17 @@
       "item.drstone.fired_clay_brick": "Clay Brick",
       "effect.drstone.intoxicated": "Intoxicated",
       "item.drstone.petrification_device": "Petrification Device",
+      "advancements.dr_stone_ko_s.descr": "Thanks for playing the mod!",
       "block.drstone.grape_bush_vine": "Grape Bush Vine",
+      "advancements.get_miracle_fluid.title": "This is exhilarating!",
+      "gamerule.dsMassPetrification.description": "Toggles the Mass Petrification Event from happening.",
+      "advancements.get_bat_guano.descr": "Obtain some bat guano",
       "item.drstone.revival_fluid": "Miracle Fluid",
+      "advancements.wine_making.title": "Anti-Prohibition",
       "block.drstone.miracle_dripstone": "Miracle Dripstone",
+      "advancements.get_clay_bricks.title": "The Foundations",
       "item.drstone.cup_distilled_alcohol": "Cup of Distilled Alcohol",
+      "gamerule.dsMassPetrification": "Mass Petrification Event",
       "block.drstone.distilling_pot": "Distilling Pot"
     }
   },
@@ -2332,6 +2777,14 @@
           },
           {
             "name": "Player",
+            "children": []
+          },
+          {
+            "name": "Command",
+            "children": []
+          },
+          {
+            "name": "World",
             "children": []
           }
         ]
@@ -2420,6 +2873,14 @@
           {
             "name": "GUI",
             "children": []
+          },
+          {
+            "name": "Achievements",
+            "children": []
+          },
+          {
+            "name": "Configs",
+            "children": []
           }
         ]
       }
@@ -2429,8 +2890,9 @@
     "modid": "drstone",
     "modName": "Dr. Stone: Kingdom of Science",
     "version": "1.0.0",
-    "author": "noiit, MCreator",
-    "websiteURL": "https://mcreator.net",
+    "description": "Adds Dr. Stone Items and Technology into Minecraft",
+    "author": "NoiiLive",
+    "websiteURL": "https://discord.gg/TJj3Sk52Jq",
     "license": "All Rights Reserved",
     "serverSideOnly": false,
     "modPicture": "drkosicon",
@@ -2439,11 +2901,10 @@
     "dependants": [],
     "mcreatorDependencies": [
       "kleidersplayerrenderer",
-      "geckolib",
-      "playeranimator"
+      "geckolib"
     ],
     "currentGenerator": "forge-1.20.1",
-    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "credits": "NoiiLive, Riichiro Inagaki",
     "modElementsPackage": "net.clozynoii.drstone"
   },
   "mcreatorVersion": 202400232117

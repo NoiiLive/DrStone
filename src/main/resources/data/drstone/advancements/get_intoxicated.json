@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "drstone:sweetberry_wine"
+    },
+    "title": {
+      "translate": "advancements.get_intoxicated.title"
+    },
+    "description": {
+      "translate": "advancements.get_intoxicated.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "get_intoxicated_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "drstone:wine_making"
+}

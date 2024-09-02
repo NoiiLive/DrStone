@@ -15,12 +15,15 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.particles.BlockParticleOption;
 import net.minecraft.core.BlockPos;
+import net.minecraft.advancements.AdvancementProgress;
+import net.minecraft.advancements.Advancement;
 
 import net.clozynoii.drstone.init.DrstoneModItems;
 
@@ -83,6 +86,10 @@ public class StompingPotUseProcedure {
 						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.sweet_berry_bush.place")), SoundSource.BLOCKS, 1, (float) 0.8, false);
 					}
 				}
+				if (entity instanceof Player _player) {
+					ItemStack _stktoremove = new ItemStack(DrstoneModItems.GRAPES.get());
+					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+				}
 			} else if (new Object() {
 				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 					BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -113,6 +120,10 @@ public class StompingPotUseProcedure {
 					} else {
 						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.sweet_berry_bush.place")), SoundSource.BLOCKS, 1, (float) 0.8, false);
 					}
+				}
+				if (entity instanceof Player _player) {
+					ItemStack _stktoremove = new ItemStack(DrstoneModItems.GRAPES.get());
+					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 				}
 			} else if (new Object() {
 				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
@@ -145,6 +156,10 @@ public class StompingPotUseProcedure {
 						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.sweet_berry_bush.place")), SoundSource.BLOCKS, 1, (float) 0.8, false);
 					}
 				}
+				if (entity instanceof Player _player) {
+					ItemStack _stktoremove = new ItemStack(DrstoneModItems.GRAPES.get());
+					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+				}
 			} else if (new Object() {
 				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 					BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -176,6 +191,10 @@ public class StompingPotUseProcedure {
 						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.sweet_berry_bush.place")), SoundSource.BLOCKS, 1, (float) 0.8, false);
 					}
 				}
+				if (entity instanceof Player _player) {
+					ItemStack _stktoremove = new ItemStack(DrstoneModItems.GRAPES.get());
+					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+				}
 			} else if (new Object() {
 				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 					BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -206,6 +225,10 @@ public class StompingPotUseProcedure {
 					} else {
 						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.sweet_berry_bush.place")), SoundSource.BLOCKS, 1, (float) 0.8, false);
 					}
+				}
+				if (entity instanceof Player _player) {
+					ItemStack _stktoremove = new ItemStack(DrstoneModItems.GRAPES.get());
+					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 				}
 			} else if (new Object() {
 				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
@@ -273,6 +296,10 @@ public class StompingPotUseProcedure {
 						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.sweet_berry_bush.place")), SoundSource.BLOCKS, 1, (float) 0.8, false);
 					}
 				}
+				if (entity instanceof Player _player) {
+					ItemStack _stktoremove = new ItemStack(Items.SWEET_BERRIES);
+					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+				}
 			} else if (new Object() {
 				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 					BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -303,6 +330,10 @@ public class StompingPotUseProcedure {
 					} else {
 						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.sweet_berry_bush.place")), SoundSource.BLOCKS, 1, (float) 0.8, false);
 					}
+				}
+				if (entity instanceof Player _player) {
+					ItemStack _stktoremove = new ItemStack(Items.SWEET_BERRIES);
+					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 				}
 			} else if (new Object() {
 				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
@@ -335,6 +366,10 @@ public class StompingPotUseProcedure {
 						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.sweet_berry_bush.place")), SoundSource.BLOCKS, 1, (float) 0.8, false);
 					}
 				}
+				if (entity instanceof Player _player) {
+					ItemStack _stktoremove = new ItemStack(Items.SWEET_BERRIES);
+					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+				}
 			} else if (new Object() {
 				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 					BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -366,6 +401,10 @@ public class StompingPotUseProcedure {
 						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.sweet_berry_bush.place")), SoundSource.BLOCKS, 1, (float) 0.8, false);
 					}
 				}
+				if (entity instanceof Player _player) {
+					ItemStack _stktoremove = new ItemStack(Items.SWEET_BERRIES);
+					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+				}
 			} else if (new Object() {
 				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 					BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -396,6 +435,10 @@ public class StompingPotUseProcedure {
 					} else {
 						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.sweet_berry_bush.place")), SoundSource.BLOCKS, 1, (float) 0.8, false);
 					}
+				}
+				if (entity instanceof Player _player) {
+					ItemStack _stktoremove = new ItemStack(Items.SWEET_BERRIES);
+					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 				}
 			} else if (new Object() {
 				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
@@ -463,6 +506,10 @@ public class StompingPotUseProcedure {
 						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.sweet_berry_bush.place")), SoundSource.BLOCKS, 1, (float) 0.8, false);
 					}
 				}
+				if (entity instanceof Player _player) {
+					ItemStack _stktoremove = new ItemStack(Items.GLOW_BERRIES);
+					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+				}
 			} else if (new Object() {
 				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 					BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -493,6 +540,10 @@ public class StompingPotUseProcedure {
 					} else {
 						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.sweet_berry_bush.place")), SoundSource.BLOCKS, 1, (float) 0.8, false);
 					}
+				}
+				if (entity instanceof Player _player) {
+					ItemStack _stktoremove = new ItemStack(Items.GLOW_BERRIES);
+					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 				}
 			} else if (new Object() {
 				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
@@ -525,6 +576,10 @@ public class StompingPotUseProcedure {
 						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.sweet_berry_bush.place")), SoundSource.BLOCKS, 1, (float) 0.8, false);
 					}
 				}
+				if (entity instanceof Player _player) {
+					ItemStack _stktoremove = new ItemStack(Items.GLOW_BERRIES);
+					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+				}
 			} else if (new Object() {
 				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 					BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -556,6 +611,10 @@ public class StompingPotUseProcedure {
 						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.sweet_berry_bush.place")), SoundSource.BLOCKS, 1, (float) 0.8, false);
 					}
 				}
+				if (entity instanceof Player _player) {
+					ItemStack _stktoremove = new ItemStack(Items.GLOW_BERRIES);
+					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+				}
 			} else if (new Object() {
 				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 					BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -586,6 +645,10 @@ public class StompingPotUseProcedure {
 					} else {
 						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.sweet_berry_bush.place")), SoundSource.BLOCKS, 1, (float) 0.8, false);
 					}
+				}
+				if (entity instanceof Player _player) {
+					ItemStack _stktoremove = new ItemStack(Items.GLOW_BERRIES);
+					_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 				}
 			} else if (new Object() {
 				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
@@ -756,6 +819,17 @@ public class StompingPotUseProcedure {
 						_setstack.setCount(1);
 						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
+					if (!(entity instanceof ServerPlayer _plr126 && _plr126.level() instanceof ServerLevel
+							&& _plr126.getAdvancements().getOrStartProgress(_plr126.server.getAdvancements().getAdvancement(new ResourceLocation("drstone:juice_making"))).isDone())) {
+						if (entity instanceof ServerPlayer _player) {
+							Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("drstone:juice_making"));
+							AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+							if (!_ap.isDone()) {
+								for (String criteria : _ap.getRemainingCriteria())
+									_player.getAdvancements().award(_adv, criteria);
+							}
+						}
+					}
 				}
 				if ((new Object() {
 					public String getValue(LevelAccessor world, BlockPos pos, String tag) {
@@ -799,6 +873,17 @@ public class StompingPotUseProcedure {
 						_setstack.setCount(1);
 						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
+					if (!(entity instanceof ServerPlayer _plr134 && _plr134.level() instanceof ServerLevel
+							&& _plr134.getAdvancements().getOrStartProgress(_plr134.server.getAdvancements().getAdvancement(new ResourceLocation("drstone:juice_making"))).isDone())) {
+						if (entity instanceof ServerPlayer _player) {
+							Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("drstone:juice_making"));
+							AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+							if (!_ap.isDone()) {
+								for (String criteria : _ap.getRemainingCriteria())
+									_player.getAdvancements().award(_adv, criteria);
+							}
+						}
+					}
 				}
 				if ((new Object() {
 					public String getValue(LevelAccessor world, BlockPos pos, String tag) {
@@ -841,6 +926,17 @@ public class StompingPotUseProcedure {
 						ItemStack _setstack = new ItemStack(DrstoneModItems.CUP_GLOWBERRY_JUICE.get()).copy();
 						_setstack.setCount(1);
 						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+					}
+					if (!(entity instanceof ServerPlayer _plr142 && _plr142.level() instanceof ServerLevel
+							&& _plr142.getAdvancements().getOrStartProgress(_plr142.server.getAdvancements().getAdvancement(new ResourceLocation("drstone:juice_making"))).isDone())) {
+						if (entity instanceof ServerPlayer _player) {
+							Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("drstone:juice_making"));
+							AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+							if (!_ap.isDone()) {
+								for (String criteria : _ap.getRemainingCriteria())
+									_player.getAdvancements().award(_adv, criteria);
+							}
+						}
 					}
 				}
 			}

@@ -6,10 +6,11 @@ license="All Rights Reserved"
 modId="drstone"
 version="1.0.0"
 displayName="Dr. Stone: Kingdom of Science"
-displayURL="https://mcreator.net"
+displayURL="https://discord.gg/TJj3Sk52Jq"
 logoFile="logo.png"
-credits="Created using mod maker MCreator - https://mcreator.net/about"
-authors="noiit, MCreator"
+credits="NoiiLive, Riichiro Inagaki"
+authors="NoiiLive"
+description="Adds Dr. Stone Items and Technology into Minecraft"
 
 # Start of user code block mod configuration
 # End of user code block mod configuration
@@ -30,12 +31,6 @@ authors="noiit, MCreator"
     side="BOTH"
 [[dependencies.drstone]]
     modId="geckolib"
-    mandatory=false
-    versionRange="[0,)"
-    ordering="NONE"
-    side="BOTH"
-[[dependencies.drstone]]
-    modId="playeranimator"
     mandatory=false
     versionRange="[0,)"
     ordering="NONE"
