@@ -16,7 +16,7 @@
     ],
     "stackSize": 1,
     "enchantability": 0,
-    "useDuration": 20,
+    "useDuration": 30,
     "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
@@ -41,9 +41,6 @@
     "inventoryStackSize": 64,
     "onRightClickedInAir": {
       "name": "PetrificationMenu"
-    },
-    "onItemInInventoryTick": {
-      "name": "PetrificationDeviceTimer"
     },
     "enableRanged": true,
     "shootConstantly": false,

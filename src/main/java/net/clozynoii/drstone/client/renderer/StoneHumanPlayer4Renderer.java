@@ -72,7 +72,6 @@ public class StoneHumanPlayer4Renderer extends GeoEntityRenderer<StoneHumanPlaye
 
     private GeoModel<StoneHumanPlayer4Entity> getModel(UUID uuid) {
         boolean isSlim = isSlimSkin(uuid);
-        System.out.println("UUID: " + uuid + " isSlim: " + isSlim); // Debug log
         return isSlim ? slimModel : defaultModel;
     }
 

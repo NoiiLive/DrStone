@@ -418,7 +418,7 @@
           }
         ]
       },
-      "path": "~/Procedures/Player"
+      "path": "~/Procedures/Entities"
     },
     {
       "name": "RevivalFluid",
@@ -575,30 +575,6 @@
       "path": "~/Misc/Tabs"
     },
     {
-      "name": "NoVillagers",
-      "type": "gamerule",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "no_villagers",
-      "metadata": {
-        "files": [],
-        "type": "logic"
-      },
-      "path": "~/Misc/Gamerules"
-    },
-    {
-      "name": "SpawnPetrified",
-      "type": "gamerule",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "spawn_petrified",
-      "metadata": {
-        "files": [],
-        "type": "logic"
-      },
-      "path": "~/Misc/Gamerules"
-    },
-    {
       "name": "DrStoneOP",
       "type": "command",
       "compiles": true,
@@ -669,7 +645,7 @@
           "src/main/java/net/clozynoii/drstone/network/PetrificationDeviceGUIButtonMessage.java"
         ]
       },
-      "path": "~/GUI"
+      "path": "~/Misc/GUI"
     },
     {
       "name": "PetrificationMenu",
@@ -685,10 +661,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
           },
           {
             "name": "x",
@@ -744,29 +716,6 @@
           {
             "name": "world",
             "type": "world"
-          }
-        ]
-      },
-      "path": "~/Procedures/Items"
-    },
-    {
-      "name": "PetrificationDeviceTimer",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "petrification_device_timer",
-      "metadata": {
-        "files": [
-          "src/main/java/net/clozynoii/drstone/procedures/PetrificationDeviceTimerProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
           }
         ]
       },
@@ -1654,58 +1603,6 @@
       "path": "~/Particles"
     },
     {
-      "name": "PetrificationDeviceProjectileWhileProjectileFlyingTick",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "petrification_device_projectile_while_projectile_flying_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/clozynoii/drstone/procedures/PetrificationDeviceProjectileWhileProjectileFlyingTickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "immediatesourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Projectile"
-    },
-    {
-      "name": "PetrificationDeviceProjectile",
-      "type": "projectile",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "petrification_device_projectile",
-      "metadata": {
-        "files": [
-          "src/main/java/net/clozynoii/drstone/entity/PetrificationDeviceProjectileEntity.java"
-        ]
-      },
-      "path": "~/Projectile"
-    },
-    {
       "name": "MiracleDrip",
       "type": "particle",
       "compiles": true,
@@ -2139,6 +2036,158 @@
         ]
       },
       "path": "~/Structures"
+    },
+    {
+      "name": "PlayerTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/procedures/PlayerTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Player"
+    },
+    {
+      "name": "DsSpawnPetrified",
+      "type": "gamerule",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ds_spawn_petrified",
+      "metadata": {
+        "type": "logic",
+        "files": []
+      },
+      "path": "~/Misc/Gamerules"
+    },
+    {
+      "name": "Petrificate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "petrificate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/procedures/PetrificateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Player"
+    },
+    {
+      "name": "PetrifiedHidePlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "petrified_hide_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/procedures/PetrifiedHidePlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Player"
+    },
+    {
+      "name": "UnpetrifyPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "unpetrify_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/procedures/UnpetrifyPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Entities"
+    },
+    {
+      "name": "DsDeviceRadius",
+      "type": "gamerule",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ds_device_radius",
+      "metadata": {
+        "files": [],
+        "type": "number"
+      },
+      "path": "~/Misc/Gamerules"
     }
   ],
   "variable_elements": [
@@ -2153,6 +2202,24 @@
       "type": "number",
       "scope": "player_lifetime",
       "value": "0"
+    },
+    {
+      "name": "MassPetrificationEvent",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "MiracleCaveSpawned",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "FirstUnpetrify",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
     }
   ],
   "sound_elements": [],
@@ -2191,12 +2258,10 @@
       "block.drstone.empty_cup": "Empty Cup",
       "effect.drstone.petrified": "Petrified",
       "item.drstone.grape_wine": "Cup of Grape Wine",
-      "gamerule.spawnPetrified": "Spawn Petrified",
       "item.drstone.cup_sweetberry_juice": "Cup of Sweetberry Juice",
-      "gamerule.noVillagers": "No Vanilla Villagers",
       "item.drstone.clay_cup": "Clay Cup",
-      "gamerule.noVillagers.description": "Disables Vanilla Villagers",
       "item.drstone.senkuu_armor_leggings": "Senkuu\u0027s Pants",
+      "gamerule.dsSpawnPetrified": "Spawn Petrified",
       "block.drstone.glowberry_juice_cup": "Glowberry Juice Cup",
       "item.drstone.stone_human_player_1_spawn_egg": "Stone Human Spawn Egg",
       "block.drstone.grape_bush_vine_mature": "Grape Bush Vine",
@@ -2208,14 +2273,15 @@
       "item.drstone.stone_villager_broken_spawn_egg": "Stone Villager Spawn Egg",
       "item.drstone.stone_human_player_4_spawn_egg": "Stone Human Spawn Egg",
       "item_group.drstone.dr_stone": "Dr. Stone",
-      "gamerule.spawnPetrified.description": "Changes players being petrified when joining AFTER mass petrification.",
       "gui.drstone.petrification_device_gui.Seconds": "0",
       "item.drstone.stone_villager_spawn_egg": "Stone Villager Spawn Egg",
+      "gamerule.dsSpawnPetrified.description": "Changes players being petrified when joining AFTER mass petrification.",
       "block.drstone.clay_pot": "Clay Pot",
       "block.drstone.miracle_fluid_pot": "Clay Pot (Bat Guano)",
       "item.drstone.cooked_clay_cup": "Clay Cup",
       "entity.drstone.stone_villager_broken": "Stone Villager",
       "gui.drstone.petrification_device_gui.button_set_conditions": "Set Conditions",
+      "gamerule.dsDeviceRadius": "Petrification Device Radius",
       "item.drstone.stone_human_player_3_spawn_egg": "Stone Human Spawn Egg",
       "gui.drstone.petrification_device_gui.Meters": "0",
       "item.drstone.bat_guano_cup": "Cup of Bat Guano",
@@ -2230,6 +2296,7 @@
       "block.drstone.sweetberry_juice_cup": "Sweetberry Juice Cup",
       "item.drstone.senkuu_armor_boots": "Senkuu\u0027s Shoes",
       "entity.drstone.stone_human_player_1": "Stone Human",
+      "gamerule.dsDeviceRadius.description": "Changes the distance cap on the petrification device",
       "entity.drstone.stone_human_player_2": "Stone Human",
       "item.drstone.stone_human_player_2_spawn_egg": "Stone Human Spawn Egg",
       "entity.drstone.stone_human_player_3": "Stone Human",
@@ -2248,56 +2315,6 @@
   "foldersRoot": {
     "name": "~",
     "children": [
-      {
-        "name": "Items",
-        "children": [
-          {
-            "name": "Materials",
-            "children": []
-          },
-          {
-            "name": "Tools",
-            "children": []
-          },
-          {
-            "name": "Food",
-            "children": []
-          },
-          {
-            "name": "Misc",
-            "children": []
-          }
-        ]
-      },
-      {
-        "name": "Armor",
-        "children": []
-      },
-      {
-        "name": "Misc",
-        "children": [
-          {
-            "name": "Projectile",
-            "children": []
-          },
-          {
-            "name": "Commands",
-            "children": []
-          },
-          {
-            "name": "Tabs",
-            "children": []
-          },
-          {
-            "name": "Gamerules",
-            "children": []
-          }
-        ]
-      },
-      {
-        "name": "Particles",
-        "children": []
-      },
       {
         "name": "Procedures",
         "children": [
@@ -2320,20 +2337,29 @@
         ]
       },
       {
-        "name": "Entities",
+        "name": "Armor",
         "children": []
       },
       {
-        "name": "Effect",
-        "children": []
-      },
-      {
-        "name": "Recipes",
-        "children": []
-      },
-      {
-        "name": "Projectile",
-        "children": []
+        "name": "Items",
+        "children": [
+          {
+            "name": "Materials",
+            "children": []
+          },
+          {
+            "name": "Tools",
+            "children": []
+          },
+          {
+            "name": "Food",
+            "children": []
+          },
+          {
+            "name": "Misc",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Blocks",
@@ -2353,23 +2379,61 @@
         ]
       },
       {
-        "name": "GUI",
+        "name": "Structures",
         "children": []
       },
       {
-        "name": "Structures",
+        "name": "Recipes",
         "children": []
+      },
+      {
+        "name": "Effect",
+        "children": []
+      },
+      {
+        "name": "Particles",
+        "children": []
+      },
+      {
+        "name": "Entities",
+        "children": []
+      },
+      {
+        "name": "Misc",
+        "children": [
+          {
+            "name": "Projectile",
+            "children": []
+          },
+          {
+            "name": "Commands",
+            "children": []
+          },
+          {
+            "name": "Tabs",
+            "children": []
+          },
+          {
+            "name": "Gamerules",
+            "children": []
+          },
+          {
+            "name": "GUI",
+            "children": []
+          }
+        ]
       }
     ]
   },
   "workspaceSettings": {
     "modid": "drstone",
-    "modName": "DrStone",
+    "modName": "Dr. Stone: Kingdom of Science",
     "version": "1.0.0",
     "author": "noiit, MCreator",
     "websiteURL": "https://mcreator.net",
-    "license": "Not specified",
+    "license": "All Rights Reserved",
     "serverSideOnly": false,
+    "modPicture": "drkosicon",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],

@@ -46,6 +46,8 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.nbt.CompoundTag;
 
+import net.clozynoii.drstone.procedures.UnpetrifyPlayerProcedure;
+import net.clozynoii.drstone.procedures.PlayerStatuePositionProcedure;
 import net.clozynoii.drstone.init.DrstoneModEntities;
 
 import java.util.List;
@@ -137,20 +139,7 @@ public class StoneHumanPlayer3Entity extends TamableAnimal implements GeoEntity 
 			return false;
 		return super.hurt(source, amount);
 	}
-
-	@Override
-	public void addAdditionalSaveData(CompoundTag compound) {
-		super.addAdditionalSaveData(compound);
-		compound.putString("Texture", this.getTexture());
-	}
-
-	@Override
-	public void readAdditionalSaveData(CompoundTag compound) {
-		super.readAdditionalSaveData(compound);
-		if (compound.contains("Texture"))
-			this.setTexture(compound.getString("Texture"));
-	}
-
+	
 	@Override
 	public InteractionResult mobInteract(Player sourceentity, InteractionHand hand) {
 		ItemStack itemstack = sourceentity.getItemInHand(hand);
@@ -191,12 +180,20 @@ public class StoneHumanPlayer3Entity extends TamableAnimal implements GeoEntity 
 					this.setPersistenceRequired();
 			}
 		}
+		double x = this.getX();
+		double y = this.getY();
+		double z = this.getZ();
+		Entity entity = this;
+		Level world = this.level();
+
+		UnpetrifyPlayerProcedure.execute(world, x, y, z, entity, sourceentity);
 		return retval;
 	}
 
 	@Override
 	public void baseTick() {
 		super.baseTick();
+		PlayerStatuePositionProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
 		this.refreshDimensions();
 	}
 

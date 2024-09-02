@@ -14,6 +14,7 @@ import net.minecraft.client.gui.components.EditBox;
 
 import net.clozynoii.drstone.network.DrstoneModVariables;
 import net.clozynoii.drstone.init.DrstoneModItems;
+import net.clozynoii.drstone.init.DrstoneModGameRules;
 
 import java.util.List;
 import java.util.HashMap;
@@ -24,7 +25,7 @@ public class DeviceConditionsSetProcedure {
 		if (entity == null || guistate == null)
 			return;
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == DrstoneModItems.PETRIFICATION_DEVICE.get()) {
-			(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putDouble("Meters", new Object() {
+			if (new Object() {
 				double convert(String s) {
 					try {
 						return Double.parseDouble(s.trim());
@@ -32,7 +33,41 @@ public class DeviceConditionsSetProcedure {
 					}
 					return 0;
 				}
-			}.convert(guistate.containsKey("text:Meters") ? ((EditBox) guistate.get("text:Meters")).getValue() : ""));
+			}.convert(guistate.containsKey("text:Meters") ? ((EditBox) guistate.get("text:Meters")).getValue() : "") <= (world.getLevelData().getGameRules().getInt(DrstoneModGameRules.DS_DEVICE_RADIUS))) {
+				(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putDouble("Meters", new Object() {
+					double convert(String s) {
+						try {
+							return Double.parseDouble(s.trim());
+						} catch (Exception e) {
+						}
+						return 0;
+					}
+				}.convert(guistate.containsKey("text:Meters") ? ((EditBox) guistate.get("text:Meters")).getValue() : ""));
+				{
+					double _setval = new Object() {
+						double convert(String s) {
+							try {
+								return Double.parseDouble(s.trim());
+							} catch (Exception e) {
+							}
+							return 0;
+						}
+					}.convert(guistate.containsKey("text:Meters") ? ((EditBox) guistate.get("text:Meters")).getValue() : "");
+					entity.getCapability(DrstoneModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.DeviceMeters = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+			} else {
+				(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putDouble("Meters", (world.getLevelData().getGameRules().getInt(DrstoneModGameRules.DS_DEVICE_RADIUS)));
+				{
+					double _setval = (world.getLevelData().getGameRules().getInt(DrstoneModGameRules.DS_DEVICE_RADIUS));
+					entity.getCapability(DrstoneModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.DeviceMeters = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+			}
 			(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putDouble("Seconds", (new Object() {
 				double convert(String s) {
 					try {
@@ -42,21 +77,6 @@ public class DeviceConditionsSetProcedure {
 					return 0;
 				}
 			}.convert(guistate.containsKey("text:Seconds") ? ((EditBox) guistate.get("text:Seconds")).getValue() : "") * 20));
-			{
-				double _setval = new Object() {
-					double convert(String s) {
-						try {
-							return Double.parseDouble(s.trim());
-						} catch (Exception e) {
-						}
-						return 0;
-					}
-				}.convert(guistate.containsKey("text:Meters") ? ((EditBox) guistate.get("text:Meters")).getValue() : "");
-				entity.getCapability(DrstoneModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.DeviceMeters = _setval;
-					capability.syncPlayerVariables(entity);
-				});
-			}
 			{
 				double _setval = new Object() {
 					double convert(String s) {
@@ -99,7 +119,7 @@ public class DeviceConditionsSetProcedure {
 				}
 			}
 		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == DrstoneModItems.PETRIFICATION_DEVICE.get()) {
-			(entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getOrCreateTag().putDouble("Meters", new Object() {
+			if (new Object() {
 				double convert(String s) {
 					try {
 						return Double.parseDouble(s.trim());
@@ -107,7 +127,41 @@ public class DeviceConditionsSetProcedure {
 					}
 					return 0;
 				}
-			}.convert(guistate.containsKey("text:Meters") ? ((EditBox) guistate.get("text:Meters")).getValue() : ""));
+			}.convert(guistate.containsKey("text:Meters") ? ((EditBox) guistate.get("text:Meters")).getValue() : "") <= (world.getLevelData().getGameRules().getInt(DrstoneModGameRules.DS_DEVICE_RADIUS))) {
+				(entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getOrCreateTag().putDouble("Meters", new Object() {
+					double convert(String s) {
+						try {
+							return Double.parseDouble(s.trim());
+						} catch (Exception e) {
+						}
+						return 0;
+					}
+				}.convert(guistate.containsKey("text:Meters") ? ((EditBox) guistate.get("text:Meters")).getValue() : ""));
+				{
+					double _setval = new Object() {
+						double convert(String s) {
+							try {
+								return Double.parseDouble(s.trim());
+							} catch (Exception e) {
+							}
+							return 0;
+						}
+					}.convert(guistate.containsKey("text:Meters") ? ((EditBox) guistate.get("text:Meters")).getValue() : "");
+					entity.getCapability(DrstoneModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.DeviceMeters = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+			} else {
+				(entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getOrCreateTag().putDouble("Meters", (world.getLevelData().getGameRules().getInt(DrstoneModGameRules.DS_DEVICE_RADIUS)));
+				{
+					double _setval = (world.getLevelData().getGameRules().getInt(DrstoneModGameRules.DS_DEVICE_RADIUS));
+					entity.getCapability(DrstoneModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.DeviceMeters = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+			}
 			(entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getOrCreateTag().putDouble("Seconds", (new Object() {
 				double convert(String s) {
 					try {
@@ -117,21 +171,6 @@ public class DeviceConditionsSetProcedure {
 					return 0;
 				}
 			}.convert(guistate.containsKey("text:Seconds") ? ((EditBox) guistate.get("text:Seconds")).getValue() : "") * 20));
-			{
-				double _setval = new Object() {
-					double convert(String s) {
-						try {
-							return Double.parseDouble(s.trim());
-						} catch (Exception e) {
-						}
-						return 0;
-					}
-				}.convert(guistate.containsKey("text:Meters") ? ((EditBox) guistate.get("text:Meters")).getValue() : "");
-				entity.getCapability(DrstoneModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.DeviceMeters = _setval;
-					capability.syncPlayerVariables(entity);
-				});
-			}
 			{
 				double _setval = new Object() {
 					double convert(String s) {

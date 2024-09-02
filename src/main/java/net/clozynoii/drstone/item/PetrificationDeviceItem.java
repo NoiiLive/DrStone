@@ -11,14 +11,12 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.chat.Component;
 
 import net.clozynoii.drstone.procedures.PetrificationMenuProcedure;
-import net.clozynoii.drstone.procedures.PetrificationDeviceTimerProcedure;
 import net.clozynoii.drstone.entity.PetrificationThrownEntity;
 
 import java.util.List;
@@ -35,7 +33,7 @@ public class PetrificationDeviceItem extends Item {
 
 	@Override
 	public int getUseDuration(ItemStack itemstack) {
-		return 20;
+		return 30;
 	}
 
 	@Override
@@ -51,14 +49,8 @@ public class PetrificationDeviceItem extends Item {
 			ar = InteractionResultHolder.success(entity.getItemInHand(hand));
 			entity.startUsingItem(hand);
 		}
-		PetrificationMenuProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity, ar.getObject());
+		PetrificationMenuProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity);
 		return ar;
-	}
-
-	@Override
-	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
-		super.inventoryTick(itemstack, world, entity, slot, selected);
-		PetrificationDeviceTimerProcedure.execute(entity, itemstack);
 	}
 
 	@Override
