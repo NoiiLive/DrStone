@@ -32,7 +32,7 @@ public class GlowberryWineReadyProcedure {
 				}
 			}.getValue(world, BlockPos.containing(x, y, z), "WineProgress") == 4) {
 				if (world instanceof ServerLevel _level)
-					_level.sendParticles(ParticleTypes.HAPPY_VILLAGER, (x + 0.5), (y + 1), (z + 0.5), 1, 0.25, 0.25, 0.25, 0);
+					_level.sendParticles(ParticleTypes.HAPPY_VILLAGER, (x + 0.5), (y + 0.5), (z + 0.5), 1, 0.5, 0.5, 0.5, 0);
 			}
 		}
 		if (new Object() {
