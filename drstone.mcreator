@@ -2571,6 +2571,25 @@
         ]
       },
       "path": "~/Misc/Achievements"
+    },
+    {
+      "name": "StatueDMG",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "statue_dmg",
+      "metadata": {
+        "files": [
+          "src/main/java/net/clozynoii/drstone/procedures/StatueDMGProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Entities"
     }
   ],
   "variable_elements": [
@@ -2643,6 +2662,12 @@
     ],
     "BLOCKS:minecraft:mineable/hoe": [
       "~CUSTOM:PlayerOffline"
+    ],
+    "ENTITIES:mod:player_statues": [
+      "CUSTOM:StoneHumanPlayer1",
+      "CUSTOM:StoneHumanPlayer2",
+      "CUSTOM:StoneHumanPlayer3",
+      "CUSTOM:StoneHumanPlayer4"
     ]
   },
   "tab_element_order": {

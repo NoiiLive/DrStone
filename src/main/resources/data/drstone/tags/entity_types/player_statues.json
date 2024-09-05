@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "drstone:stone_human_player_1",
+    "drstone:stone_human_player_2",
+    "drstone:stone_human_player_3",
+    "drstone:stone_human_player_4"
+  ]
+}
